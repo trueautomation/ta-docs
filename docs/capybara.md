@@ -1,6 +1,18 @@
 # Creating your first test in TrueAutomation using Capybara + RSpec  
 
-### Test example:
+
+
+1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [Easy Setup Guide](easy_setup.md))
+
+2. Open your project in your integrated development environment (IDE)
+
+3. Open folder `spec/` inside of your project, if you don’t have one - create it.
+
+4. Create folder `test_scenario/` in `spec/` folder
+
+5. Create simple test file in `test_scenario/` folder.
+    
+It can look like this if it is the very first time you run TrueAutomation 
 
 ```ruby
 require 'spec_helper'
@@ -11,19 +23,20 @@ describe 'True Automation Demo Test' do
     visit 'http://www.trueautomation-demo.inf.ua'
 
     # Fill user identifier Id and password
-    find(:xpath, ta('demo:userId', "//input[@placeholder='email']")).set('team@trueautomation.io')
-    find(:xpath, ta('demo:userPassword', "//input[@type='password']")).set('password')
+    find(:xpath, ta('loginPage:userEmail', "//input[@placeholder='email']")).set('team@trueautomation.io')
+    find(:xpath, ta('loginPage:userPassword', "//input[@type='password']")).set('password')
 
     # Select `Remember me` checkbox
-    find(:id, ta('demo:rememberMe', 'checkboxG1')).click
+    find(:id, ta('loginPage:rememberMe', 'checkboxG1')).click
 
     # Click authorize button
-    find(:xpath, ta('demo:authorizeBtn', "//button[@class='btn-radius']")).click
+    find(:xpath, ta('loginPage:authorizeBtn', "//button[@class='btn-radius']")).click
   end
 end
 ```
 
-### Test example uses only ta locators:
+It can look like this, if you have previously run TrueAutomation
+
 ```Ruby
 require 'spec_helper'
 
@@ -33,14 +46,14 @@ describe 'True Automation Demo Test' do
     visit 'http://www.trueautomation-demo.inf.ua'
 
     # Fill user identifier Id and password
-    find(ta('demo:userId')).set('team@trueautomation.io')
-    find(ta('demo:userPassword')).set('password')
+    find(ta('loginPage:userEmail')).set('team@trueautomation.io')
+    find(ta('loginPage:userPassword')).set('password')
 
     # Select `Remember me` checkbox
-    find(ta('demo:rememberMe')).click
+    find(ta('loginPage:rememberMe')).click
 
     # Click authorize button
-    find(ta('demo:authorizeBtn')).click
+    find(ta('loginPage:authorizeBtn')).click
   end
 end
 ```

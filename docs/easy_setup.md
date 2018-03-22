@@ -2,17 +2,16 @@
 
 1. Register an account with TrueAutomation at https://app.trueautomation.io/signup
 2. On your computer go to Terminal and install TrueAutomation Client by running this command: 
+    
+    2.1. Unix operating system 
  
-    ```sh
-    npm -g install trueautomation
-    ```
-     
-     _True Automation client requires Node v9+ to run. The best way to get proper up-to-date and stable environment is install node via nvm. So we suggest to to install nvm for your platform first.  Please follow instructions here. 
-     Once you have nvm in place, the latest version of node can be installed. Run this command to do so:_
- 
-    ```sh
-    nvm install stable
-    ```    
+   ```sh
+    curl -o- http://trueautomation.io/installer.sh | bash
+   ```
+   2.2. Windows operating system
+   
+   ?> _TODO:_ add setup process on Windows
+  
 3. Select programming language (currently supported languages: Ruby and Java)
 
     3.1. Ruby

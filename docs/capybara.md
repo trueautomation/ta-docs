@@ -1,7 +1,5 @@
 # Creating your first test in TrueAutomation using Capybara + RSpec  
 
-
-
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [Easy Setup Guide](easy_setup.md))
 
 2. Open your project in your integrated development environment (IDE)
@@ -57,6 +55,19 @@ describe 'True Automation Demo Test' do
   end
 end
 ```
+
+6. To run your test file use the command below in your terminal:
+
+```sh
+rspec spec/test_scenario/*rb
+```
+
+7. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
+
+![Test output](_images/pass-test-output-capybara-rspec.png 'Test output')
+
+The test ran and was successful.
+
 
 #### API example: 
 ```Ruby

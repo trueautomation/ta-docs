@@ -6,7 +6,7 @@
   * [Using smart locators (Object repository)](smart_locators.md)
 
 * Creating your first test in TrueAutomation
-  * [Ruby](ruby-low-api-lavel.md)
-  * [Ruby/Capybara](capybara.md)  
-  * [Java/TestNG](java-testNG) 
+  * [Ruby/Capybara](capybara.md)
+  * [Ruby](ruby-low-api-lavel.md) 
+  * [Java/TestNG](java-testNG.md) 
  

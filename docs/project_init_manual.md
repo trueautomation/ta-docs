@@ -5,33 +5,33 @@
 > This clause explains how to implement TrueAutomation into Capybara/RSpec step by step:
  
 1. Add this line to your `Gemfile`
-```ruby
-gem 'true_automation'
-```
+    ```ruby
+    gem 'true_automation'
+    ```
 2. Run command
-```sh
-bundle install
-```
+    ```sh
+    bundle install
+    ```
 3. Load RSpec support by adding the following line into your `spec_helper.rb` file:
-```ruby
-require 'true_automation/rspec'
-```
+    ```ruby
+    require 'true_automation/rspec'
+    ```
 4. Load Capybara support by adding the following line into your `spec_helper.rb` file:
-```ruby
-require 'true_automation/driver/capybara'
-```
+    ```ruby
+    require 'true_automation/driver/capybara'
+    ```
 5. Register the new WebDriver for Capybara in your `spec_helper.rb` file:
-```ruby
-Capybara.register_driver :true_automation_driver do |app|
- TrueAutomation::Driver::Capybara.new(app)
-end
-```
+    ```ruby
+    Capybara.register_driver :true_automation_driver do |app|
+     TrueAutomation::Driver::Capybara.new(app)
+    end
+    ```
 6. Update default driver in your `spec_helper.rb` file:
-```ruby
-Capybara.configure do |capybara|
- capybara.default_driver = :true_automation_driver
-end
-```
+    ```ruby
+    Capybara.configure do |capybara|
+     capybara.default_driver = :true_automation_driver
+    end
+    ```
 7. Make TrueAutomation DSL available
 ```ruby
 config.include TrueAutomation::DSL

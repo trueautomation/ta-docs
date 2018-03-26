@@ -7,7 +7,6 @@
   * [Using smart locators (Object repository)](smart_locators.md)
 
 * Creating first tests
-  * [Ruby/Capybara](capybara.md)
-  * [Ruby](ruby-low-api-lavel.md) 
-  * [Java/TestNG](java-testNG.md) 
+  * [Ruby/Capybara](capybara_rspec.md)
+  * [Java/TestNG](java_testNG.md) 
  

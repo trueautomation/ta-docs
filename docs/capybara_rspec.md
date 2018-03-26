@@ -1,4 +1,4 @@
-# Creating your first test in TrueAutomation using Capybara + RSpec  
+# Creating your first test in TrueAutomation using Capybara/RSpec  
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [Easy Setup Guide](easy_setup.md))
 
@@ -8,11 +8,11 @@
 
 4. Create folder `test_scenario/` in `spec/` folder
 
-5. Create simple test file in `test_scenario/` folder.
+5. Create simple test file in `test_scenario/` folder
     
-It can look like this if it is the very first time you run TrueAutomation 
-
+  It can look like this if it is the very first time you run TrueAutomation 
 ```ruby
+
 require 'spec_helper'
 
 describe 'True Automation Demo Test' do
@@ -31,11 +31,12 @@ describe 'True Automation Demo Test' do
     find(:xpath, ta('loginPage:authorizeBtn', "//button[@class='btn-radius']")).click
   end
 end
+
 ```
 
-It can look like this, if you have previously run TrueAutomation
+   It can look like this, if you have previously run TrueAutomation
+```ruby
 
-```Ruby
 require 'spec_helper'
 
 describe 'True Automation Demo Test' do
@@ -54,6 +55,7 @@ describe 'True Automation Demo Test' do
     find(ta('loginPage:authorizeBtn')).click
   end
 end
+
 ```
 
 6. To run your test file use the command below in your terminal:

@@ -76,3 +76,6 @@ trueautomation init
      ![Congratulations](_images/congratulations.png 'Congratulations')
      
 Congratulations. You’re good to go with TrueAutomation. If you have suggestions or questions reg this guide - let us know at [team@trueautomation.io](mailto:team@trueautomation.io) 
+
+
+ ![Initial process](_gif/init-ta.gif 'Initial process')

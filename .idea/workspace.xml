@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b6c2d0-bdcc-4b2e-9134-c5e1b05fc5a8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/project-init-manually.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" afterPath="$PROJECT_DIR$/docs/_sidebar.md" />
-      <change beforePath="$PROJECT_DIR$/docs/capybara_rspec.md" afterPath="$PROJECT_DIR$/docs/first-test-capybara-rspec.md" />
-      <change beforePath="$PROJECT_DIR$/docs/easy_setup.md" afterPath="$PROJECT_DIR$/docs/easy-setup.md" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change beforePath="$PROJECT_DIR$/docs/java_testNG.md" afterPath="$PROJECT_DIR$/docs/first-test-java-testng.md" />
-      <change beforePath="$PROJECT_DIR$/docs/key_benefits.md" afterPath="$PROJECT_DIR$/docs/key-benefits.md" />
-      <change beforePath="$PROJECT_DIR$/docs/project_init_automaticlly.md" afterPath="$PROJECT_DIR$/docs/project-init-automatically.md" />
-      <change beforePath="$PROJECT_DIR$/docs/project_init_manual.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/docs/smart_locators.md" afterPath="$PROJECT_DIR$/docs/smart-locators.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +37,8 @@
         <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="191">
-                <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <first_editor relative-caret-position="446">
+                <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -414,7 +404,7 @@
       <workItem from="1522070603166" duration="214000" />
       <workItem from="1522090806483" duration="6887000" />
       <workItem from="1522140369067" duration="37000" />
-      <workItem from="1522141130198" duration="2036000" />
+      <workItem from="1522141130198" duration="2143000" />
     </task>
     <task id="LOCAL-00001" summary="wip commit">
       <created>1521753785050</created>
@@ -451,14 +441,22 @@
       <option name="project" value="LOCAL" />
       <updated>1522104786102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clean up documentations">
+      <created>1522143249954</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522143249954</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31822000" />
+    <option name="totallyTimeSpent" value="31929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3837" y="38" width="1877" height="892" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -472,7 +470,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45294857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14332426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14332426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -525,7 +523,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add gif" />
     <MESSAGE value="wip commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip commit" />
+    <MESSAGE value="clean up documentations" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up documentations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1036,8 +1035,8 @@
     <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="191">
-            <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <first_editor relative-caret-position="446">
+            <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
             <folding />
           </first_editor>
           <second_editor />

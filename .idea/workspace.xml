@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b6c2d0-bdcc-4b2e-9134-c5e1b05fc5a8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/_images/pass-test-output-java-testng.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/project-init-manually.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/docs/_sidebar.md" afterPath="$PROJECT_DIR$/docs/_sidebar.md" />
-      <change beforePath="$PROJECT_DIR$/docs/capybara.md" afterPath="$PROJECT_DIR$/docs/capybara_rspec.md" />
+      <change beforePath="$PROJECT_DIR$/docs/capybara_rspec.md" afterPath="$PROJECT_DIR$/docs/first-test-capybara-rspec.md" />
+      <change beforePath="$PROJECT_DIR$/docs/easy_setup.md" afterPath="$PROJECT_DIR$/docs/easy-setup.md" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change beforePath="$PROJECT_DIR$/docs/java-testNG.md" afterPath="$PROJECT_DIR$/docs/java_testNG.md" />
-      <change beforePath="$PROJECT_DIR$/docs/project_init_manual.md" afterPath="$PROJECT_DIR$/docs/project_init_manual.md" />
+      <change beforePath="$PROJECT_DIR$/docs/java_testNG.md" afterPath="$PROJECT_DIR$/docs/first-test-java-testng.md" />
+      <change beforePath="$PROJECT_DIR$/docs/key_benefits.md" afterPath="$PROJECT_DIR$/docs/key-benefits.md" />
+      <change beforePath="$PROJECT_DIR$/docs/project_init_automaticlly.md" afterPath="$PROJECT_DIR$/docs/project-init-automatically.md" />
+      <change beforePath="$PROJECT_DIR$/docs/project_init_manual.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/smart_locators.md" afterPath="$PROJECT_DIR$/docs/smart-locators.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +21,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/docs/index.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="81">
+                    <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="easy_setup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/easy_setup.md">
+      <file leaf-file-name="project-init-automatically.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
-                <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <first_editor relative-caret-position="191">
+                <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -32,43 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_init_automaticlly.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+      <file leaf-file-name="first-test-capybara-rspec.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/first-test-capybara-rspec.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capybara_rspec.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/capybara_rspec.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="273">
-                <caret line="60" column="15" lean-forward="true" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="184" lean-forward="false" selection-start-line="2" selection-start-column="176" selection-end-line="2" selection-end-column="184" />
                 <folding>
-                  <marker date="1522104775459" expanded="true" signature="621:1203" ph="do ... end" />
-                  <marker date="1522104775459" expanded="true" signature="655:1199" ph="do ... end" />
-                  <marker date="1522104775459" expanded="true" signature="1347:1791" ph="do ... end" />
-                  <marker date="1522104775459" expanded="true" signature="1381:1787" ph="do ... end" />
-                  <marker date="1522104775459" expanded="true" signature="2531:2545" ph="do ... end" />
-                  <marker date="1522104775459" expanded="true" signature="4618:4657" ph="##..." />
-                  <marker date="1522104775459" expanded="true" signature="6931:6955" ph="{ ... }" />
+                  <marker date="1522143082672" expanded="true" signature="727:1309" ph="do ... end" />
+                  <marker date="1522143082672" expanded="true" signature="761:1305" ph="do ... end" />
+                  <marker date="1522143082672" expanded="true" signature="1450:1894" ph="do ... end" />
+                  <marker date="1522143082672" expanded="true" signature="1484:1890" ph="do ... end" />
+                  <marker date="1522143082672" expanded="true" signature="2633:2647" ph="do ... end" />
+                  <marker date="1522143082672" expanded="true" signature="4720:4759" ph="##..." />
+                  <marker date="1522143082672" expanded="true" signature="7033:7057" ph="{ ... }" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -81,7 +82,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="135">
-                <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+                <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -89,18 +90,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_init_manual.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/project_init_manual.md">
+      <file leaf-file-name="project-init-manually.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/project-init-manually.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
-                <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="7" />
+              <first_editor relative-caret-position="-222">
+                <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
                 <folding>
-                  <marker date="1522104263137" expanded="true" signature="1416:1656" ph="..." />
-                  <marker date="1522104263137" expanded="true" signature="1437:1636" ph="..." />
-                  <marker date="1522104263137" expanded="true" signature="1616:1636" ph="..." />
-                  <marker date="1522104263137" expanded="true" signature="1782:1937" ph="..." />
+                  <marker date="1522143082679" expanded="true" signature="686:741" ph="do ... end" />
+                  <marker date="1522143082679" expanded="true" signature="830:899" ph="do ... end" />
+                  <marker date="1522143082679" expanded="true" signature="1430:1436" ph="..." />
+                  <marker date="1522143082679" expanded="true" signature="1430:1646" ph="..." />
+                  <marker date="1522143082679" expanded="true" signature="1447:1630" ph="..." />
+                  <marker date="1522143082679" expanded="true" signature="1719:2251" ph="..." />
+                  <marker date="1522143082679" expanded="true" signature="1767:1902" ph="..." />
                 </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+                <folding />
               </first_editor>
               <second_editor />
             </state>
@@ -120,39 +137,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="java_testNG.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/java_testNG.md">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smart-locators.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/smart-locators.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="453">
-                <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="7" />
-                <folding>
-                  <marker date="1522104104210" expanded="false" signature="511:845" ph="..." />
-                  <marker date="1522104104210" expanded="true" signature="1450:1940" ph="{...}" />
-                  <marker date="1522104104210" expanded="true" signature="1651:1940" ph="{...}" />
-                  <marker date="1522104104210" expanded="true" signature="2147:2481" ph="..." />
-                  <marker date="1522104104210" expanded="true" signature="2976:3466" ph="{...}" />
-                </folding>
+              <first_editor relative-caret-position="330">
+                <caret line="22" column="81" lean-forward="false" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
+                <folding />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pass-test-output-capybara-rspec.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/_images/pass-test-output-capybara-rspec.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="key_benefits.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/key_benefits.md">
+      <file leaf-file-name="first-test-java-testng.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/first-test-java-testng.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="30">
-                <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-                <folding />
+                <caret line="2" column="243" lean-forward="false" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="243" />
+                <folding>
+                  <marker date="1522143082664" expanded="false" signature="514:848" ph="..." />
+                  <marker date="1522143082664" expanded="true" signature="1453:1943" ph="{...}" />
+                  <marker date="1522143082664" expanded="true" signature="1654:1943" ph="{...}" />
+                  <marker date="1522143082664" expanded="true" signature="2150:2484" ph="..." />
+                  <marker date="1522143082664" expanded="true" signature="2979:3469" ph="{...}" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -188,17 +208,22 @@
         <option value="$PROJECT_DIR$/docs/easy_setup.md" />
         <option value="$PROJECT_DIR$/docs/capybara.md" />
         <option value="$PROJECT_DIR$/docs/ruby-low-api-lavel.md" />
-        <option value="$PROJECT_DIR$/docs/project_init.md" />
         <option value="/XML Fragment (project_init_manual.md:1653).xml" />
         <option value="/XML Fragment (project_init_manual.md:1301).xml" />
         <option value="$PROJECT_DIR$/docs/project_init_automaticlly.md" />
         <option value="$PROJECT_DIR$/docs/java-testNG.md" />
         <option value="/Java Fragment (java_testNG.md:452).java" />
         <option value="$PROJECT_DIR$/docs/_sidebar.md" />
-        <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/docs/java_testNG.md" />
-        <option value="$PROJECT_DIR$/docs/project_init_manual.md" />
         <option value="$PROJECT_DIR$/docs/capybara_rspec.md" />
+        <option value="/Ruby Fragment (project_init_manual.md:917).rb" />
+        <option value="/XML Fragment (project_init_manual.md:1885).xml" />
+        <option value="/Java Fragment (project_init_manual.md:2192).java" />
+        <option value="$PROJECT_DIR$/docs/project_init_manual.md" />
+        <option value="$PROJECT_DIR$/docs/test_capybara_rspec.md" />
+        <option value="/XML Fragment (project_init.md:1404).xml" />
+        <option value="$PROJECT_DIR$/docs/project_init.md" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -208,11 +233,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="251" />
-    <option name="y" value="76" />
-    <option name="width" value="1400" />
-    <option name="height" value="878" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3837" />
+    <option name="y" value="38" />
+    <option name="width" value="1877" />
+    <option name="height" value="892" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,7 +255,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,25 +271,10 @@
               <item name="documentation" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="documentation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="_gif" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="documentation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="_images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,7 +412,9 @@
       <workItem from="1521724279572" duration="5596000" />
       <workItem from="1522059794115" duration="2756000" />
       <workItem from="1522070603166" duration="214000" />
-      <workItem from="1522090806483" duration="6687000" />
+      <workItem from="1522090806483" duration="6887000" />
+      <workItem from="1522140369067" duration="37000" />
+      <workItem from="1522141130198" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="wip commit">
       <created>1521753785050</created>
@@ -429,15 +444,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522100753294</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="wip commit">
+      <created>1522104786102</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522104786102</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29549000" />
+    <option name="totallyTimeSpent" value="31822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1877" height="1178" extended-state="6" />
-    <editor active="true" />
+    <frame x="-3837" y="38" width="1877" height="892" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,10 +469,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32779318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45294857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15640327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14332426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -511,19 +532,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/capybara_rspec.md">
+    <entry file="file://$PROJECT_DIR$/docs/first-test-capybara-rspec.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1050">
             <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
             <folding>
-              <marker date="1522104775459" expanded="true" signature="621:1203" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="655:1199" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1347:1791" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1381:1787" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="2531:2545" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="4618:4657" ph="##..." />
-              <marker date="1522104775459" expanded="true" signature="6931:6955" ph="{ ... }" />
+              <marker date="1522143082672" expanded="true" signature="727:1309" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="761:1305" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1450:1894" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1484:1890" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="2633:2647" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="4720:4759" ph="##..." />
+              <marker date="1522143082672" expanded="true" signature="7033:7057" ph="{ ... }" />
             </folding>
           </first_editor>
           <second_editor />
@@ -549,17 +570,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/java_testNG.md">
+    <entry file="file://$PROJECT_DIR$/docs/first-test-java-testng.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
             <folding>
-              <marker date="1522104104210" expanded="false" signature="511:845" ph="..." />
-              <marker date="1522104104210" expanded="true" signature="1450:1940" ph="{...}" />
-              <marker date="1522104104210" expanded="true" signature="1651:1940" ph="{...}" />
-              <marker date="1522104104210" expanded="true" signature="2147:2481" ph="..." />
-              <marker date="1522104104210" expanded="true" signature="2976:3466" ph="{...}" />
+              <marker date="1522143082664" expanded="false" signature="514:848" ph="..." />
+              <marker date="1522143082664" expanded="true" signature="1453:1943" ph="{...}" />
+              <marker date="1522143082664" expanded="true" signature="1654:1943" ph="{...}" />
+              <marker date="1522143082664" expanded="true" signature="2150:2484" ph="..." />
+              <marker date="1522143082664" expanded="true" signature="2979:3469" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -577,7 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/key_benefits.md">
+    <entry file="file://$PROJECT_DIR$/docs/key-benefits.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
@@ -593,13 +614,12 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1200">
@@ -637,13 +657,12 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/easy_setup.md">
+    <entry file="file://$PROJECT_DIR$/docs/easy-setup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="435">
@@ -654,7 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="765">
@@ -670,7 +689,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -688,26 +706,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/capybara_rspec.md">
+    <entry file="file://$PROJECT_DIR$/docs/first-test-capybara-rspec.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
             <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
             <folding>
-              <marker date="1522104775459" expanded="true" signature="621:1203" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="655:1199" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1347:1791" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1381:1787" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="2531:2545" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="4618:4657" ph="##..." />
-              <marker date="1522104775459" expanded="true" signature="6931:6955" ph="{ ... }" />
+              <marker date="1522143082672" expanded="true" signature="727:1309" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="761:1305" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1450:1894" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1484:1890" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="2633:2647" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="4720:4759" ph="##..." />
+              <marker date="1522143082672" expanded="true" signature="7033:7057" ph="{ ... }" />
             </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/easy_setup.md">
+    <entry file="file://$PROJECT_DIR$/docs/easy-setup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="450">
@@ -718,7 +736,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/smart_locators.md">
+    <entry file="file://$PROJECT_DIR$/docs/smart-locators.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="330">
@@ -728,7 +746,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1155">
@@ -750,7 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/key_benefits.md">
+    <entry file="file://$PROJECT_DIR$/docs/key-benefits.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
@@ -766,7 +784,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -777,7 +794,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1155">
@@ -800,7 +817,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -811,7 +827,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1155">
@@ -822,7 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/smart_locators.md">
+    <entry file="file://$PROJECT_DIR$/docs/smart-locators.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="330">
@@ -832,19 +848,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/capybara_rspec.md">
+    <entry file="file://$PROJECT_DIR$/docs/first-test-capybara-rspec.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
             <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
             <folding>
-              <marker date="1522104775459" expanded="true" signature="621:1203" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="655:1199" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1347:1791" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1381:1787" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="2531:2545" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="4618:4657" ph="##..." />
-              <marker date="1522104775459" expanded="true" signature="6931:6955" ph="{ ... }" />
+              <marker date="1522143082672" expanded="true" signature="727:1309" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="761:1305" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1450:1894" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1484:1890" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="2633:2647" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="4720:4759" ph="##..." />
+              <marker date="1522143082672" expanded="true" signature="7033:7057" ph="{ ... }" />
             </folding>
           </first_editor>
           <second_editor />
@@ -856,7 +872,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -871,24 +886,99 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/_images/congratulations.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/smart_locators.md">
+    <entry file="file://$PROJECT_DIR$/docs/easy-setup.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <first_editor relative-caret-position="435">
+            <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
             <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/_images/pass-test-output-capybara-rspec.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/key-benefits.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/_sidebar.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/first-test-java-testng.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="243" lean-forward="false" selection-start-line="2" selection-start-column="78" selection-end-line="2" selection-end-column="243" />
+            <folding>
+              <marker date="1522143082664" expanded="false" signature="514:848" ph="..." />
+              <marker date="1522143082664" expanded="true" signature="1453:1943" ph="{...}" />
+              <marker date="1522143082664" expanded="true" signature="1654:1943" ph="{...}" />
+              <marker date="1522143082664" expanded="true" signature="2150:2484" ph="..." />
+              <marker date="1522143082664" expanded="true" signature="2979:3469" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/first-test-capybara-rspec.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="184" lean-forward="false" selection-start-line="2" selection-start-column="176" selection-end-line="2" selection-end-column="184" />
+            <folding>
+              <marker date="1522143082672" expanded="true" signature="727:1309" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="761:1305" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1450:1894" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="1484:1890" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="2633:2647" ph="do ... end" />
+              <marker date="1522143082672" expanded="true" signature="4720:4759" ph="##..." />
+              <marker date="1522143082672" expanded="true" signature="7033:7057" ph="{ ... }" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/project-init-manually.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-222">
+            <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <folding>
+              <marker date="1522143082679" expanded="true" signature="686:741" ph="do ... end" />
+              <marker date="1522143082679" expanded="true" signature="830:899" ph="do ... end" />
+              <marker date="1522143082679" expanded="true" signature="1430:1436" ph="..." />
+              <marker date="1522143082679" expanded="true" signature="1430:1646" ph="..." />
+              <marker date="1522143082679" expanded="true" signature="1447:1630" ph="..." />
+              <marker date="1522143082679" expanded="true" signature="1719:2251" ph="..." />
+              <marker date="1522143082679" expanded="true" signature="1767:1902" ph="..." />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -916,110 +1006,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/key_benefits.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_automaticlly.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_sidebar.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/easy_setup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_images/pass-test-output-capybara-rspec.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="742">
+          <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/java_testNG.md">
+    <entry file="file://$PROJECT_DIR$/docs/smart-locators.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="453">
-            <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="104" selection-end-column="7" />
-            <folding>
-              <marker date="1522104104210" expanded="false" signature="511:845" ph="..." />
-              <marker date="1522104104210" expanded="true" signature="1450:1940" ph="{...}" />
-              <marker date="1522104104210" expanded="true" signature="1651:1940" ph="{...}" />
-              <marker date="1522104104210" expanded="true" signature="2147:2481" ph="..." />
-              <marker date="1522104104210" expanded="true" signature="2976:3466" ph="{...}" />
-            </folding>
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="81" lean-forward="false" selection-start-line="22" selection-start-column="81" selection-end-line="22" selection-end-column="81" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/project_init_manual.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
-            <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="7" />
-            <folding>
-              <marker date="1522104263137" expanded="true" signature="1416:1656" ph="..." />
-              <marker date="1522104263137" expanded="true" signature="1437:1636" ph="..." />
-              <marker date="1522104263137" expanded="true" signature="1616:1636" ph="..." />
-              <marker date="1522104263137" expanded="true" signature="1782:1937" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/capybara_rspec.md">
+    <entry file="file://$PROJECT_DIR$/docs/project-init-automatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="273">
-            <caret line="60" column="15" lean-forward="true" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-            <folding>
-              <marker date="1522104775459" expanded="true" signature="621:1203" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="655:1199" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1347:1791" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="1381:1787" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="2531:2545" ph="do ... end" />
-              <marker date="1522104775459" expanded="true" signature="4618:4657" ph="##..." />
-              <marker date="1522104775459" expanded="true" signature="6931:6955" ph="{ ... }" />
-            </folding>
+          <first_editor relative-caret-position="191">
+            <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>

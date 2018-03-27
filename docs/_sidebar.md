@@ -7,6 +7,6 @@
   * [Using smart locators (Object repository)](smart-locators.md)
 
 * Creating first tests
-  * [Ruby/Capybara](first-test-capybara-rspec.md)
+  * [Ruby/Capybara](first-test-capybara-rspec.md#creating-your-first-test-in-trueautomation-using-capybararspec)
   * [Java/TestNG](first-test-java-testng.md) 
  

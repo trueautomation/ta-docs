@@ -1,4 +1,6 @@
-# Creating your first test in TrueAutomation using Capybara/RSpec  
+# Creating your first test in TrueAutomation using Capybara/RSpec
+
+> [Example project on GitHub.](https://github.com/shapovalovei/trueautomation-capybara) 
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the initializing project [automatically](project-init-automatically.md) or [manually](project-init-manually.md#initializing-javatestng-project)
 
@@ -71,8 +73,8 @@ rspec spec/test_scenario/*rb
 The test ran and was successful.
 
 
-#### API example: 
-```Ruby
+## API example: 
+```ruby
 # Find by: id, xpath, css, name 
 find(:id, ta('pageName:moduleName:objectName', 'id-1'))
 find(:css, ta('pageName:moduleName:objectName', "a#input"))

@@ -18,7 +18,7 @@
           
           import static io.trueautomation.client.TrueAutomationHelper.ta;
           
-          public class test {
+          public class testScenario {
               private WebDriver driver;
               private By email = By.xpath(ta("loginPage:userEmail", "//input[@placeholder='email']"));
               private By password = By.xpath(ta("loginPage:userPassword", "//input[@type='password']"));
@@ -65,7 +65,7 @@
           
           import static io.trueautomation.client.TrueAutomationHelper.ta;
           
-          public class test {
+          public class testScenario {
               private WebDriver driver;
               private By email = By.xpath(ta("loginPage:userEmail", "//input[@placeholder='email']"));
               private By password = By.xpath(ta("loginPage:userPassword", "//input[@type='password']"));
@@ -102,7 +102,7 @@
 4. To run your test file use the command below in your terminal:
 
    ```sh
-    mvn test
+    mvn -Dtest=testScenario test
    ```
 
 5. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:

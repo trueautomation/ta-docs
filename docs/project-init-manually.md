@@ -10,7 +10,7 @@ gem 'true_automation'
 ```
 
 2. Run command
-```sh
+```bash
 bundle install
 ```
 
@@ -39,7 +39,7 @@ end
 ```
     
 7. Make TrueAutomation DSL available
-```
+```ruby
 config.include TrueAutomation::DSL
 ```
 

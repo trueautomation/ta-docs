@@ -18,35 +18,23 @@
 </head>
 <body>
 <div id="app"></div>
+<script src="//unpkg.com/docsify-copy-code/index.js"></script>
 <script>
     window.$docsify = {
         name: 'True Automation',
         homepage: 'key-benefits.md',
+        nameLink: '/',
+        externalLinkTarget: '_blank',
         auto2top: true,
-        executeScript: true,
         loadSidebar: true,
-        mergeNavbar: true,
+        //mergeNavbar: true,
         maxLevel: 4,
-        subMaxLevel: 2,
-        //search: 'auto', // default
-        search: {
-            paths: [
-                '/',
-                '/key-benefits.md',
-                '/easy-setup.md',
-                '/first-test-capybara-rspec.md',
-                '/first-test-java-testng.md',
-                '/project-init-automatically.md',
-                '/project-init-manually.md',
-                '/smart-locators.md',
-                '/ruby-low-api-lavel.md'
-            ],
-            placeholder: 'Search',
-            noData: {
-                '/': 'No results!'
-            }
-        },
-        formatUpdated: '{MM}/{DD} {HH}:{mm}'
+        subMaxLevel: 3,
+        search: 'auto', // default
+        plugins: [
+            // Other plugins might go here
+            window.DocsifyCopyCodePlugin.init()
+        ]
     }
 
 </script>
@@ -58,17 +46,5 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-ruby.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/front-matter.min.js"></script>
-
-
-<script src="//unpkg.com/docsify-copy-code/index.js">
-    window.$docsify = {
-        // Other docsify config options go here
-        plugins: [
-            // Other plugins might go here
-            window.DocsifyCopyCodePlugin.init()
-        ]
-    }
-
-</script>
 </body>
 </html>

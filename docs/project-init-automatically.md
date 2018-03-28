@@ -3,15 +3,15 @@
 ##### To initialize project:
 1. Go to terminal
 2. If you already have a folder where your project should be located - please go to it. E.g. : 
-```sh
+```bash
 cd my-project/
 ```
 Or create a new folder for your project. E.g. : 
-```sh
+```bash
 mkdir my-project
 ```
 3. Run command to initialize your project. E.g. : 
-```sh
+```bash
 trueautomation init
 ```
 4. If you’re running TrueAutomation for the 1st time, you will be asked whether you have an account with TrueAutomation.

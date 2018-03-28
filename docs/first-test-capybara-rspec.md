@@ -58,7 +58,7 @@
 
 6. To run your test file use the command below in your terminal:
 
-   ```sh
+   ```bash
     rspec spec/test_scenario/*rb
    ```
 

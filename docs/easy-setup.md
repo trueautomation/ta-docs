@@ -5,7 +5,7 @@
     
     2.1. Unix operating system 
  
-   ```sh
+   ```bash
     curl -o- http://trueautomation.io/installer.sh | bash
    ```
    2.2. Windows operating system

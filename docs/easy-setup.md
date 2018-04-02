@@ -6,8 +6,13 @@
     2.1. Unix operating system 
  
    ```bash
-    curl -o- http://trueautomation.io/installer.sh | bash
+    curl -o- https://trueautomation.io/installer.sh | bash
    ```
+   or 
+   ```bash
+    wget -qO-  https://trueautomation.io/installer.sh | bash
+   ```
+   
    2.2. Windows operating system
    
    ?> _TODO:_ add setup process on Windows

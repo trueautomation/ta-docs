@@ -33,7 +33,7 @@
     
    _TrueAutomation client requires JDK 8 or later. We suggest to get the proper version of JDK [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
     You will also need Maven to work with your projects and run the tests. We suggest you to get the proper version of Maven [here](https://maven.apache.org/install.html)._
-    
-    
+       
+4. Then go to the [initialize new project](project-init-automatically.md)
 
    

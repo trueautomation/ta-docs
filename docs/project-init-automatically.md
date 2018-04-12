@@ -18,7 +18,7 @@ trueautomation init
     
     4.1. If you have an account - enter `y` in the terminal. You will be prompted to the next step.
 
-     _If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/signup and then return back to step 3 of initialization process._
+     _If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to step 3 of initialization process._
      
     4.2. Enter you API key in the terminal. You can get your API key in your account of TrueAutomation at https://app.trueautomation.io/app/profile
 5. The TrueAutomation app will detect whether the folder of the project is empty or not.

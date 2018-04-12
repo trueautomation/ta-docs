@@ -37,13 +37,20 @@ Capybara.configure do |capybara|
   capybara.default_driver = :true_automation_driver
 end
 ```
-    
+ 
 7. Make TrueAutomation DSL available
 ```ruby
 config.include TrueAutomation::DSL
 ```
 
-8. Then go to the ["Creating your first test in TrueAutomation using Capybara/RSpec"](first-test-capybara-rspec.md#creating-your-first-test-in-trueautomation-using-capybararspec) and create your first test.
+8. Create `trueautomation.json` with following line. And setup `"projectName"`
+```json
+{
+  "projectName": "ta-project-name"
+}
+```
+
+9. Then go to the ["Creating your first test in TrueAutomation using Capybara/RSpec"](first-test-capybara-rspec.md#creating-your-first-test-in-trueautomation-using-capybararspec) and create your first test.
 
 
 ## Initializing Java/TestNG project
@@ -80,5 +87,12 @@ WebDriver driver = new TrueAutomationDriver();
 ```java
 import static io.trueautomation.client.TrueAutomationHelper.ta;
 ```
-5. Then go to the ["Creating your first test in TrueAutomation using Java/TestNG"](first-test-java-testng.md#creating-your-first-test-in-trueautomation-using-javatestng) and create your first test.
+
+5. Create `trueautomation.json` with following line. And setup `"projectName"`
+```json
+{
+  "projectName": "ta-project-name"
+}
+```
+6. Then go to the ["Creating your first test in TrueAutomation using Java/TestNG"](first-test-java-testng.md#creating-your-first-test-in-trueautomation-using-javatestng) and create your first test.
 

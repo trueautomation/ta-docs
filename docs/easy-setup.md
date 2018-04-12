@@ -3,10 +3,6 @@
 1. Register an account with TrueAutomation at https://app.trueautomation.io/auth/signup
 2. On your computer go to Terminal and install TrueAutomation Client by running this command: 
 
-    _True Automation client requires [Node v9+](https://nodejs.org/en/) to run. The best way to get proper up-to-date and stable environment is install node via nvm. 
-    So we suggest to to install nvm for your platform first. Please follow instructions [here](https://github.com/creationix/nvm). 
-    Once you have nvm in place, the latest version of node can be installed. Run this command to do so:_
-
     2.1. Unix operating system 
  
    ```bash

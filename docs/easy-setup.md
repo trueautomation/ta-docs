@@ -27,7 +27,7 @@
     
     _TrueAutomation client requires Ruby 2.2.0 or later to run. We suggest to get the proper version or Ruby [here](https://www.ruby-lang.org/en/documentation/installation/).
      We are also supporting Capybara framework. If you prefer to work with it we suggest you to get it [here](https://github.com/teamcapybara/capybara).
-      If you will need RSpec, you can get it [here](http://rspec.info/documentation/)._
+     If you will need RSpec, you can get it [here](http://rspec.info/documentation/)._
          
     3.2. Java
     

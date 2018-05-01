@@ -2,7 +2,7 @@
 
 ## Initializing Capybara/RSpec project
 
-> This clause explains how to implement TrueAutomation into Capybara/RSpec step by step:
+This clause explains how to implement TrueAutomation into Capybara/RSpec step by step:
  
 1. Add the following line to your `Gemfile`
 ```ruby
@@ -55,7 +55,7 @@ config.include TrueAutomation::DSL
 
 ## Initializing Java/TestNG project
 
-> This clause explains how to implement True Automation into Java/TestNG step by step:
+This clause explains how to implement True Automation into Java/TestNG step by step:
 
 1. Add the repositories information inside the `<project>` tag in the `pom.xml` file:
 ```xml

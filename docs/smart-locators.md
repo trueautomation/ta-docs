@@ -1,4 +1,4 @@
-# What is the difference ?
+# Selenium vs TrueAutomation ?
 
 Object Repository is a collection of object and properties. Initially it is designed for caching of test objects. Afterwards (one you already have objects in the repository) it will help to more precisely detect elements on the web page even in case when their parameters were partially changed. Objects are added to your project repository when you run tests with them in TrueAutomation for the 1st time.  
 
@@ -12,7 +12,7 @@ In order to use TrueAutomation Smart Locators use `ta(ta_name, locator)` instead
 
 Object repository located: `https://app.trueautomation.io/app/projects/<project-name>/elements`
 
-## Capybara example:
+## Capybara example
 
 Capybara without TrueAutomation locator
 ```ruby
@@ -30,7 +30,7 @@ Once your object are in a repository and you want to use them in a text. You can
 find(ta('pageName:moduleName:objectName'))
 ```
 
-## Java example:
+## Java example
 
 Java without TrueAutomation locator
 ```java

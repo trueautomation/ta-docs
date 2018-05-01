@@ -74,7 +74,6 @@ The test ran and was successful.
     # Find by: id, xpath, css, name 
     find(:id, ta('pageName:moduleName:objectName', 'id-1'))
     find(:css, ta('pageName:moduleName:objectName', "a#input"))
-    find(:name, ta('pageName:moduleName:objectName', 'fieldName'))
     find(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     
     # iframe 

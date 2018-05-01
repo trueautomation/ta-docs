@@ -29,7 +29,7 @@ trueautomation init
 
     If you enter `y`,  you will be prompted to a selection of technology:
     
-    ![Technology stack](_images/technology.png 'Technology stack')
+    ![Technology stack](_images/technology-stack.png 'Technology stack')
     
     Please choose a technology stack you’re planning to use.
 
@@ -53,7 +53,7 @@ trueautomation init
     
     If you do not have this project in your TrueAutomation account, please enter `c` and you will be suggested to create one right away:
     
-    ![New project](_images/create-new-project.png 'New project')
+    ![New project](_images/new-project.png 'New project')
 
 7. Your initialization process is almost over.
    

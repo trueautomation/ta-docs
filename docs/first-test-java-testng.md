@@ -1,6 +1,6 @@
 # Creating your first test in TrueAutomation using Java/TestNG
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the initializing project [automatically](project-init-automatically.md) or [manually](project-init-manually.md#initializing-javatestng-project) or [example project from GitHub](https://github.com/shapovalovei/trueautomation-testng)) 
+1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the initializing project [automatically](project-init-auto.md) or [manually](project-init-manually.md#initializing-javatestng-project) or [example project from GitHub](https://github.com/shapovalovei/trueautomation-testng)) 
 
 2. Open your project in your integrated development environment (IDE)
 

@@ -1,6 +1,6 @@
-# Creating your first TrueAutomation test using Ruby/Capybara
+# Creating your first test in TrueAutomation using Capybara/RSpec
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the initializing project [automatically](project-init-auto.md), [manually](project-init-manually.md#initializing-capybararspec-project) or [example project from GitHub](https://github.com/shapovalovei/trueautomation-capybara)) 
+1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the initializing project [automatically](project-init-automatically.md), [manually](project-init-manually.md#initializing-capybararspec-project) or [example project from GitHub](https://github.com/shapovalovei/trueautomation-capybara)) 
 
 2. Open your project in your integrated development environment (IDE).
 
@@ -69,7 +69,7 @@
 The test ran and was successful.
 
 
-### API example
+## API example: 
    ```ruby
     # Find by: id, xpath, css, name 
     find(:id, ta('pageName:moduleName:objectName', 'id-1'))

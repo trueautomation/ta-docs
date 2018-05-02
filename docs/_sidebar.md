@@ -1,7 +1,6 @@
 
 * [Technology support](technology-support.md)
 
-
 * **Getting started**
   * [Install client](install-client.md)
   * [Project setup](project-setup.md)

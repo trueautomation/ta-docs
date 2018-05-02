@@ -1,8 +1,6 @@
-# TrueAutomation vs Selenium  
+# Selenium vs TrueAutomation ?
 
-One of the main tasks of TA is to solve problem of working with unstable locators. The Object Repository is exactly used for this task. 
-The OR is a collection of object and properties. Initially, it is designed for caching of test objects. Afterwards, one you have already objects in the repository, it will help to  detect elements on the web page more precisely even in case when their parameters were partially changed. 
-Objects are added to your project repository when you run tests with them in TrueAutomation for the 1st time. Thus, TA will solve this problem when Selenium doesn’t perform such functions at all.  
+Object Repository is a collection of object and properties. Initially it is designed for caching of test objects. Afterwards (one you already have objects in the repository) it will help to more precisely detect elements on the web page even in case when their parameters were partially changed. Objects are added to your project repository when you run tests with them in TrueAutomation for the 1st time.  
 
 There is a special helper `ta(name, locator)`.
 
@@ -26,7 +24,7 @@ Capybara with TrueAutomation locator
 find(:xpath, ta('pageName:moduleName:objectName', '//locator'))
 ```
 
-Once your object are in a repository and you want to use it in a test. You can do it like this:
+Once your object are in a repository and you want to use them in a text. You can do it like this:
 
 ```ruby
 find(ta('pageName:moduleName:objectName'))
@@ -44,7 +42,8 @@ Java with TrueAutomation locator
 driver.findElement(By.xpath(ta('pageName:moduleName:objectName', '//locator')))
 ```
 
-Once your object are in a repository and you want to use them in a test. You can do it like this:
+Once your object are in a repository and you want to use them in a text. You can do it like this:
+
 ```ruby
 driver.findElement(By.xpath(ta('pageName:moduleName:objectName')))
 ```

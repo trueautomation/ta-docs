@@ -26,7 +26,7 @@ It gives you everything you need to set up a full TrueAutomation environment on 
 
 Just [download it](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
-  ![Windows](_gif/install-windows2.gif 'Windows installer')
+  ![Windows](_gif/install-windows.gif 'Windows installer')
 ### Manual installation
 
 1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe)

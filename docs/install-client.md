@@ -19,7 +19,7 @@ wget -qO-  https://trueautomation.io/installer.sh | bash
 
 ## Windows operating system
 
-#### Installation using installer
+### Installation using installer
 
 If you are on Windows, there is a great project to help you install TrueAutomation: [TrueAutomation installer](https://trueautomation.io/downloads/trueautomation-setup.exe). 
 It gives you everything you need to set up a full TrueAutomation environment on Windows.
@@ -27,7 +27,7 @@ It gives you everything you need to set up a full TrueAutomation environment on 
 Just [download it](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
   ![Windows](_gif/install-windows2.gif 'Windows installer')
-#### Manual installation
+### Manual installation
 
 1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe)
 2. Create a new folder named `ta` in `C:\` and move executable to this folder

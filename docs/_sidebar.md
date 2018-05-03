@@ -1,7 +1,3 @@
-
-* [Technology support](technology-support.md)
-
-
 * **Getting started**
   * [Install client](install-client.md)
   * [Project setup](project-setup.md)
@@ -17,3 +13,5 @@
 * **Creating tests**
  * [Java/Maven](first-test-java.md)
  * [Ruby/Capybara](first-test-capybara.md)
+ 
+* [**Technology support**](technology-support.md)

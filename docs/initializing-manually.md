@@ -31,7 +31,7 @@ import io.trueautomation.client.driver.TrueAutomationDriver;
 WebDriver driver = new TrueAutomationDriver();
 ```
 
-4. Add the following linet into java file and use TA locators:
+4. Add the following lines into java file and use TA locators:
 ```java
 import static io.trueautomation.client.TrueAutomationHelper.ta;
 ```

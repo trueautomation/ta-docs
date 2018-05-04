@@ -1,100 +1,81 @@
-## Initializing Java/Maven project
+# Project Setup
 
-This clause explains how to implement TrueAutomation into Java/Maven project step by step. 
-Firstly, you must have a fully configured and working Java/Maven project. If you do not have such a project, you can [clone our sample project with Github](https://github.com/shapovalovei/testng-example).
+TrueAutomation client has a built-in command for initializing a directory for usage with TrueAutomation: `trueautomation init`
 
-**And now take the following steps:**
+**For the purpose of this getting started guide, please follow along in your terminal:**
 
-1. Add the repositories information inside the `<project>` tag in the `pom.xml` file:
-```xml
-<repositories>
-    <repository>
-        <id>trueautomation-io</id>
-        <name>TrueAutomation.IO MVN Repository</name>
-        <url>https://mvn.trueautomation.io/artifactory/trueautomation</url>
-    </repository>
-</repositories>       
-```
-
-2. Add the dependency information inside the `<dependencies>` tag in the `pom.xml` file:
-```xml
-<dependency>
-    <groupId>io.trueautomation</groupId>
-    <artifactId>trueautomation-client</artifactId>
-    <version>0.3.0</version>
-</dependency>  
-```
-
-3. Create TrueAutomation Driver by adding the following lines into `java` file:
-```java
-import io.trueautomation.client.driver.TrueAutomationDriver;
-WebDriver driver = new TrueAutomationDriver();
-```
-
-4. Add the following lines into java file and use TA locators:
-```java
-import static io.trueautomation.client.TrueAutomationHelper.ta;
-```
-
-5. Create `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/main)
-```json
-{
-  "projectName": "ta-project-name"
-}
-```
-6. Then go to the ["Creating your first test in TrueAutomation using Java/TestNG"](first-test-java.md#creating-your-first-test-in-trueautomation-using-javatestng) and create your first test.
-
-## Initializing Ruby/Capybara project
-
-This clause explains how to implement TrueAutomation into Ruby/Capybara project step by step. 
-Firstly, you must have a fully configured and working Ruby/Capybara project. If you do not have such a project, you can [clone our sample project with Github](https://github.com/shapovalovei/capybara-example).
-
-**And now take the following steps:**
- 
-1. Add the following line to your `Gemfile`
-```ruby
-gem 'true_automation'
-```
-
-2. Run command
+1. If you already have a folder where your project should be located - please go to it. E.g. :
 ```bash
-bundle install
+cd my-project/
 ```
+Or create a new folder for your project. E.g. :
+```bash
+mkdir my-project
+```
+2. Run command to initialize your project. E.g. :
+```bash
+trueautomation init
+```
+3. If you’re running TrueAutomation for the 1st time, you will be asked whether you have an account with [TrueAutomation.IO](https://trueautomation.io).
 
-3. Load RSpec support by adding the following line into your `spec_helper.rb` file:
-```ruby
-require 'true_automation/rspec'
-```
+    3.1. If you have an account - enter `y` in the terminal. You will be prompted to the next step.
 
-4. Load Capybara support by adding the following line into your `spec_helper.rb` file:
-```ruby
-require 'true_automation/driver/capybara'
-```
+      _If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to step 3 of initialization process._
 
-5. Register the new WebDriver for Capybara in your `spec_helper.rb` file:
-```ruby
-Capybara.register_driver :true_automation_driver do |app|
- TrueAutomation::Driver::Capybara.new(app)
-end
-```
+    3.2. Enter you API key in the terminal. You can get your API key in your account of TrueAutomation at https://app.trueautomation.io/app/profile
+4. The TrueAutomation app will detect whether the folder of the project is empty or not.
 
-6. Update default driver in your `spec_helper.rb` file:
-```ruby
-Capybara.configure do |capybara|
-  capybara.default_driver = :true_automation_driver
-end
-```
- 
-7. Make TrueAutomation DSL available
-```ruby
-config.include TrueAutomation::DSL
-```
+    4.1. Directory is empty. You will get a message:
 
-8. Create `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/main)
-```json
-{
-  "projectName": "ta-project-name"
-}
-```
+    > Directory is empty. Do you want to initialize a new project? (у/n)
 
-9. Then go to the ["Creating your first test in TrueAutomation using Capybara/RSpec"](first-test-capybara.md#creating-your-first-test-in-trueautomation-using-capybararspec) and create your first test.
+    If you enter `y`,  you will be prompted to a selection of technology:
+
+    ![Technology stack](_images/technology.png 'Technology stack')
+
+    Please choose a technology stack you’re planning to use.
+
+    If you enter `n`, initialization of the project will be aborted.
+
+    4.2. If the directory is not empty. TrueAutomation app will confirm the technology with you.
+
+    > E.g.: We detected that your project is based on Java. Please confirm that (y/n).
+
+    > E.g.: We detected that your project is based on Capybara. Please confirm that (y/n).
+
+    If the technology was detected correctly, please enter `y` and you will be prompted to the next step.
+
+    If the technology was detected in a wrong way, please enter `n`. The initialization will be aborted. Please let us know at [team@trueautomation.io](mailto:team@trueautomation.io) about such case and we will look into it ASAP.
+
+5. You will be asked whether you have a project created at your TrueAutomation account. This is needed to make the most of TrueAutomation experience.
+
+   > E.g.: Do you want to use existing (e) TrueAutomation.IO project or create a new one (c)? (Ech) (e/c)
+
+    If you already have this project created - enter `e`. You will be asked to provide the name of the project as it is stated in your TrueAutomation account.
+
+    ![Existing project](_images/existing-project.png 'Existing project')
+
+    If you do not have this project in your TrueAutomation account, please enter `c` and you will be suggested to create one right away:
+
+    ![New project](_images/create-new-project.png 'New project')
+
+6. Your initialization process is almost over.
+
+    6.1. If you have initialized project in an empty directory. You will see the message like that:
+
+     * Ruby/Capybara
+
+     ![Capybara congratulations](_images/capybara-congratulations.png 'Capybara congratulations')
+
+     * Java/Maven
+
+     ![Java/Maven congratulations](_images/java-congratulations.png 'Java/Maven congratulations')
+
+    6.2 If your project was initialized in the folder that already contained framework - you should see this message
+
+     ![Congratulations](_images/congrat-update.png 'Congratulations')
+
+Congratulations. You’re good to go with TrueAutomation. If you have suggestions or questions reg this guide - let us know at [team@trueautomation.io](mailto:team@trueautomation.io)
+
+
+ ![Initial process](_gif/init-ta.gif 'Initial process')

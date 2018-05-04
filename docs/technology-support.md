@@ -6,7 +6,7 @@
 |:--------:|:--------------------------:|
 | macOS    |  High Sierra               |
 | Linux    |  Ubuntu (16.04, 17.10)     |
-| Windows  | 7, 10 (x32, x64)           |
+| Windows  |    10 (x32, x64)           |
 
 #### Browser support:
 |Browser| Google Chrome | Firefox     | Safari      | IE          | Edge        |

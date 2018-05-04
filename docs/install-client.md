@@ -30,7 +30,7 @@ Just [download it](https://trueautomation.io/downloads/trueautomation-setup.exe)
 ### Manual installation
 
 1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe)
-2. Create a new folder named `ta` in `C:\` and move executable to this folder
+2. Move `trueautomation.exe` (executable) to any folder you have
 
   ![Windows executable](_images/windows-executable.png 'Windows executable')
 3. Set new environment variable `TRUEAUTOMATION_EXEC` to point to the executable

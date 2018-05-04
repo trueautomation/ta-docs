@@ -29,7 +29,7 @@ Just [download it](https://trueautomation.io/downloads/trueautomation-setup.exe)
   ![Windows](_gif/install-windows.gif 'Windows installer')
 ### Manual installation
 
-1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe)
+1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe) and rename to `trueautomation.exe`
 2. Move `trueautomation.exe` (executable) to any folder you have
 
   ![Windows executable](_images/windows-executable.png 'Windows executable')

@@ -8,7 +8,7 @@ TrueAutomation client has a built-in command for initializing a directory for us
 ```bash
 cd my-project/
 ```
-Or create a new folder for your project. E.g. :
+Or create a new folder for your project and proceed to it. E.g. :
 ```bash
 mkdir my-project
 ```
@@ -20,18 +20,14 @@ trueautomation init
 
     3.1. If you have an account - enter `y` in the terminal. You will be prompted to the next step.
 
-      _If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to step 3 of initialization process._
+    3.2. If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to step 3 of initialization process.
 
-    3.2. Enter you API key in the terminal. You can get your API key in your account of TrueAutomation at https://app.trueautomation.io/app/profile
+    3.3. Enter you API key in the terminal. You can get your API key in your account of TrueAutomation at https://app.trueautomation.io/app/profile
 4. The TrueAutomation app will detect whether the folder of the project is empty or not.
 
-    4.1. Directory is empty. You will get a message:
+    4.1. Directory is empty. If you enter `y`,  you will be prompted to a selection of technology:
 
-    > Directory is empty. Do you want to initialize a new project? (у/n)
-
-    If you enter `y`,  you will be prompted to a selection of technology:
-
-    ![Technology stack](_images/technology.png 'Technology stack')
+   ![Technology stack](_images/technology.png 'Technology stack')
 
     Please choose a technology stack you’re planning to use.
 
@@ -39,13 +35,13 @@ trueautomation init
 
     4.2. If the directory is not empty. TrueAutomation app will confirm the technology with you.
 
-    > E.g.: We detected that your project is based on Java. Please confirm that (y/n).
+    > We detected that your project is based on Java. Please confirm that (y/n).
 
-    > E.g.: We detected that your project is based on Capybara. Please confirm that (y/n).
+    > We detected that your project is based on Capybara. Please confirm that (y/n).
 
     If the technology was detected correctly, please enter `y` and you will be prompted to the next step.
 
-    If the technology was detected in a wrong way, please enter `n`. The initialization will be aborted. Please let us know at [team@trueautomation.io](mailto:team@trueautomation.io) about such case and we will look into it ASAP.
+    If the technology was detected in a wrong way, please enter `n`. TrueAutomation client will confirm the technology with you. Please let us know at [team@trueautomation.io](mailto:team@trueautomation.io) about such case and we will look into it ASAP.
 
 5. You will be asked whether you have a project created at your TrueAutomation account. This is needed to make the most of TrueAutomation experience.
 
@@ -53,15 +49,15 @@ trueautomation init
 
     If you already have this project created - enter `e`. You will be asked to provide the name of the project as it is stated in your TrueAutomation account.
 
-    ![Existing project](_images/existing-project.png 'Existing project')
+    ![Existing project](_images/use-existing-project.png 'Existing project')
 
     If you do not have this project in your TrueAutomation account, please enter `c` and you will be suggested to create one right away:
 
-    ![New project](_images/create-new-project.png 'New project')
+    ![New project](_images/use-new-project.png 'New project')
 
 6. Your initialization process is almost over.
 
-    6.1. If you have initialized project in an empty directory. You will see the message like that:
+    6.1. If you have initialized project in an empty directory you will see the message like that:
 
      * Ruby/Capybara
 

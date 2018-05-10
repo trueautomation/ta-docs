@@ -17,38 +17,15 @@ wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
 ![Unix](_gif/install-unix.gif 'Install process')
 
+
 ## Windows operating system
 
-### Installation using installer
+Before installing TrueAutomation client, you need to download and install [Microsoft Visual C ++ 2015 Redistributable Update 3 RC](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 
 
-If you are on Windows, there is a great project to help you install TrueAutomation: [TrueAutomation installer](https://trueautomation.io/downloads/trueautomation-setup.exe). 
-It gives you everything you need to set up a full TrueAutomation environment on Windows.
-
-Just [download it](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
+Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
   ![Windows](_gif/install-windows.gif 'Windows installer')
-### Manual installation
 
-1. [Download executable](https://trueautomation.io/downloads/trueautomation-win.exe) and rename to `trueautomation.exe`
-2. Move `trueautomation.exe` (executable) to any folder you have
-
-  ![Windows executable](_images/windows-executable.png 'Windows executable')
-3. Set new environment variable `TRUEAUTOMATION_EXEC` to point to the executable
-
-    - From the desktop, right click the Computer icon.
-    - Choose Properties from the context menu.
-    - Click the Advanced system settings link.
-    - Click Environment Variables button.
-    - Click New... button.
-    - Fill variable data.
-    - Click OK.
-
-  ![New variable](_images/new-var.png 'New variable')
-4. Add path to `trueautomation.exe` binary to your `PATH` variable
-
-  ![Update PATH](_images/update-path-var.png 'Update PATH')
-5. Close all remaining windows by clicking OK.
-6. Reopen Command prompt window.
 
 ## Verifying the Installation
 

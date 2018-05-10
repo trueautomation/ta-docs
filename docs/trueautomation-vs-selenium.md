@@ -1,7 +1,7 @@
 # TrueAutomation vs Selenium  
 
-One of the main tasks of TA is to solve problem of working with unstable locators. The Object Repository is exactly used for this task. 
-The OR is a collection of object and properties. Initially, it is designed for caching of test objects. Afterwards, one you have already objects in the repository, it will help to  detect elements on the web page more precisely even in case when their parameters were partially changed. 
+One of the main tasks of TA is to solve problem of working with unstable locators. The Object Repository is exactly used for this task.
+The OR is a collection of object and properties. Initially, it is designed for caching of test objects. Afterwards, one you have already objects in the repository, it will help to  detect elements on the web page more precisely even in case when their parameters were partially changed.
 Objects are added to your project repository when you run tests with them in TrueAutomation for the 1st time. Thus, TA will solve this problem when Selenium doesn’t perform such functions at all.  
 
 There is a special helper `ta(name, locator)`.
@@ -40,11 +40,11 @@ driver.findElement(By.xpath("//locator"))
 ```
 
 Java with TrueAutomation locator
-```ruby
+```java
 driver.findElement(By.xpath(ta('pageName:moduleName:objectName', '//locator')))
 ```
 
 Once your object are in a repository and you want to use them in a test. You can do it like this:
-```ruby
+```java
 driver.findElement(By.xpath(ta('pageName:moduleName:objectName')))
 ```

@@ -60,70 +60,70 @@ The test ran and was successful.
 
 
 ## API example
+
+### Finds
    ```ruby
-    # Find by: id, xpath, css, name
-    find(:id, ta('pageName:moduleName:objectName', 'id-1'))
-    find(:css, ta('pageName:moduleName:objectName', "a#input"))
-    find(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+   # Find by: id, xpath, css, name
+   find(:id, ta('pageName:moduleName:objectName', 'id-1'))
+   find(:css, ta('pageName:moduleName:objectName', "a#input"))
+   find(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-    # iframe
-    within_frame(:xpath, ta('pageName:moduleName:objectName',"//iframe[@class='iframe']")) do
-        ...
-    end
+   # iframe
+   within_frame(:xpath, ta('pageName:moduleName:objectName',"//iframe[@class='iframe']")) do
+       ...
+   end
 
-    # Clicking links and buttons by id and text
-    click_link(ta('pageName:moduleName:objectName', 'id-1'))
-    click_link(ta('pageName:moduleName:objectName', 'Forgot password?'))
+   # Clicking links and buttons by id and text
+   click_link(ta('pageName:moduleName:objectName', 'id-1'))
+   click_link(ta('pageName:moduleName:objectName', 'Forgot password?'))
 
-    # Radio buttons by id and text
-    choose(ta('pageName:moduleName:objectName', 'radio1'))
-    choose(ta('pageName:moduleName:objectName', 'Option 1'))
+   # Radio buttons by id and text
+   choose(ta('pageName:moduleName:objectName', 'radio1'))
+   choose(ta('pageName:moduleName:objectName', 'Option 1'))
 
-    # Checkboxes by id and text
-    check(ta('pageName:moduleName:objectName', 'id-1'))
-    check(ta('pageName:moduleName:objectName', 'Choice A'))
-    uncheck(ta('pageName:moduleName:objectName', 'id-1'))
-    uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
+   # Checkboxes by id and text
+   check(ta('pageName:moduleName:objectName', 'id-1'))
+   check(ta('pageName:moduleName:objectName', 'Choice A'))
+   uncheck(ta('pageName:moduleName:objectName', 'id-1'))
+   uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
+   # Fill in
+   fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
+   fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')
 
-    # Fill in
-    fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
-    fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')
+   # Find all (page.all() / find_all())
+   find_all(:id, ta('pageName:moduleName:objectName', 'id-1'))
+   find_all(:css, ta('pageName:moduleName:objectName', "a#input"))
+   find_all(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-    # Find all (page.all() / find_all())
-    find_all(ta('pageName:moduleName:objectName', 'someText'))
-    find_all(:id, ta('pageName:moduleName:objectName', 'id-1'))
-    find_all(:css, ta('pageName:moduleName:objectName', "a#input"))
-    find_all(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+   # Find button
+   find_button(ta('pageName:moduleName:objectName', 'id-1'))
+   find_button(ta('pageName:moduleName:objectName', 'someText'))
 
-    # Find button
-    find_button(ta('pageName:moduleName:objectName', 'id-1'))
-    find_button(ta('pageName:moduleName:objectName', 'someText'))   
+   # Find link
+   find_link(ta('pageName:moduleName:objectName', 'id-1'))
+   find_link(ta('pageName:moduleName:objectName', 'someText'))
 
-    # Find link
-    find_link(ta('pageName:moduleName:objectName', 'id-1'))
-    find_link(ta('pageName:moduleName:objectName', 'someText'))
+   # Find field
+   find_field(ta('pageName:moduleName:objectName', 'id-1'))
+   find_field(ta('pageName:moduleName:objectName', 'someText'))
 
-    # Find field
-    find_field(ta('pageName:moduleName:objectName', 'id-1'))
-    find_field(ta('pageName:moduleName:objectName', 'someText'))
+   # First
+   first(:id, ta('pageName:moduleName:objectName', 'id-1'))
+   first(:css, ta('pageName:moduleName:objectName', "a#input"))
+   first(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-    # First
-    first(ta('pageName:moduleName:objectName', 'someText'))
-    first(:id, ta('pageName:moduleName:objectName', 'id-1'))
-    first(:css, ta('pageName:moduleName:objectName', "a#input"))
-    first(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+   # Click button & link
+   click_button(ta('pageName:moduleName:objectName','someText'))
+   click_link_or_button(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # Click button & link
-    click_button(ta('pageName:moduleName:objectName','someText'))
-    click_link_or_button(ta('pageName:moduleName:objectName', 'id-1'))
-
-
-    # Select
-    select ta('pageName:moduleName:objectName', 'someText'), from: ta('pageName:moduleName:objectName', 'someText')
-    select ta('pageName:moduleName:objectName', 'someText'), from: ta('pageName:moduleName:objectName', 'id-1')
+   # Select
+   select 'someText', from: ta('pageName:moduleName:objectName', 'someText')
+   select 'someText', from: ta('pageName:moduleName:objectName', 'id-1')
+```
 
 
-    # Assertions
+### Assertions
+   ```ruby
     # assert_all_of_selectors
     assert_all_of_selectors('label', text: ta('pageName:moduleName:objectName', 'someText'))
     assert_all_of_selectors(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))

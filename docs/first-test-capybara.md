@@ -86,6 +86,7 @@ The test ran and was successful.
    check(ta('pageName:moduleName:objectName', 'Choice A'))
    uncheck(ta('pageName:moduleName:objectName', 'id-1'))
    uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
+   
    # Fill in
    fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
    fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')

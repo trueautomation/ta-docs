@@ -86,7 +86,7 @@ The test ran and was successful.
    check(ta('pageName:moduleName:objectName', 'Choice A'))
    uncheck(ta('pageName:moduleName:objectName', 'id-1'))
    uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
-   
+
    # Fill in
    fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
    fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')
@@ -126,19 +126,14 @@ The test ran and was successful.
 ### Assertions
    ```ruby
     # assert_all_of_selectors
-    assert_all_of_selectors('label', text: ta('pageName:moduleName:objectName', 'someText'))
     assert_all_of_selectors(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     assert_all_of_selectors(:css, ta('pageName:moduleName:objectName', 'a#input'))
     assert_all_of_selectors(:id, ta('pageName:moduleName:objectName', 'id-1'))
 
     # assert_selector
-    assert_selector('label', text: ta('pageName:moduleName:objectName', 'someText'))
     assert_selector(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     assert_selector(:css, ta('pageName:moduleName:objectName', 'a#input'))
     assert_selector(:id, ta('pageName:moduleName:objectName', 'id-1'))
-
-    # assert_text
-    assert_text(ta('pageName:moduleName:objectName', 'someText'))
 
     # has_button?
     has_button?(ta('pageName:moduleName:objectName', 'someText'))
@@ -164,7 +159,6 @@ The test ran and was successful.
     has_select?(ta('pageName:moduleName:objectName', 'id-1'), with_options: ta('pageName:moduleName:objectName', %w[someText1 someText]))
 
     # has_selector?
-    has_selector?('label', text: ta('pageName:moduleName:objectName', 'someText'))
     has_selector?(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     has_selector?(:css, ta('pageName:moduleName:objectName', 'a#input'))
     has_selector?(:id, ta('pageName:moduleName:objectName', 'id-1'))
@@ -173,12 +167,6 @@ The test ran and was successful.
     has_table?(ta('pageName:moduleName:objectName', 'someText'))
     has_table?(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_text?
-    has_text?(ta('pageName:moduleName:objectName', 'someText'))
-
     # has_xpath?
     has_xpath?(ta('pageName:moduleName:objectName', "//div[@class='btn']"))
-
-    xpath = XPath.generate { |x| x.descendant(:p) }
-    has_xpath?(ta('pageName:moduleName:objectName', xpath))
    ```

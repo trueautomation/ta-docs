@@ -36,7 +36,7 @@ WebDriver driver = new TrueAutomationDriver();
 import static io.trueautomation.client.TrueAutomationHelper.ta;
 ```
 
-5. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/main)
+5. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)
 ```json
 {
   "projectName": "ta-project-name"
@@ -90,7 +90,7 @@ end
 config.include TrueAutomation::DSL
 ```
 
-8. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/main)
+8. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)
 ```json
 {
   "projectName": "ta-project-name"

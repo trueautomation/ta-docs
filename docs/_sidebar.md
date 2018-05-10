@@ -7,7 +7,7 @@
 
 * **Initializing**
   * [Initializing automatically](initializing.md)
-  * [Initializing manualy](initializing-manually.md)
+  * [Initializing manualy](project-init-manually.md)
 
 
 * **Creating tests**

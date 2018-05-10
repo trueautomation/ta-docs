@@ -1,6 +1,6 @@
 ## Initializing Java/Maven project
 
-This clause explains how to implement TrueAutomation into Java/Maven project step by step. 
+This clause explains how to implement TrueAutomation into Java/Maven project step by step.
 Firstly, you must have a fully configured and working Java/Maven project. If you do not have such a project, you can [clone our sample project with Github](https://github.com/shapovalovei/testng-example).
 
 **And now take the following steps:**
@@ -36,7 +36,7 @@ WebDriver driver = new TrueAutomationDriver();
 import static io.trueautomation.client.TrueAutomationHelper.ta;
 ```
 
-5. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)
+5. 1Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)
 ```json
 {
   "projectName": "ta-project-name"
@@ -46,11 +46,11 @@ import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 ## Initializing Ruby/Capybara project
 
-This clause explains how to implement TrueAutomation into Ruby/Capybara project step by step. 
+This clause explains how to implement TrueAutomation into Ruby/Capybara project step by step.
 Firstly, you must have a fully configured and working Ruby/Capybara project. If you do not have such a project, you can [clone our sample project with Github](https://github.com/shapovalovei/capybara-example).
 
 **And now take the following steps:**
- 
+
 1. Add the following line to your `Gemfile`
 ```ruby
 gem 'true_automation'
@@ -84,7 +84,7 @@ Capybara.configure do |capybara|
   capybara.default_driver = :true_automation_driver
 end
 ```
- 
+
 7. Make TrueAutomation DSL available
 ```ruby
 config.include TrueAutomation::DSL

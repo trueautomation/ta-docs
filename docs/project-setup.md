@@ -57,7 +57,7 @@ trueautomation init
 
 6. Your initialization process is almost over.
 
-    6.1. If you have initialized project in an empty directory you will see the message like that:
+   6.1. If you have initialized project in an empty directory you will see the message like that:
 
      * Ruby/Capybara
 
@@ -67,7 +67,7 @@ trueautomation init
 
      ![Java/Maven congratulations](_images/java-congratulations.png 'Java/Maven congratulations')
 
-    6.2 If your project was initialized in the folder that already contained framework - you should see this message
+   6.2 If your project was initialized in the folder that already contained framework - you should see this message
 
      ![Congratulations](_images/congrat-update.png 'Congratulations')
 

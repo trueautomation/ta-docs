@@ -62,7 +62,7 @@ The test ran and was successful.
 ## API example
 
 ### Finds
-   ```ruby
+```ruby
    # Find by: id, xpath, css, name
    find(:id, ta('pageName:moduleName:objectName', 'id-1'))
    find(:css, ta('pageName:moduleName:objectName', "a#input"))
@@ -124,7 +124,7 @@ The test ran and was successful.
 
 
 ### Assertions
-   ```ruby
+```ruby
     # assert_all_of_selectors
     assert_all_of_selectors(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     assert_all_of_selectors(:css, ta('pageName:moduleName:objectName', 'a#input'))
@@ -154,10 +154,6 @@ The test ran and was successful.
     has_link?(ta('pageName:moduleName:objectName', 'id-1'))
     has_link?(ta('pageName:moduleName:objectName', 'someText'))
 
-    # has_select?
-    has_select?(ta('pageName:moduleName:objectName', 'someText'), with_options: ta('pageName:moduleName:objectName', %w[someText1 someText]))
-    has_select?(ta('pageName:moduleName:objectName', 'id-1'), with_options: ta('pageName:moduleName:objectName', %w[someText1 someText]))
-
     # has_selector?
     has_selector?(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
     has_selector?(:css, ta('pageName:moduleName:objectName', 'a#input'))
@@ -169,4 +165,4 @@ The test ran and was successful.
 
     # has_xpath?
     has_xpath?(ta('pageName:moduleName:objectName', "//div[@class='btn']"))
-   ```
+```

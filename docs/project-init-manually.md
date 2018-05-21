@@ -21,7 +21,7 @@ Firstly, you must have a fully configured and working Java/Maven project. If you
 <dependency>
     <groupId>io.trueautomation</groupId>
     <artifactId>trueautomation-client</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
 </dependency>  
 ```
 

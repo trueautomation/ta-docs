@@ -3,7 +3,6 @@
   * [Project setup](project-setup.md)
   * [API Key](api-key.md)
   * [TrueAutomation vs Selenium](trueautomation-vs-selenium.md)
-  * [**Test**](test.md)
 
 
 * **Initializing**

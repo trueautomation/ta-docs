@@ -1,8 +1,9 @@
 * **Getting started**
-  * [Install client](install-client.md)
+  * [Installation Client](install-client.md)
   * [Project setup](project-setup.md)
   * [API Key](api-key.md)
   * [TrueAutomation vs Selenium](trueautomation-vs-selenium.md)
+  * [**Test**](test.md)
 
 
 * **Initializing**
@@ -16,3 +17,4 @@
  
 * [**Technology support**](technology-support.md)
 * [**Roadmap**](roadmap.md)
+

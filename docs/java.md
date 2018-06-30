@@ -90,7 +90,7 @@ Update your ‘pom.xml.’ file, which should look like this:
     <dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
-      <version>6.0.0-BETA5</version>
+      <version>5.0.0</version>
     </dependency>
   </dependencies>
   <repositories>
@@ -115,7 +115,7 @@ capabilities.setCapability(MobileCapabilityType.UDID, "101F5280-F668-4FDD-987F-3
 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ios");
 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
 
-WebDriver driver = new TrueAutomationDriver(new URL("http://127.0.0.1:4723/wd/hub"), appiumCapabilities);
+WebDriver driver = new TrueAutomationDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 ```
 
 After all changes the text should look like:
@@ -314,6 +314,3 @@ public class exampleTest {
 }
 ```
 
-## PageObject & PageFactory
-
-Check out an example of the test project, using PageObject & PageFactory, here: https://github.com/shapovalovei/trueautomation-testng

@@ -27,7 +27,7 @@ trueautomation init
 
     4.1. Directory is empty. If you enter `y`,  you will be prompted to a selection of technology:
 
-   ![Technology stack](_images/technology.png 'Technology stack')
+   ![Technology stack](../_images/technology.png 'Technology stack')
 
     Please choose a technology stack you’re planning to use.
 
@@ -49,11 +49,11 @@ trueautomation init
 
     If you already have this project created - enter `e`. You will be asked to provide the name of the project as it is stated in your TrueAutomation account.
 
-    ![Existing project](_images/use-existing-project.png 'Existing project')
+    ![Existing project](../_images/use-existing-project.png 'Existing project')
 
     If you do not have this project in your TrueAutomation account, please enter `c` and you will be suggested to create one right away:
 
-    ![New project](_images/use-new-project.png 'New project')
+    ![New project](../_images/use-new-project.png 'New project')
 
 6. Your initialization process is almost over.
 
@@ -61,17 +61,17 @@ trueautomation init
 
      * Ruby/Capybara
 
-     ![Capybara congratulations](_images/capybara-congratulations.png 'Capybara congratulations')
+     ![Capybara congratulations](../_images/capybara-congratulations.png 'Capybara congratulations')
 
      * Java/Maven
 
-     ![Java/Maven congratulations](_images/java-congratulations.png 'Java/Maven congratulations')
+     ![Java/Maven congratulations](../_images/java-congratulations.png 'Java/Maven congratulations')
 
    6.2 If your project was initialized in the folder that already contained framework - you should see this message
 
-     ![Congratulations](_images/congrat-update.png 'Congratulations')
+     ![Congratulations](../_images/congrat-update.png 'Congratulations')
 
 Congratulations. You’re good to go with TrueAutomation. If you have suggestions or questions reg this guide - let us know at [team@trueautomation.io](mailto:team@trueautomation.io)
 
 
- ![Initial process](_gif/init-ta.gif 'Initial process')
+ ![Initial process](../_gif/init-ta.gif 'Initial process')

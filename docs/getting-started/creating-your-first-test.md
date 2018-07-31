@@ -1,8 +1,8 @@
 # Creating your first test
 
-## Creating test with Java
+## Creating your first test in TrueAutomation using Java/Maven
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](initializing.md))
+1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 
 2. Open your project in your integrated development environment (IDE)
 
@@ -24,9 +24,9 @@
 
          public class exampleTest {
              private WebDriver driver;
-             private By loginBtn = By.cssSelector(ta("loginBtn", "a.login-btn"));
-             private By signupBtn = By.cssSelector(ta("signupBtn", "div.sign-up-container > a"));
-             private By emailFl = By.name(ta("emailFl", "email"));
+             private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+             private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+             private By emailFl = By.name(ta("ta:loginPage:email", "email"));
 
              @BeforeTest
              public void beforeTest() {
@@ -78,10 +78,10 @@
               public void exampleTest() {
                   driver.get("https://trueautomation.io");
 
-                  driver.findElement(By.cssSelector(ta("loginBtn"))).click();
-                  driver.findElement(By.cssSelector(ta("signupBtn"))).click();
+                  driver.findElement(By.cssSelector(ta("ta:mainPage:loginBtn"))).click();
+                  driver.findElement(By.cssSelector(ta("ta:mainPage:signupBtn"))).click();
 
-                  driver.findElement(By.name(ta("emailFl"))).sendKeys("your@mail.com");
+                  driver.findElement(By.name(ta("ta:loginPage:email"))).sendKeys("your@mail.com");
               }
 
               @AfterTest
@@ -98,15 +98,15 @@
 
 5. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
 
-    ![Test output](_images/java-test.png 'Test output')
+    ![Test output](../_images/java-test.png 'Test output')
 
 The test ran and was successful.
 
 Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-testng
 
-## Creating test with Ruby/Capybara
+## Creating your first TrueAutomation test using Ruby/Capybara
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](initializing.md))
+1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 
 2. Open your project in your integrated development environment (IDE).
 
@@ -160,7 +160,7 @@ Check out an example of an actual test here:  https://github.com/shapovalovei/tr
 
 6. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
 
-    ![Test output](_images/capybara-test.png 'Test output')
+    ![Test output](../_images/capybara-test.png 'Test output')
 
 The test ran and was successful.
 

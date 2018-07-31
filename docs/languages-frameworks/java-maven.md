@@ -15,7 +15,7 @@ WebDriver driver = new TrueAutomationDriver(new URL("http://remote_address"), ne
 ```
 	
 Here is the example of the test, using RemoteWebDriver: 
-   ```java
+```java
    import io.trueautomation.client.driver.TrueAutomationDriver;
    import org.openqa.selenium.By;
    import org.openqa.selenium.WebDriver;
@@ -57,30 +57,31 @@ Here is the example of the test, using RemoteWebDriver:
            driver.quit();
        }
    }
-    ```
+```
 
 Check out an example of an actual test here: https://github.com/pyavchik/remoteWebdriver
 
 ## GRID 
-Creating your first test in TrueAutomation using Java/Maven + GRID
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
+TrueAutomation supports [GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).
 
-2. Download the Selenium Standalone Server from [here](https://docs.seleniumhq.org/download/) to folder with your project
+- Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
+
+- Download the Selenium Standalone Server from [here](https://docs.seleniumhq.org/download/) to folder with your project
 
     ![Selenium standalone server](../_images/seleniumStandaloneServer.png 'Test output')
     
-3. Launch grid hub
-    ```bash
+- Launch grid hub
+    ```
     java -jar selenium-server-standalone-3.13.0.jar -role hub
     ```
     ![Hub start](../_images/hub_start.png 'Test output')
-4. Launch grid node
-    ```bash
+- Launch grid node
+    ```
     java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
     ```
     ![Node start](../_images/node_start.png 'Test output')
 
-5. Change exampleTest.java with:
+- Here is the example of the test, using GRID:
 
       ```java
          import io.trueautomation.client.driver.TrueAutomationDriver;

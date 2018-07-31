@@ -1,11 +1,17 @@
-# Java
+# Java/Maven
+
+Before using the following tools, please make sure that you have:
+- [Registered TrueAutomation.IO account](https://app.trueautomation.io/auth/signup)
+- [Installed TrueAutomation client](install-client.md ':target=_blank')
+- [Initialized project](initializing.md ':target=_blank')
+
 ## RemoteWebDriver
-TrueAutomation supports [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver). To use it, set the following parameters into TrueAutomationDriver:
+TrueAutomation supports [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver). To use TrueAutomationDriver as RemoteWebDriver, set the following parameters into TrueAutomationDriver:
 - remote address of web driver or hub as url objects;
 - capabilities.
 
 ```java
-WebDriver driver = new TrueAutomationDriver(new URL("http://<driver_host>:<driver_port>"), new DesiredCapabilities());
+WebDriver driver = new TrueAutomationDriver(new URL("http://remote_address"), new DesiredCapabilities());
 ```
 	
 Here is the example of the test, using RemoteWebDriver: 
@@ -26,13 +32,13 @@ Here is the example of the test, using RemoteWebDriver:
 
    public class exampleTest {
        private WebDriver driver;
-       private By loginBtn = By.cssSelector(ta("loginBtn", "a.login-btn"));
-       private By signupBtn = By.cssSelector(ta("signupBtn", "div.sign-up-container > a"));
-       private By emailFl = By.name(ta("emailFl", "email"));
+       private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+       private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+       private By emailFl = By.name(ta("ta:loginPage:email", "email"));
 
        @BeforeTest
        public void beforeTest() throws MalformedURLException {
-           driver = new TrueAutomationDriver(new URL("http://<driver_host>:<driver_port>"), new DesiredCapabilities());
+           driver = new TrueAutomationDriver(new URL("http://remote_address"), new DesiredCapabilities());
            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
        }
 
@@ -52,6 +58,8 @@ Here is the example of the test, using RemoteWebDriver:
        }
    }
     ```
+
+Check out an example of an actual test here: https://github.com/pyavchik/remoteWebdriver
 
 
 ## Appium
@@ -103,23 +111,36 @@ Update your ‘pom.xml.’ file, which should look like this:
 </project>
 ```
 
-Run Appium server, using Terminal, appium desktop app, [AppiumServiceBuilder](https://appium.github.io/java-client/io/appium/java_client/service/local/AppiumServiceBuilder.html) from `java-client`
+Run Appium server, using Terminal, appium desktop app, [AppiumServiceBuilder](https://appium.github.io/java-client/io/appium/java_client/service/local/AppiumServiceBuilder.html) from `java-client`. By default Appium is run on port number `4723`.
 
 Install url into TrueAutomationDriver, based on Appium hub, and all capabilities you need.
+
 For example:
+
+Set up driver for iOS (make sure that you use your device udid):
 ```java
 DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone X");
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone");
 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCuiTest");
 capabilities.setCapability(MobileCapabilityType.UDID, "101F5280-F668-4FDD-987F-3FAD33E028F8");
 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ios");
 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
 
-WebDriver driver = new TrueAutomationDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+WebDriver driver = new TrueAutomationDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+```
+
+Set up driver for Android (make sure that you use your device udid):
+```java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android device");
+capabilities.setCapability(MobileCapabilityType.UDID, "8618f72f53");
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
+
+WebDriver driver = new TrueAutomationDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 ```
 
 After all changes the text should look like:
-
 ```java
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.trueautomation.client.driver.TrueAutomationDriver;
@@ -151,7 +172,7 @@ public class exampleTest {
         capabilities.setCapability(MobileCapabilityType.UDID, "<DEVICE UDID>");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "<PLATFORM_NAME>");
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "<BROWSER_NAME>");
-        driver = new TrueAutomationDriver(new URL("http://<appium_host>/wd/hub"), capabilities);
+        driver = new TrueAutomationDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
@@ -192,6 +213,8 @@ For example:
 ```java
 @FindByTA(taName="mySite:loginPage:username", id = "username") 
 private WebElement userName;
+
+// or
 
 @FindByTA(taName="mySite:loginPage:username", how = How.ID, using = "username") 
 private WebElement userName;
@@ -259,7 +282,7 @@ public class exampleTest {
 
 As a test will have run successfully for the first time, and all elements will have been saved in the object repository, you can use just `taName`.
 
- ![Object repository with elements](_images/rep-with-elements.png 'Object repository with elements')
+ ![Object repository with elements](_images/cloud-objects.png 'Object repository with elements')
  
  The test will look like this:
 ```java

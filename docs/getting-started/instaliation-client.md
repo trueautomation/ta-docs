@@ -15,7 +15,7 @@ or
 ```bash
 wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
-![Unix](_gif/install-unix.gif 'Install process')
+![Unix](../_gif/install-unix.gif 'Install process')
 
 ### Windows operating system
 
@@ -23,7 +23,7 @@ Before installing TrueAutomation client, you need to download and install [Micro
 
 Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
-  ![Windows](_gif/install-windows.gif 'Windows installer')
+  ![Windows](../_gif/install-windows.gif 'Windows installer')
 
 
 ## Verifying the Installation
@@ -33,9 +33,9 @@ After installing TrueAutomation client, verify the installation worked by openin
 trueautomation -h
 ```
 
-![Help](_images/ta-help-output.png 'Help output')
+![Help](../_images/ta-help-output.png 'Help output')
 
-You have successfully downloaded and installed TrueAutomation client! Read on to learn about [setting up your first TrueAutomation project](project-setup.md).
+You have successfully downloaded and installed TrueAutomation client! Read on to learn about [setting up your first TrueAutomation project](/getting-started/project-setup.md).
 
 
 ## Uninstalling TrueAutomation Client
@@ -49,3 +49,22 @@ rm -rf ~/.trueautomation/
 ### Windows operating system
 
 Uninstall using the add/remove programs section of the control panel
+
+
+## Update TrueAutomation Client
+
+On your computer go to Terminal and update TrueAutomation Client by running this command:
+```bash
+curl -o- https://trueautomation.io/installer.sh | bash
+```
+or
+```bash
+wget -qO-  https://trueautomation.io/installer.sh | bash
+```
+![Unix](../_gif/install-unix.gif 'Install process')
+
+### Windows operating system
+
+Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
+
+  ![Windows](../_gif/install-windows.gif 'Windows installer')

@@ -1,5 +1,5 @@
 * **Getting started**
-  * [Installation Client](/getting-started/instaliation-client.md)
+  * [Installation Client](/getting-started/installation-client.md)
   * [Project setup](/getting-started/project-setup.md)
   * [Creating your first test](/getting-started/creating-your-first-test.md)
   * [API Key](/getting-started/api-key.md)

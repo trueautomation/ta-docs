@@ -66,7 +66,9 @@ Creating your first test in TrueAutomation using Java/Maven + GRID
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 
 2. Download the Selenium Standalone Server from [here](https://docs.seleniumhq.org/download/) to folder with your project
+
     ![Selenium standalone server](../_images/seleniumStandaloneServer.png 'Test output')
+    
 3. Launch grid hub
     ```bash
     java -jar selenium-server-standalone-3.13.0.jar -role hub

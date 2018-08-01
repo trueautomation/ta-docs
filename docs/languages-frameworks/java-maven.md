@@ -148,7 +148,7 @@ Update your ‘pom.xml.’ file, which should contains this maven dependency:
 <dependency>
     <groupId>io.appium</groupId>
     <artifactId>java-client</artifactId>
-    <version>5.0.2</version>
+    <version>6.1.0</version>
 </dependency>
 ```
 

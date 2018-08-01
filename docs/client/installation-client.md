@@ -1,8 +1,6 @@
 # Install Client {docsify-ignore}
 ## Installing TrueAutomation Client
 
-So, you’ve just finished [registration](https://app.trueautomation.io/auth/signup) at the [TrueAutomation.IO](https://trueautomation.io/).
-
 Installing TrueAutomation client is extremely easy. The installer will automatically add TrueAutomation client to your system path so that it is available in terminals.
 If it is not found, please try logging out and logging back in to your system (this is particularly necessary sometimes for Windows).
 

@@ -69,6 +69,85 @@ end
 
 Check out an example of an actual test here: https://github.com/pyavchik/remoteWebdriver
 
+## GRID 
+TrueAutomation supports [Selenium GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).
+
+Firstly you need to download the Selenium Standalonde Server from [here](https://docs.seleniumhq.org/download/) to folder with your project
+
+![Selenium standalone server](../_images/seleniumStandaloneServer.png 'Test output')
+    
+On your computer go to Terminal and launch grid hub
+```bash
+java -jar selenium-server-standalone-3.13.0.jar -role hub
+```
+
+![Hub start](../_images/hub_start.png 'Test output')
+
+On your computer go to Terminal and launch grid node
+```bash
+java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
+```
+![Node start](../_images/node_start.png 'Test output')
+
+Here is the example of the test, using GRID:
+
+```java
+   import io.trueautomation.client.driver.TrueAutomationDriver;
+   import org.openqa.selenium.By;
+   import org.openqa.selenium.Platform;
+   import org.openqa.selenium.remote.DesiredCapabilities;
+   import org.testng.annotations.AfterTest;
+   import org.testng.annotations.BeforeTest;
+   import org.testng.annotations.Test;
+   
+   import java.util.concurrent.TimeUnit;
+   
+   import static io.trueautomation.client.TrueAutomationHelper.ta;
+   
+   public class exampleTest {
+       private TrueAutomationDriver driver;
+       private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+       private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+       private By emailFl = By.name(ta("ta:loginPage:email", "email"));
+   
+       @BeforeTest
+       public void beforeTest() {
+           DesiredCapabilities cap = DesiredCapabilities.chrome();
+           cap.setBrowserName("chrome");
+           cap.setPlatform(Platform.ANY);
+           cap.setCapability("taRemoteUrl", "http://localhost:4444/wd/hub");
+           driver = new TrueAutomationDriver(cap);
+           driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+       }
+   
+       @Test
+       public void exampleTest() {
+           driver.get("https://trueautomation.io");
+           driver.findElement(loginBtn).click();
+           driver.findElement(signupBtn).click();
+           driver.findElement(emailFl).sendKeys("your@mail.com");
+       }
+   
+       @AfterTest
+       public void afterTest() {
+           driver.quit();
+       }
+    }
+```
+
+To run your test file use the command below in your terminal
+```bash
+mvn -Dtest=exampleTest test
+```
+A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
+
+   ![Test output](../_images/java-grid-test.png 'Test output')
+
+The test ran and was successful.
+
+Check out an example of an actual test here: https://github.com/pyavchik/trueautomationGRID.git
+
+
 ## API example
 
 ```ruby

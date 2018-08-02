@@ -2,7 +2,7 @@
 
 There are two ways for you to start writing tests with TrueAutomation:
 
-* To initialize a project with automatic tests using TrueAutomation Client and built-in command:  (for details checkout the [Project Setup](project-setup.md)).
+* To initialize a project with automatic tests using TrueAutomation Client and built-in command:  (for details checkout the [Project Setup](/getting-started/project-setup.md)).
 
     ```bash
     trueautomation init

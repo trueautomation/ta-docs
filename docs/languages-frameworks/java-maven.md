@@ -2,8 +2,8 @@
 
 Before using the following tools, please make sure that you have:
 - [Registered TrueAutomation.IO account](https://app.trueautomation.io/auth/signup)
-- [Installed TrueAutomation client](install-client.md ':target=_blank')
-- [Initialized project](initializing.md ':target=_blank')
+- [Installed TrueAutomation client](/getting-started/installation-client.md ':target=_blank')
+- [Initialized project](/getting-started/installation-client.md ':target=_blank')
 
 ## RemoteWebDriver
 TrueAutomation supports [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver). To use TrueAutomationDriver as RemoteWebDriver, set the following parameters into TrueAutomationDriver:
@@ -59,7 +59,7 @@ Here is the example of the test, using RemoteWebDriver:
    }
 ```
 
-Check out an example of an actual test here: https://github.com/pyavchik/remoteWebdriver
+Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver
 
 ## GRID 
 TrueAutomation supports [Selenium GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).

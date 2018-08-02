@@ -1,6 +1,6 @@
 # Creating your first test
 
-## Creating your first test in TrueAutomation using Java/Maven
+## TrueAutomation using Java/Maven
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 
@@ -104,7 +104,7 @@ The test ran and was successful.
 
 Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-testng
 
-## Creating your first TrueAutomation test using Ruby/Capybara
+## TrueAutomation test using Ruby/Capybara
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 

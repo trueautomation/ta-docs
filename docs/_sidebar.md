@@ -23,4 +23,4 @@
 
 * [**Technology support**](/support/technology-support.md)
 * [**Roadmap**](/support/roadmap.md)
-* [**Coverpage**](/_coverpage.md)
+

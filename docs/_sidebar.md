@@ -1,18 +1,26 @@
 * **Getting started**
-  * [Installation Client](install-client.md)
-  * [Project setup](project-setup.md)
-  * [Creating your first test](creating-first-test.md)
-  * [API Key](api-key.md)
-  * [TrueAutomation vs Selenium](trueautomation-vs-selenium.md)
+  * [Installation Client](/getting-started/installation-client.md)
+  * [API Key](/getting-started/api-key.md)
+  * [Project setup](/getting-started/project-setup.md)
+  * [TrueAutomation vs Selenium](/getting-started/trueautomation-vs-selenium.md)
+  * [Creating your first test](/getting-started/creating-your-first-test.md)
 
-* **Initializing**
-  * [Initializing automatically](initializing.md)
-  * [Initializing manualy](project-init-manually.md)
-   
+
+* **TrueAutomation Client**
+  * [Installation Client](/client/installation-client.md)
+  * [Uninstallation Client](/client/uninstallation-client.md)
+
+
+* **Initializing project**
+  * [Initializing automatically](/initializing/initializing-automatically.md)
+  * [Initializing manualy](/initializing/initializing-manually.md)
+
+
 *  **Languages & Frameworks**
- * [Java/Maven](java.md)
- * [Ruby/Capybara](capybara.md)
- 
-* [**Technology support**](technology-support.md)
-* [**Roadmap**](roadmap.md)
+ * [Java/Maven](/languages-frameworks/java-maven.md)
+ * [Ruby/Capybara](/languages-frameworks/ruby-capybara.md)
 
+
+* [**Technology support**](/support/technology-support.md)
+* [**Roadmap**](/support/roadmap.md)
+* [**Coverpage**](/_coverpage.md)

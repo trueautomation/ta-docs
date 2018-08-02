@@ -67,7 +67,7 @@ RSpec.configure do |config|
 end
 ```
 
-Check out an example of an actual test here: https://github.com/pyavchik/remoteWebdriver
+Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver
 
 ## API example
 

@@ -10,6 +10,7 @@
   * [Installation Client](/client/installation-client.md)
   * [Uninstallation Client](/client/uninstallation-client.md)
 
+
 * **Initializing project**
   * [Initializing automatically](/initializing/initializing-automatically.md)
   * [Initializing manualy](/initializing/initializing-manually.md)

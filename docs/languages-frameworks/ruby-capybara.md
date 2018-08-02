@@ -159,7 +159,7 @@ end
    end
 ```
 
-Check out an example of an actual test here: https://github.com/pyavchik/taCapybaraGRID.git
+Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-grid
 
 ## API example
 

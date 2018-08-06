@@ -37,4 +37,4 @@ trueautomation -h
 
 ![Help](../_images/ta-help-output.png 'Help output')
 
-You have successfully downloaded and installed TrueAutomation client! Read on to learn about [setting up your first TrueAutomation project](/getting-started/project-setup.md).
+You have successfully downloaded and installed TrueAutomation client! Read on to learn about [API Key](/getting-started/api-key.md) & [setting up your first TrueAutomation project](/getting-started/project-setup.md).

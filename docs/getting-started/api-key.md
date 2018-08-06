@@ -11,3 +11,5 @@ The API key is needed to grant access to your TrueAutomation account. It is set 
 If the API key is not installed when you run the test, there is an error that tells you how to solve the problem:
 
 !> API key is not set. Run `trueautomation init` to set the API key.
+
+Now that you know about the API key, you can proceed [setting up your first TrueAutomation project](/getting-started/project-setup.md).

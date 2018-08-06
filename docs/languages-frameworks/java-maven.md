@@ -106,10 +106,7 @@ Here is the example of the test, using GRID:
   
       @BeforeTest
       public void beforeTest() throws MalformedURLException {
-          MutableCapabilities capabilities;
-          System.setProperty("webdriver.chromedriver.driver", "chromedriver");
-          capabilities = new ChromeOptions();
-          driver = new TrueAutomationDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+          driver = new TrueAutomationDriver(new URL("http://localhost:4444/wd/hub"), new ChromeOptions());
           driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
       }
   

@@ -91,6 +91,7 @@ java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://localhost
 ![Node start](../_images/node_start.png 'Test output')
 
 Here is the example of the test, using GRID:
+
 ```ruby
 require 'spec_helper'
 

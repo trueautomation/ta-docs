@@ -104,7 +104,7 @@ The test ran and was successful.
 
 Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-testng
 
-## TrueAutomation test using Ruby/Capybara
+## TrueAutomation test using Capybara
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 
@@ -123,11 +123,11 @@ Check out an example of an actual test here:  https://github.com/shapovalovei/tr
       it 'Test example' do
         visit 'https://trueautomation.io/'
 
-        find(:css, ta('loginBtn', 'a.login-btn')).click
+        find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click
 
-        find(:css, ta('signupBtn', 'div.sign-up-container > a')).click
+        find(:css, ta('ta:mainPage:signupBtn', 'div.sign-up-container > a')).click
 
-        fill_in ta('emailFl', 'email'), with: 'your@mail.com'
+        fill_in ta('ta:loginPage:email', 'email'), with: 'your@mail.com'
         sleep 3
       end
     end
@@ -142,11 +142,11 @@ Check out an example of an actual test here:  https://github.com/shapovalovei/tr
       it 'Test example' do
         visit 'https://trueautomation.io/'
 
-        find(ta('loginBtn')).click
+        find(ta('ta:mainPage:loginBtn')).click
 
-        find(ta('signupBtn')).click
+        find(ta('ta:mainPage:signupBtn')).click
 
-        fill_in ta('emailFl'), with: 'your@mail.com'
+        fill_in ta('ta:loginPage:email'), with: 'your@mail.com'
         sleep 3
       end
     end

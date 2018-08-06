@@ -84,47 +84,48 @@ java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://localhost
 Here is the example of the test, using GRID:
 
 ```java
-   import io.trueautomation.client.driver.TrueAutomationDriver;
-   import org.openqa.selenium.By;
-   import org.openqa.selenium.Platform;
-   import org.openqa.selenium.remote.DesiredCapabilities;
-   import org.testng.annotations.AfterTest;
-   import org.testng.annotations.BeforeTest;
-   import org.testng.annotations.Test;
-   
-   import java.util.concurrent.TimeUnit;
-   
-   import static io.trueautomation.client.TrueAutomationHelper.ta;
-   
-   public class exampleTest {
-       private TrueAutomationDriver driver;
-       private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
-       private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
-       private By emailFl = By.name(ta("ta:loginPage:email", "email"));
-   
-       @BeforeTest
-       public void beforeTest() {
-           DesiredCapabilities cap = DesiredCapabilities.chrome();
-           cap.setBrowserName("chrome");
-           cap.setPlatform(Platform.ANY);
-           cap.setCapability("taRemoteUrl", "http://localhost:4444/wd/hub");
-           driver = new TrueAutomationDriver(cap);
-           driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-       }
-   
-       @Test
-       public void exampleTest() {
-           driver.get("https://trueautomation.io");
-           driver.findElement(loginBtn).click();
-           driver.findElement(signupBtn).click();
-           driver.findElement(emailFl).sendKeys("your@mail.com");
-       }
-   
-       @AfterTest
-       public void afterTest() {
-           driver.quit();
-       }
-    }
+  import io.trueautomation.client.driver.TrueAutomationDriver;
+  import org.openqa.selenium.By;
+  import org.openqa.selenium.MutableCapabilities;
+  import org.openqa.selenium.chrome.ChromeOptions;
+  import org.testng.annotations.AfterTest;
+  import org.testng.annotations.BeforeTest;
+  import org.testng.annotations.Test;
+  
+  import java.net.MalformedURLException;
+  import java.net.URL;
+  import java.util.concurrent.TimeUnit;
+  
+  import static io.trueautomation.client.TrueAutomationHelper.ta;
+  
+  public class exampleTest {
+      private TrueAutomationDriver driver;
+      private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+      private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+      private By emailFl = By.name(ta("ta:loginPage:email", "email"));
+  
+      @BeforeTest
+      public void beforeTest() throws MalformedURLException {
+          MutableCapabilities capabilities;
+          System.setProperty("webdriver.chromedriver.driver", "chromedriver");
+          capabilities = new ChromeOptions();
+          driver = new TrueAutomationDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+          driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+      }
+  
+      @Test
+      public void exampleTest() {
+          driver.get("https://trueautomation.io");
+          driver.findElement(loginBtn).click();
+          driver.findElement(signupBtn).click();
+          driver.findElement(emailFl).sendKeys("your@mail.com");
+      }
+  
+      @AfterTest
+      public void afterTest() {
+          driver.quit();
+      }
+  }
 ```
 
 To run your test file use the command below in your terminal
@@ -143,49 +144,13 @@ Check out an example of an actual test here: https://github.com/pyavchik/trueaut
 TrueAutomation supports [Appium](https://appium.io/).
 Ensure you have Appium and all of Appium's dependencies installed If you don’t have, use the Appium documentation to install it.
 
-Update your ‘pom.xml.’ file, which should look like this:
+Update your ‘pom.xml.’ file, which should contains this maven dependency:
 ```xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>appium-java</groupId>
-  <artifactId>appium-java</artifactId>
-  <version>1.0</version>
-  <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>3.11.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.10</version>
-      <scope>exampleTest</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.trueautomation</groupId>
-      <artifactId>trueautomation-client</artifactId>
-      <version>0.3.3</version>
-    </dependency>
-    <dependency>
-      <groupId>io.appium</groupId>
-      <artifactId>java-client</artifactId>
-      <version>5.0.0</version>
-    </dependency>
-  </dependencies>
-  <repositories>
-    <repository>
-      <id>trueautomation-io</id>
-      <name>TrueAutomation.IO MVN Repository</name>
-      <url>https://mvn.trueautomation.io/artifactory/trueautomation</url>
-    </repository>
-  </repositories>
-</project>
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>6.1.0</version>
+</dependency>
 ```
 
 Run Appium server, using Terminal, appium desktop app, [AppiumServiceBuilder](https://appium.github.io/java-client/io/appium/java_client/service/local/AppiumServiceBuilder.html) from `java-client`. By default Appium is run on port number `4723`.

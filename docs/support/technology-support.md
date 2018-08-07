@@ -1,7 +1,6 @@
 # Technology support
 
 #### OS Platform support:
-
 | OS       |      Version               |
 |:--------:|:--------------------------:|
 | macOS    |  High Sierra               |
@@ -26,4 +25,3 @@ Support any browser uses **RemoteWebDriver protocol**
 - Selenium GRID
 - Appium
 - PageFactory
-

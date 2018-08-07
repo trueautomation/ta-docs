@@ -1,9 +1,7 @@
 # Roadmap
 
 * IDE plugin;
-* Browser support;
-* Mobile support;
+* Local browsers support;
 * Language support: C#, Python, Javascript;
-* Selenium hubs support;
 * Waits;
 

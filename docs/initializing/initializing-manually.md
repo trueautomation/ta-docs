@@ -42,7 +42,7 @@ import static io.trueautomation.client.TrueAutomationHelper.ta;
   "projectName": "ta-project-name"
 }
 ```
-6. Then go to the ["Creating your first test in TrueAutomation using Java/TestNG"](/getting-started/creating-your-first-test.md#creating-your-first-test-in-trueautomation-using-javamaven) and create your first test.
+6. Then go to the [Creating your first test in TrueAutomation using Java/Maven](/getting-started/creating-your-first-test.md#creating-your-first-test-in-trueautomation-using-javamaven) and create your first test.
 
 ## Initializing Ruby/Capybara project
 
@@ -97,4 +97,4 @@ config.include TrueAutomation::DSL
 }
 ```
 
-9. Then go to the ["Creating your first test in TrueAutomation using Capybara/RSpec"](/getting-started/creating-your-first-test.md#creating-your-first-test-in-trueautomation-using-capybararspec) and create your first test.
+9. Then go to the [Creating your first test in TrueAutomation using Capybara/RSpec](/getting-started/creating-your-first-test.md#trueautomation-test-using-capybararspec) and create your first test.

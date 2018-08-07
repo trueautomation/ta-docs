@@ -1,6 +1,6 @@
 # API Key
 
-Each user who registered an account on [TrueAutomation.IO](https://trueautomation.io) receives an API key.
+Each user who registered an account on [TrueAutomation.IO](https://app.trueautomation.io) receives an API key.
 
 ![API Key Сloud](../_images/api-key.png 'API Key Сloud')
 

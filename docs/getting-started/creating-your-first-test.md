@@ -102,9 +102,9 @@
 
 The test ran and was successful.
 
-Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-testng
+Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-java
 
-## TrueAutomation test using Capybara
+## TrueAutomation test using Capybara/RSpec
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
 

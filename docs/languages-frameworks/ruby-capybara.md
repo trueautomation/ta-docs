@@ -68,7 +68,7 @@ RSpec.configure do |config|
 end
 ```
 
-Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-remoteWebDriver**
 
 ## GRID 
 TrueAutomation supports [Selenium GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).
@@ -160,7 +160,7 @@ Capybara.configure do |capybara|
 end
 ```
 
-Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-grid
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-grid**
 
 ## API example
 

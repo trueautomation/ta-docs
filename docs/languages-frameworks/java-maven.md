@@ -59,7 +59,7 @@ Here is the example of the test, using RemoteWebDriver:
    }
 ```
 
-Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver**
 
 ## GRID 
 TrueAutomation supports [Selenium GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).
@@ -135,7 +135,7 @@ A new chrome window will be opened test actions should be performed. You’ll ge
 
 The test ran and was successful.
 
-Check out an example of an actual test here: https://github.com/pyavchik/trueautomationGRID.git
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-grid**
 
 ## Appium
 TrueAutomation supports [Appium](https://appium.io/).
@@ -234,7 +234,7 @@ public class exampleTest {
 
 Before you run the test, make sure that you have updated DesireCapabilities(`DEVICE_NAME`, `AUTOMATION_NAME`, `UDID`, `PLATFORM_NAME`, `BROWSER_NAME`)  according to the capabilities to the device, used for running the test.
 
-Check out an example of an actual test here: https://github.com/shapovalovei/appium-testng-trueautomation
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-java-remoteWebDriver**
 
 ## PageFactory
 
@@ -376,3 +376,4 @@ public class exampleTest {
 }
 ```
 
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-pageFactor**

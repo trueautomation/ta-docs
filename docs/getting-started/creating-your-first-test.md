@@ -102,7 +102,7 @@
 
 The test ran and was successful.
 
-Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-java
+**Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-java**
 
 ## TrueAutomation test using Capybara/RSpec
 
@@ -164,4 +164,4 @@ Check out an example of an actual test here:  https://github.com/shapovalovei/tr
 
 The test ran and was successful.
 
-Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-capybara
+**Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-capybara**

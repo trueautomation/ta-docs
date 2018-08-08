@@ -17,11 +17,11 @@ or
 wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
 
-![Unix2](../_gif/unix.gif 'Install process')
+![Unix](../_gif/unix.gif 'Install process')
 
 ### Windows operating system{docsify-ignore}
 
-Before installing TrueAutomation client, you need to download and install [Microsoft Visual C ++ 2015 Redistributable Update 3 RC](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 
+Before installing TrueAutomation client, you need to download and install [Microsoft Visual C ++ 2015 Redistributable Update 3 RC](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
@@ -37,4 +37,4 @@ trueautomation -h
 
 ![Help](../_images/ta-help-output.png 'Help output')
 
-You have successfully downloaded and installed TrueAutomation client! Read on to learn about [API Key](/getting-started/api-key.md) & [setting up your first TrueAutomation project](/getting-started/project-setup.md).
+You have successfully downloaded and insta

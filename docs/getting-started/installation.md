@@ -28,7 +28,7 @@ Just [download Windows installer](https://trueautomation.io/downloads/trueautoma
 ![Windows2](../_gif/windows.gif 'Windows installer')
 
 
-## Verifying the Installation{docsify-ignore}
+## Verifying the Installation {docsify-ignore}
 
 After installing TrueAutomation client, verify the installation worked by opening a new command prompt or terminal, and checking that TrueAutomation is available:
 ```bash

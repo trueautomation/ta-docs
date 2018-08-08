@@ -17,15 +17,14 @@ or
 wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
 
-![Unix](../../_gif/unix.gif 'Install process')
+    ![Unix](../../_gif/unix.gif 'Install process')
 
 ### Windows operating system{docsify-ignore}
 
 Before installing TrueAutomation client, you need to download and install [Microsoft Visual C ++ 2015 Redistributable Update 3 RC](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 
 
 Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
-
-![Windows](/getting-started/../_gif/windows.gif 'Windows installer')
+    ![Windows](/../_gif/windows.gif 'Windows installer1')
 
 
 ## Verifying the Installation{docsify-ignore}

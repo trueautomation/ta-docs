@@ -1,6 +1,5 @@
 * **Getting started**
   * [Installation Client](/getting-started/installation.md)
-  * [\ 11](/getting-started/11.md)
   * [API Key](/getting-started/api-key.md)
   * [Project setup](/getting-started/project-setup.md)
   * [TrueAutomation vs Selenium](/getting-started/trueautomation-vs-selenium.md)

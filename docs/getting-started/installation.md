@@ -25,7 +25,7 @@ Before installing TrueAutomation client, you need to download and install [Micro
 
 Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
-![Windows2](docs/_gif/windows.gif 'Windows installer')
+![Windows2](getting-started/_gif/windows.gif 'Windows installer')
 
 
 ## Verifying the Installation {docsify-ignore}

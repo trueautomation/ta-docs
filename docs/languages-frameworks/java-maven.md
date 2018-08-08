@@ -321,7 +321,7 @@ public class exampleTest {
 
 As a test will have run successfully for the first time, and all elements will have been saved in the object repository, you can use just `taName`.
 
- ![Object repository with elements](_images/cloud-objects.png 'Object repository with elements')
+ ![Object repository with elements](../_images/cloud-objects.png 'Object repository with elements')
  
  The test will look like this:
 ```java

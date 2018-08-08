@@ -17,7 +17,7 @@ or
 wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
 
-![Unix](../_gif/unix.gif 'Install process')
+![Unix](getting-started/../_gif/unix.gif 'Install process')
 
 ### Windows operating system {docsify-ignore}
 
@@ -25,7 +25,7 @@ Before installing TrueAutomation client, you need to download and install [Micro
 
 Just [download Windows installer](https://trueautomation.io/downloads/trueautomation-setup.exe), run it, and you are done!
 
-![Windows2](getting-started/_gif/windows.gif 'Windows installer')
+![Windows2](getting-started/../_gif/windows.gif 'Windows installer')
 
 
 ## Verifying the Installation {docsify-ignore}
@@ -35,6 +35,6 @@ After installing TrueAutomation client, verify the installation worked by openin
 trueautomation -h
 ```
 
-![Help](../_images/ta-help-output.png 'Help output')
+![Help](getting-started/../_images/ta-help-output.png 'Help output')
 
 You have successfully downloaded and insta

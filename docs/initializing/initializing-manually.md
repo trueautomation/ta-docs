@@ -13,7 +13,7 @@ Firstly, you must have a fully configured and working Java/Maven project. If you
         <name>TrueAutomation.IO MVN Repository</name>
         <url>https://mvn.trueautomation.io/artifactory/trueautomation</url>
     </repository>
-</repositories>       
+</repositories>
 ```
 
 2. Add the dependency information inside the `<dependencies>` tag in the `pom.xml` file:
@@ -21,13 +21,15 @@ Firstly, you must have a fully configured and working Java/Maven project. If you
 <dependency>
     <groupId>io.trueautomation</groupId>
     <artifactId>trueautomation-client</artifactId>
-    <version>0.3.3</version>
+    <version>0.3.4</version>
 </dependency>  
 ```
 
 3. Create TrueAutomation Driver by adding the following lines into `java` file:
 ```java
 import io.trueautomation.client.driver.TrueAutomationDriver;
+```
+```java
 WebDriver driver = new TrueAutomationDriver();
 ```
 

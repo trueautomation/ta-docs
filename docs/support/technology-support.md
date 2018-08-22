@@ -10,7 +10,7 @@
 #### Local browsers support:
 |Browser| Google Chrome | Firefox     | Safari      | IE          | Edge        |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|**Status** | Supported     | In progress | In progress | In progress | In progress |
+|**Status** | Supported     | Supported | Supported | In progress | Supported |
 
 Support any browser uses **RemoteWebDriver protocol**
 

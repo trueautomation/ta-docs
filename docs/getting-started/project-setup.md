@@ -20,58 +20,54 @@ trueautomation init
 
     3.1. If you have an account - enter `y` in the terminal. You will be prompted to the next step.
 
-    3.2. If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to step 3 of initialization process.
+    3.2. If you do not have an account - enter `n` in the terminal. In this case you will need to register an account with TrueAutomation at: https://app.trueautomation.io/auth/signup and then return back to initialization process.
 
-    3.3. Enter you API key in the terminal. You can get your API key in your account of TrueAutomation at https://app.trueautomation.io/app/profile
-4. The TrueAutomation app will detect whether the folder of the project is empty or not.
+4. Enter your API key. You can get it in your profile at TrueAutomation.IO account.
 
-    4.1. Directory is empty. If you enter `y`,  you will be prompted to a selection of technology:
+    ![Technology stack](../_gif/api-500-sp.gif 'Technology stack')
+
+5. The TrueAutomation app will detect whether the folder of the project is empty or not.
+
+   5.1. If you initialize the project in an empty directory, you will see this message:
 
    ![Technology stack](../_images/technology.png 'Technology stack')
+   Please choose a technology stack you’re planning to use.
+   Enter `1` to choose Capybara/RSpec. Enter `2` to choose Java/Maven.
 
-    Please choose a technology stack you’re planning to use.
+   5.2. TrueAutomation app will offer to update your project if you initialize it in the folder that already contained framework:
+   > ? We detected that your project is based on Java/Maven. Do you want to update the project with TrueAutomation? (Y/n)
 
-    If you enter `n`, initialization of the project will be aborted.
+   > ? We detected that your project is based on Capybara/RSpec. Do you want to update the project with TrueAutomation? (Y/n)
 
-    4.2. If the directory is not empty. TrueAutomation app will confirm the technology with you.
+   Choose `Y` to update the project. We will modify your project and you will be able to use it with TrueAutomation.
 
-    > We detected that your project is based on Java. Please confirm that (y/n).
+   ![Congratulations](../_images/congrat-update.png 'Congratulations')
 
-    > We detected that your project is based on Capybara. Please confirm that (y/n).
+   If you don't ready to update your project, choose `n`. The initialization process will be interrupted. You can return to the initialization process, using command `trueautomation init` again.
 
-    If the technology was detected correctly, please enter `y` and you will be prompted to the next step.
+   ![Congratulations](../_images/interrupted.png 'Interrupted')
 
-    If the technology was detected in a wrong way, please enter `n`. TrueAutomation client will confirm the technology with you. Please let us know at [team@trueautomation.io](mailto:team@trueautomation.io) about such case and we will look into it ASAP.
+6. You will be asked whether you have a project created at your TrueAutomation account. This is needed to make the most of TrueAutomation experience.
 
-5. You will be asked whether you have a project created at your TrueAutomation account. This is needed to make the most of TrueAutomation experience.
+   > ? Do you want to use existing (e) TrueAutomation.IO project or create a new one (c)? (Ech)
 
-   > E.g.: Do you want to use existing (e) TrueAutomation.IO project or create a new one (c)? (Ech) (e/c)
-
-    If you already have this project created - enter `e`. You will be asked to provide the name of the project as it is stated in your TrueAutomation account.
+    Enter `e` (existing) if you have already created appropriate project. You will be asked to choose the project name from list.
 
     ![Existing project](../_images/use-existing-project.png 'Existing project')
 
-    If you do not have this project in your TrueAutomation account, please enter `c` and you will be suggested to create one right away:
+    If you do not have a necessary project at your TrueAutomation account, please enter `c` (create) to create one right away.
 
     ![New project](../_images/use-new-project.png 'New project')
 
-6. Your initialization process is almost over.
+7. Your initialization process is almost over.
 
-   6.1. If you have initialized project in an empty directory you will see the message like that:
-
-     * Ruby/Capybara
-
-     ![Capybara congratulations](../_images/capybara-congratulations.png 'Capybara congratulations')
-
-     * Java/Maven
+   7.1. If you have initialized project in an empty directory you will see the message like that:
 
      ![Java/Maven congratulations](../_images/java-congratulations.png 'Java/Maven congratulations')
 
-   6.2 If your project was initialized in the folder that already contained framework - you should see this message
+   7.2. If you initialized an existing project, you will see the message:
 
      ![Congratulations](../_images/congrat-update.png 'Congratulations')
 
 Congratulations. You’re good to go with TrueAutomation. If you have suggestions or questions reg this guide - let us know at [team@trueautomation.io](mailto:team@trueautomation.io)
-
-
- ![Initial process](../_gif/init-ta.gif 'Initial process')
+![Initial process](../_gif/init-ta.gif 'Initial process')

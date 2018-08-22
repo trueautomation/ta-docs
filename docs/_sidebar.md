@@ -4,7 +4,6 @@
   * [Project setup](/getting-started/project-setup.md)
   * [TrueAutomation vs Selenium](/getting-started/trueautomation-vs-selenium.md)
   * [Creating your first test](/getting-started/creating-your-first-test.md)
-  * [Manage drivers](/getting-started/manage-drivers.md)
 
 
 * **TrueAutomation Client**

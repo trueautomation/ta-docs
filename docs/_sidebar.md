@@ -22,5 +22,6 @@
 
 
 * [**Technology support**](/support/technology-support.md)
+* [**Troubleshooting**](/support/troubleshooting.md)
 * [**Roadmap**](/support/roadmap.md)
 

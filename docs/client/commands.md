@@ -1,9 +1,9 @@
 # TrueAutomation commands {docsify-ignore}
 
 ## Starting TrueAutomation client
-You can start the TrueAutomation client, using the command: ````trueautomation```` or ````trueautomation start````. The client will be started with default parameters.
+* You can start the TrueAutomation client, using the command: ````trueautomation```` or ````trueautomation start````. The client will be started with default parameters.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation [options]
 trueautomation start [options]
@@ -23,84 +23,87 @@ trueautomation start [options]
 
 
 ## Project initialization
-Run the command ```trueautomation init | i``` to initialize a new or existing project.
+* Run the command ```trueautomation init | i``` to initialize a new or existing project.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation init
 trueautomation i
 ```
-## Setting API Key
-Use the command ````trueautomation api-key```` to set a new API key.
 
- Syntax:
+## Setting API Key
+* Use the command ````trueautomation api-key```` to set a new API key.
+
+Syntax:
 ```bash
 trueautomation api-key [api-key]
 ```
+
 ## Drivers management
 Currently, we support all major drivers: Chrome Driver, Gecko Driver, Microsoft Web Driver (Edge Driver), Safari Driver and Remote Driver functionality. Use the following driver names to manage this drivers:
 
 ```bash
 chromedriver, geckodriver, microsoftwebdriver, safaridriver
 ```
-Use the command to download the driver version you need:
+* Use the command to download the driver version you need:
 ```trueautomation driver download```.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation driver download [driver_name] [version]
 ```
 
- Example:
+Example:
 ```bash
 trueautomation driver download chromedriver 2.41
 ```
-You can see the downloaded drivers list, using the command: ```trueautomation driver list```.
+* You can see the downloaded drivers list, using the command: ```trueautomation driver list```.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation driver list
 ```
-There is the command to set default driver: ````trueautomation driver use````.
+* There is the command to set default driver: ````trueautomation driver use````.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation driver use [driver_name] [version]
 ```
 
- Example:
+Example:
 ```bash
 trueautomation driver use geckodriver 0.21.0
 ```
-Use the command to remove a some driver: ```trueautomation driver remove```.
+* Use the command to remove a some driver: ```trueautomation driver remove```.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation driver remove [driver_name] [version]
 ```
 
- Example:
+Example:
 ```bash
 trueautomation driver remove geckodriver 0.21.0
 ```
-You can update all drivers to the latest version, using the following command:
+* You can update all drivers to the latest version, using the following command:
 ```trueautomation driver update all```.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation driver update all
 ```
-For more information about drivers management, use the option:
+* For more information about drivers management, use the option:
 
 | Option | Example | Description |
 | --- | --- | --- |
 |-h, --help|           trueautomation driver -h, <br>trueautomation driver --help  | output usage information  |
 
-
 ## Starting TrueAutomation IDE mode
-To start using the TrueAutomation integrated development environment (IDE), run the command ```trueautomation ide``` for your project.
+* To start using the TrueAutomation integrated development environment (IDE), run the command ```trueautomation ide``` for your project.
 
- Syntax:
+Syntax:
 ```bash
 trueautomation ide
 ```
+
+!> TrueAutomation IDE is in development now. It is only available in the test client version.

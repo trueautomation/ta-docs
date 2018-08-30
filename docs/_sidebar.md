@@ -7,6 +7,7 @@
 
 
 * **TrueAutomation Client**
+  * [Trueautomation Commands](/client/commands.md)
   * [Installation Client](/client/installation-client.md)
   * [Uninstallation Client](/client/uninstallation-client.md)
 

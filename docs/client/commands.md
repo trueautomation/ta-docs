@@ -17,7 +17,7 @@ trueautomation start [options]
 | --port                    	| trueautomation start --port 9515                                 	| port to listen on                                       	|
 | --driverPort              	| trueautomation start --driverPort 4444                           	| port for driver to listen on                            	|
 | --log-file                	| trueautomation start --log-file ~/logs.txt                       	| starting the client with writing logs into the log-file 	|
-| --driver <br> --driver-version| trueautomation start --driver chromedriver <br> --driver-version 2.41 	| setting driver name and version                         	|
+| --driver, <br> --driver-version| trueautomation start --driver chromedriver <br> --driver-version 2.41 	| setting driver name and version                         	|
 | --remote                  	| trueautomation start --remote                                    	| do not run default driver                               	|
 | -h, --help                	| trueautomation -h, <br>trueautomation --help                          	| output usage information                                	|
 

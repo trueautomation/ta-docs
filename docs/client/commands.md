@@ -90,11 +90,11 @@ You can update all drivers to the latest version, using the following command:
 ```bash
 trueautomation driver update all
 ```
-For more information, use the option:
+For more information about drivers management, use the option:
 
-| Command | Example | Description |
+| Option | Example | Description |
 | --- | --- | --- |
-|-h, --help|  trueautomation driver -h, <br>trueautomation driver --help  | output usage information  |
+|-h, --help|           trueautomation driver -h, <br>trueautomation driver --help  | output usage information  |
 
 
 ## Starting TrueAutomation IDE mode

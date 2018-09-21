@@ -20,7 +20,7 @@
 
          import java.util.concurrent.TimeUnit;
 
-         import static io.trueautomation.client.TrueAutomationHelper.ta;
+         import static io.trueautomation.client.TrueAutomationHelper.*;
 
          public class exampleTest {
              private WebDriver driver;
@@ -51,7 +51,7 @@
          }
       ```
 
-   It can look like this i	f you have previously run TrueAutomation
+   It can look like this if you have previously run TrueAutomation
 
    ```java
           import io.trueautomation.client.driver.TrueAutomationDriver;
@@ -63,7 +63,7 @@
 
           import java.util.concurrent.TimeUnit;
 
-          import static io.trueautomation.client.TrueAutomationHelper.ta;
+          import static io.trueautomation.client.TrueAutomationHelper.*;
 
           public class exampleTest {
               private WebDriver driver;
@@ -78,10 +78,10 @@
               public void exampleTest() {
                   driver.get("https://trueautomation.io");
 
-                  driver.findElement(By.cssSelector(ta("ta:mainPage:loginBtn"))).click();
-                  driver.findElement(By.cssSelector(ta("ta:mainPage:signupBtn"))).click();
+                  driver.findElement(byTa(ta("ta:mainPage:loginBtn"))).click();
+                  driver.findElement(byTa(ta("ta:mainPage:signupBtn"))).click();
 
-                  driver.findElement(By.name(ta("ta:loginPage:email"))).sendKeys("your@mail.com");
+                  driver.findElement(byTa(ta("ta:loginPage:email"))).sendKeys("your@mail.com");
               }
 
               @AfterTest

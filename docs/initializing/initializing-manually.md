@@ -21,7 +21,7 @@ Firstly, you must have a fully configured and working Java/Maven project. If you
 <dependency>
     <groupId>io.trueautomation</groupId>
     <artifactId>trueautomation-client</artifactId>
-    <version>0.3.4</version>
+    <version>0.3.7</version>
 </dependency>  
 ```
 
@@ -35,7 +35,7 @@ WebDriver driver = new TrueAutomationDriver();
 
 4. Add the following lines into java file and use TA locators:
 ```java
-import static io.trueautomation.client.TrueAutomationHelper.ta;
+import static io.trueautomation.client.TrueAutomationHelper.*;
 ```
 
 5. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)

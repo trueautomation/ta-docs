@@ -28,7 +28,7 @@ Here is the example of the test, using RemoteWebDriver:
    import java.net.URL;
    import java.util.concurrent.TimeUnit;
 
-   import static io.trueautomation.client.TrueAutomationHelper.ta;
+   import static io.trueautomation.client.TrueAutomationHelper.*;
 
    public class exampleTest {
        private WebDriver driver;
@@ -70,14 +70,14 @@ Firstly you need to download the Selenium Standalonde Server from [here](https:/
     
 On your computer go to Terminal and launch grid hub
 ```bash
-java -jar selenium-server-standalone-3.13.0.jar -role hub
+java -jar selenium-server-standalone-3.14.0.jar -role hub
 ```
 
 ![Hub start](../_images/hub_start.png 'Test output')
 
 On your computer go to Terminal and launch grid node
 ```bash
-java -jar selenium-server-standalone-3.13.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
+java -jar selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
 ```
 ![Node start](../_images/node_start.png 'Test output')
 
@@ -96,7 +96,7 @@ Here is the example of the test, using GRID:
   import java.net.URL;
   import java.util.concurrent.TimeUnit;
   
-  import static io.trueautomation.client.TrueAutomationHelper.ta;
+  import static io.trueautomation.client.TrueAutomationHelper.*;
   
   public class exampleTest {
       private TrueAutomationDriver driver;
@@ -195,7 +195,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.ta;
+import static io.trueautomation.client.TrueAutomationHelper.*;
 
 public class exampleTest {
     private WebDriver driver;
@@ -280,7 +280,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.ta;
+import static io.trueautomation.client.TrueAutomationHelper.*;
 
 public class exampleTest {
     private WebDriver driver;
@@ -337,7 +337,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.ta;
+import static io.trueautomation.client.TrueAutomationHelper.*;
 
 public class exampleTest {
     private WebDriver driver;
@@ -376,4 +376,31 @@ public class exampleTest {
 }
 ```
 
-**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-pageFactor**
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-pageFactory**
+
+<br />
+# TrueAutomation internal capabilities
+
+TrueAutomationDriver supports using of all WebDriver capabilities and we also expand them by our internal capabilities.
+
+**TrueAutomation embedded drivers selection**
+
+We have our internal capabilities for embedded drivers selection through the Desired Capabilities. These are special key and value pairs that are sent to the server in the JSON object when requesting a new automation session. They tell which driver and what driver version will be used in your test run.
+
+
+
+|**Key**| &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;**Type**&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; | **Description**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     |
+|:---:|:---:|:---|
+|driver| string | The driver name being used. Should be one of: <br>- chromedriver<br>- geckodriver<br>- microsoftwebdriver<br>- safaridriver|
+|driver_version| string | The driver version being used. If driver version is <br>not set, the test will be run with the latest driver <br>version.<br>|
+
+**Example of using**
+
+```java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("driver", "geckodriver");
+        capabilities.setCapability("driver_version", "0.22.0");
+
+        driver = new TrueAutomationDriver(capabilities);
+```
+

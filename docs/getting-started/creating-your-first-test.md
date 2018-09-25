@@ -78,10 +78,10 @@
               public void exampleTest() {
                   driver.get("https://trueautomation.io");
 
-                  driver.findElement(byTa(ta("ta:mainPage:loginBtn"))).click();
-                  driver.findElement(byTa(ta("ta:mainPage:signupBtn"))).click();
+                  driver.findElement(byTa("ta:mainPage:loginBtn")).click();
+                  driver.findElement(byTa("ta:mainPage:signupBtn")).click();
 
-                  driver.findElement(byTa(ta("ta:loginPage:email"))).sendKeys("your@mail.com");
+                  driver.findElement(byTa("ta:loginPage:email")).click();
               }
 
               @AfterTest

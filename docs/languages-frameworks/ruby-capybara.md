@@ -268,7 +268,7 @@ end
     has_xpath?(ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 ```
 
-## TrueAutomation internal capabilities
+## TrueAutomation capabilities
 
 TrueAutomationDriver supports using of all WebDriver capabilities and we also expand them by our internal capabilities.
 

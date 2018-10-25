@@ -48,7 +48,7 @@ Java with TrueAutomation locator
 driver.findElement(By.xpath(ta('pageName:moduleName:objectName', '//locator')));
 ```
 
-Once your object are in a repository and you want to use them in a test. You can do it like this:
+Once your object are in a repository and you want to use them in a test. You can do this using the "byTa" method
 ```java
-driver.findElement(By.xpath(ta('pageName:moduleName:objectName')));
+driver.findElement(byTa('pageName:moduleName:objectName'));
 ```

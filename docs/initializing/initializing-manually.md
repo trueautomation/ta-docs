@@ -35,7 +35,7 @@ WebDriver driver = new TrueAutomationDriver();
 
 4. Add the following lines into java file and use TA locators:
 ```java
-import static io.trueautomation.client.TrueAutomationHelper.*;
+import static io.trueautomation.client.TrueAutomationHelper.ta;
 ```
 
 5. Create in project root `trueautomation.json` with following line. And setup `"projectName"` from [cloud](https://app.trueautomation.io/app/projects)

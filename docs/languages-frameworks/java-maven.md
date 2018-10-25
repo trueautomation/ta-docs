@@ -28,7 +28,7 @@ Here is the example of the test, using RemoteWebDriver:
    import java.net.URL;
    import java.util.concurrent.TimeUnit;
 
-   import static io.trueautomation.client.TrueAutomationHelper.*;
+   import static io.trueautomation.client.TrueAutomationHelper.ta;
 
    public class exampleTest {
        private WebDriver driver;
@@ -96,7 +96,7 @@ Here is the example of the test, using GRID:
   import java.net.URL;
   import java.util.concurrent.TimeUnit;
   
-  import static io.trueautomation.client.TrueAutomationHelper.*;
+  import static io.trueautomation.client.TrueAutomationHelper.ta;
   
   public class exampleTest {
       private TrueAutomationDriver driver;
@@ -195,7 +195,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.*;
+import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 public class exampleTest {
     private WebDriver driver;
@@ -280,7 +280,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.*;
+import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 public class exampleTest {
     private WebDriver driver;
@@ -337,7 +337,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static io.trueautomation.client.TrueAutomationHelper.*;
+import static io.trueautomation.client.TrueAutomationHelper.ta;
 
 public class exampleTest {
     private WebDriver driver;
@@ -379,7 +379,7 @@ public class exampleTest {
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-pageFactory**
 
 <br />
-# TrueAutomation internal capabilities
+# TrueAutomation capabilities
 
 TrueAutomationDriver supports using of all WebDriver capabilities and we also expand them by our internal capabilities.
 

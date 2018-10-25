@@ -20,7 +20,7 @@
 
          import java.util.concurrent.TimeUnit;
 
-         import static io.trueautomation.client.TrueAutomationHelper.*;
+         import static io.trueautomation.client.TrueAutomationHelper.ta;
 
          public class exampleTest {
              private WebDriver driver;
@@ -63,7 +63,7 @@
 
           import java.util.concurrent.TimeUnit;
 
-          import static io.trueautomation.client.TrueAutomationHelper.*;
+          import static io.trueautomation.client.TrueAutomationHelper.byTa;
 
           public class exampleTest {
               private WebDriver driver;

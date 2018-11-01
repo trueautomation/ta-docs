@@ -37,7 +37,20 @@ here’s a link
 
     Also, the special TA buttons will be added to your code only in places where just TA locators are used. TA button will not be displayed in cases where you use TA locator + Regular locator or just Regular locator (IDs, names, XPath, etc)
 
-    ![Picker](../_images/taButton.png 'TA Button')
+
+<!-- tabs:start -->
+
+<!-- tab:Java -->
+
+![Picker](../_images/taButton.png 'TA Button')
+
+<!-- tab:Ruby -->
+
+![Picker](../_images/taButton.png 'TA Button')
+<!-- tabs:end -->
+
+
+
 
     [See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/trueautomation-vs-selenium?id=capybara-example)
 2. Click on the orange TA button in your code. Once you click, a new browser session will be initiated and you will have to pick the element, corresponding to a locator in your code.

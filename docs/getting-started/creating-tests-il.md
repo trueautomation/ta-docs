@@ -1,5 +1,3 @@
-# Creating your first test
-
 ## TrueAutomation using Java/Maven
 
 1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))

@@ -2,8 +2,10 @@
   * [Installation Client](/getting-started/installation.md)
   * [API Key](/getting-started/api-key.md)
   * [Project setup](/getting-started/project-setup.md)
+  * [Using TA locators](/getting-started/ta-locators.md)
+  * [Using the Element Picker](/getting-started/using-element-picker.md)
+  * [Creating tests, using Initial locators](/getting-started/creating-tests-il.md)
   * [TrueAutomation vs Selenium](/getting-started/trueautomation-vs-selenium.md)
-  * [Creating your first test](/getting-started/creating-your-first-test.md)
 
 
 * **TrueAutomation Client**
@@ -21,7 +23,6 @@
  * [Java/Maven](/languages-frameworks/java-maven.md)
  * [Ruby/Capybara](/languages-frameworks/ruby-capybara.md)
 
-* [**Element picker**](/element-picker/element-picker.md)
 
 * [**Technology support**](/support/technology-support.md)
 * [**Troubleshooting**](/support/troubleshooting.md)

@@ -379,6 +379,7 @@ public class exampleTest {
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-pageFactory**
 
 <br />
+
 # TrueAutomation capabilities
 
 TrueAutomationDriver supports using of all WebDriver capabilities and we also expand them by our internal capabilities.

@@ -34,7 +34,7 @@ Also, the special TA buttons will be added to your code only in places where jus
 <!-- tab:Java -->
 ![Picker](../_images/taButton.png 'TA Button')
 <!-- tab:Ruby -->
-![Picker](../_images/taButton_ruby.png 'TA Button')
+![Picker](../_images/taButton-ruby.png 'TA Button')
 <!-- tabs:end -->
 
 [See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=capybara-example)

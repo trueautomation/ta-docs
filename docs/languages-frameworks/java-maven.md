@@ -179,7 +179,7 @@ capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
 WebDriver driver = new TrueAutomationDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 ```
 
-After all changes the text should look like:
+After all changes the test should look like:
 ```java
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.trueautomation.client.driver.TrueAutomationDriver;

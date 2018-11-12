@@ -39,7 +39,7 @@ Also, the special TA buttons will be added to your code only in places where jus
 ![Picker](../_images/taButton-ruby.png 'TA Button')
 <!-- tabs:end -->
 
-[See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=capybara-example)
+[See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=example)
 
 2. Click on the orange TA button in your code. Once you click, a new browser session will be initiated and you will have to pick the element, corresponding to a locator in your code.
     The same browser session will be used for elements picking until you close the browser window or close your project.

@@ -31,13 +31,15 @@ If the project is TrueAutomation-based, we will define that and automatically st
 Also, the special TA buttons will be added to your code only in places where just TA locators are used. TA button will not be displayed in cases where you use TA locator + Regular locator or just Regular locator (IDs, names, XPath, etc)
 
 <!-- tabs:start -->
-<!-- tab:Java -->
+#### ** Java **
+
 ![Picker](../_images/taButton.png 'TA Button')
-<!-- tab:Ruby -->
+#### ** Ruby **
+
 ![Picker](../_images/taButton-ruby.png 'TA Button')
 <!-- tabs:end -->
 
-[See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=capybara-example)
+[See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=example)
 
 2. Click on the orange TA button in your code. Once you click, a new browser session will be initiated and you will have to pick the element, corresponding to a locator in your code.
     The same browser session will be used for elements picking until you close the browser window or close your project.
@@ -57,9 +59,9 @@ Also, the special TA buttons will be added to your code only in places where jus
 **Once the element is detected and recorded by TrueAutomation, a confirmation popup will be displayed. Now go back to your code, you will see that the recorded TA locator color is changed from red to green.**
 
 <!-- tabs:start -->
-<!-- tab:Java -->
+#### ** Java **
 ![Picker](../_images/taLocatorColor.png 'TA locator')
-<!-- tab:Ruby -->
+#### ** Ruby **
 ![Picker](../_images/taLocatorColor-ruby.png 'TA locator')
 <!-- tabs:end -->
 

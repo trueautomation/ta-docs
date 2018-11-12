@@ -266,7 +266,7 @@ end
 
 Before you run the test, make sure that you have updated capabilities(`deviceName`, `automationName`, `udid`, `platformName`, `browserName`)  according to the capabilities to the device, used for running the test.
 
-**Check out an example of an actual test here: https://github.com/shapovalovei/**
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-remoteWebDriver**
 
 ## API example
 

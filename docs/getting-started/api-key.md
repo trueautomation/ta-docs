@@ -4,7 +4,12 @@ Each user who registered an account on [TrueAutomation.IO](https://app.trueautom
 
 ![API Key Сloud](../_images/api-key.png 'API Key Сloud')
 
-The API key is needed to grant access to your TrueAutomation account. It is set once, the first time you make a `trueautomation init`.
+**The API key is needed to grant access to your TrueAutomation account. You have 2 options for authorize trueautomation client via setting up api-key.**
+* to use the command `trueautomation api-key <API-KEY>`. (More info: [trueautomation commads](/client/commands.md#setting-api-key))
+
+![API Key Сlient](../_images/api-key-command.png 'API Key Сlient')
+
+* when the first time you make a `trueautomation init`.
 
 ![API Key Сlient](../_images/api-key-client.png 'API Key Сlient')
 

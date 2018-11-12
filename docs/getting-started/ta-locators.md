@@ -18,26 +18,10 @@ This way, you use TA "smart locators" in your tests, and Initial locators are us
 
 Also, do not forget that you can completely get rid of using the Initial locators when creating your tests via the [TrueAutomation.IO Element Picker](https://trueautomation.io/docs/#/getting-started/using-element-picker), which allows you to record the desired element on a web page by clicking on it with the mouse cursor.
 
-## Capybara example {docsify-ignore}
+## Example {docsify-ignore}
 
-Capybara without TrueAutomation locator:
-```ruby
-find(:xpath, '//locator'))
-```
-
-Capybara with TrueAutomation locator:
-```ruby
-find(:xpath, ta('pageName:moduleName:objectName', '//locator'))
-```
-
-Once your elements are in object repository and you want to use them in a test. You can do it like this:
-
-```ruby
-find(ta('pageName:moduleName:objectName'))
-```
-
-## Java example {docsify-ignore}
-
+<!-- tabs:start -->
+#### **Java**
 Java without TrueAutomation locator:
 ```java
 driver.findElement(By.xpath("//locator"));
@@ -56,3 +40,18 @@ import static io.trueautomation.client.TrueAutomationHelper.byTa;
 
 driver.findElement(byTa('pageName:moduleName:objectName'));
 ```
+
+#### ** Capybara **
+Capybara without TrueAutomation locator:
+```ruby
+find(:xpath, '//locator'))
+```
+Capybara with TrueAutomation locator:
+```ruby
+find(:xpath, ta('pageName:moduleName:objectName', '//locator'))
+```
+Once your elements are in object repository and you want to use them in a test. You can do it like this:
+```ruby
+find(ta('pageName:objectName'))
+```
+<!-- tabs:end -->

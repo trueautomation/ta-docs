@@ -14,11 +14,11 @@ Selenium locators (`Initial locators`) are used to find element for the first ti
 
 The next time running the test, we compare the Initial locator of element in the object repository and the Initial locator in your code. If the Initial locator in code has not changed, then a TA "smart locator" will be used to find the element. Otherwise, if the Initial locator was changed, then a new Initial locator will be used to locate the element and the TA locator will be overwritten in the object repository.
 
-This way, you use TA "smart locators" in your tests, and Initial locators are used only to specify the element that you should write or rewrite. At the same time, if elements are already recorded to the object repository, you can get rid of Initial locators in your code and use only TA locators. [See examples when (only) TA locators are used below](https://trueautomation.io/docs/#/getting-started/ta-locators?id=capybara-example)
+This way, you use TA "smart locators" in your tests, and Initial locators are used only to specify the element that you should write or rewrite. At the same time, if elements are already recorded to the object repository, you can get rid of Initial locators in your code and use only TA locators. [See examples when (only) TA locators are used below](https://trueautomation.io/docs/#/getting-started/ta-locators?id=example)
 
 Also, do not forget that you can completely get rid of using the Initial locators when creating your tests via the [TrueAutomation.IO Element Picker](https://trueautomation.io/docs/#/getting-started/using-element-picker), which allows you to record the desired element on a web page by clicking on it with the mouse cursor.
 
-## Example {docsify-ignore}
+## Example: {docsify-ignore}
 
 <!-- tabs:start -->
 #### **Java**

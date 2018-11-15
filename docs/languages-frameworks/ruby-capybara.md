@@ -162,6 +162,112 @@ end
 
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-grid**
 
+## Appium
+TrueAutomation supports [Appium](https://appium.io/).
+Ensure you have Appium and all of Appium's dependencies installed If you don’t have, use the Appium documentation to install it.
+
+
+Run Appium server, using Terminal, appium desktop app. By default Appium is run on port number `4723`.
+
+Example:
+
+Set up driver for iOS (make sure that you use your device udid):
+```ruby
+Capybara.register_driver :true_automation_driver do |app|
+      caps = Selenium::WebDriver::Remote::Capabilities.new
+      caps['automationName'] = 'XCUITest'
+      caps['platformName'] = 'iOS'
+      caps['deviceName'] = 'iPhone X (11.4)'
+      caps['udid'] = '1DA711FE-C66B-4538-9147-10852CF5F1ED'
+      caps['browserName'] = 'safari'
+      TrueAutomation::Driver::Capybara.new(app, browser: :remote,
+                                           url: 'http://localhost:4723/wd/hub',
+                                           desired_capabilities: caps)
+    end
+```
+
+Set up driver for Android (make sure that you use your device udid):
+```ruby
+Capybara.register_driver :true_automation_driver do |app|
+      caps = Selenium::WebDriver::Remote::Capabilities.new
+      caps['platformName'] = 'Android'
+      caps['browserName'] = 'chrome'
+      caps['deviceName'] = 'Android'
+      TrueAutomation::Driver::Capybara.new(app, browser: :remote,
+                                           url: 'http://localhost:4723/wd/hub',
+                                           desired_capabilities: caps)
+    end
+
+```
+
+After all changes the spec_helper.rb should look like:
+```ruby
+require 'bundler/setup'
+require 'ostruct'
+require 'selenium-webdriver'
+require 'rspec'
+require 'rspec-steps'
+require 'capybara/rspec'
+require 'true_automation/rspec'
+require 'true_automation/driver/capybara'
+
+def camelize(str)
+  str.split('_').map {|w| w.capitalize}.join
+end
+
+spec_dir = File.dirname(__FILE__)
+$LOAD_PATH.unshift(spec_dir)
+
+$data = {}
+Dir[File.join(spec_dir, 'fixtures/**/*.yml')].each {|f|
+  title = File.basename(f, '.yml')
+  $data[title] = OpenStruct.new(YAML::load(File.open(f)))
+}
+
+$data = OpenStruct.new($data)
+Dir[File.join(spec_dir, 'support/**/*.rb')].each {|f| require f}
+
+
+RSpec.configure do |config|
+  config.include Capybara::DSL
+  config.include TrueAutomation::DSL
+
+
+  Capybara.register_driver :true_automation_driver do |app|
+    caps = Selenium::WebDriver::Remote::Capabilities.new
+    caps['automationName'] = 'XCUITest'
+    caps['platformName'] = 'iOS'
+    caps['deviceName'] = 'iPhone X (11.4)'
+    caps['udid'] = '1DA711FE-C66B-4538-9147-10852CF5F1ED'
+    caps['browserName'] = 'safari'
+    TrueAutomation::Driver::Capybara.new(app, browser: :remote,
+                                         url: 'http://localhost:4723/wd/hub',
+                                         desired_capabilities: caps)
+
+  end
+
+
+  Capybara.configure do |capybara|
+    capybara.run_server = false
+    capybara.default_max_wait_time = 5
+    capybara.default_driver = :true_automation_driver
+  end
+
+
+  Dir[File.join(spec_dir, 'support/**/*.rb')].each {|f|
+    base = File.basename(f, '.rb')
+    klass = camelize(base)
+    config.include Module.const_get(klass)
+  }
+
+end
+
+```
+
+Before you run the test, make sure that you have updated capabilities(`deviceName`, `automationName`, `udid`, `platformName`, `browserName`)  according to the capabilities to the device, used for running the test.
+
+**Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-remoteWebDriver**
+
 ## API example
 
 ```ruby

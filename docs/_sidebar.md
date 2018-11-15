@@ -11,7 +11,7 @@
 * **TrueAutomation Client**
   * [Trueautomation Commands](/client/commands.md)
   * [Installation Client](/client/installation-client.md)
-  * [Uninstallation Client](/client/uninstallation-client.md)
+  * [Uninstalling Client](/client/uninstalling-client.md)
 
 
 * **Initializing project**

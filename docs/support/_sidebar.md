@@ -16,7 +16,7 @@
 
 * **Initializing project**
   * [Initializing automatically](/initializing/initializing-automatically.md)
-  * [Initializing manualy](/initializing/initializing-manually.md)
+  * [Initializing manually](/initializing/initializing-manually.md)
 
 
 *  **Languages & Frameworks**
@@ -26,5 +26,4 @@
 
 * [**Technology support**](/support/technology-support.md)
 * [**Troubleshooting**](/support/troubleshooting.md)
-* [**Roadmap**](/support/roadmap.md)
 

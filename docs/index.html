@@ -27,7 +27,10 @@
         loadNavbar: true,
         autoHeader: true,
         loadSidebar: true,
-      //  logo: '_images/logo.svg',
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md',
+            '/.*/_navbar.md': '/_navbar.md'
+        },
         maxLevel: 1,
         subMaxLevel: 2,
         auto2top: true,

@@ -1,3 +1,5 @@
+<!-- docs/_sidebar.md -->
+
 * **Getting started**
   * [Installation Client](/getting-started/installation.md)
   * [API Key](/getting-started/api-key.md)

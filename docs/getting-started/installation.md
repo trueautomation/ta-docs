@@ -6,7 +6,7 @@ So, you’ve just finished [registration](https://app.trueautomation.io/auth/sig
 Installing TrueAutomation client is extremely easy. The installer will automatically add TrueAutomation client to your system path so that it is available in terminals.
 If it is not found, please try logging out and logging back in to your system (this is particularly necessary sometimes for Windows).
 
-### UNIX operating system {docsify-ignore}
+### Mac OS X and Linux operating system {docsify-ignore}
 
 On your computer go to Terminal and install TrueAutomation Client by running this command:
 ```bash

@@ -2,8 +2,8 @@
 
 Before using the following tools, please make sure that you have:
 - [Registered TrueAutomation.IO account](https://app.trueautomation.io/auth/signup)
-- [Installed TrueAutomation client](/getting-started/installation-client.md ':target=_blank')
-- [Initialized project](/getting-started/installation-client.md ':target=_blank')
+- [Installed TrueAutomation client](/getting-started/installation.md ':target=_blank')
+- [Initialized project](/initializing/initializing-automatically.md ':target=_blank')
 
 ## RemoteWebDriver
 TrueAutomation supports [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver). To use TrueAutomationDriver as RemoteWebDriver, set the following parameters into TrueAutomationDriver:

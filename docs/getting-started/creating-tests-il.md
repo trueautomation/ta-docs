@@ -163,3 +163,66 @@ The test ran and was successful.
 The test ran and was successful.
 
 **Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-capybara**
+
+## TrueAutomation with JavaScript/WebdriverIO
+
+1. Initialize TrueAutomation project on your machine in the preferred folder, (checkout the [initializing guide](/initializing/initializing-automatically.md) for details).
+
+2. Open the project in your integrated development environment (IDE).
+
+3. Create a file for your test by following the directory: `./test/specs/**/*.js` inside your project.
+
+4. First you need to load the `trueautomation-helper` module:
+
+   ```javascript
+       const ta = require('trueautomation-helper').ta;
+   ```
+5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`, more info [here](/getting-started/ta-locators.md)
+
+   ```javascript 
+        $('a.login-btn').click(); -> $(ta('loginBtn', 'a.login-btn')).click();
+   ```
+   
+   The finally test will look like this:
+   
+   ```javascript
+       const ta = require('trueautomation-helper').ta;
+       
+       describe('TrueAutomation.IO + WebdirverIO', () => {   
+           it('Test example', () => {
+               browser.setTimeout({ 'implicit': 5000 });
+       
+               browser.url('https://trueautomation.io');   
+               $(ta('loginBtn', 'a.login-btn')).click();
+               $(ta('signUpBtn', 'div.sign-up-container > a')).click();
+               $(ta('emailFld', "[name='email']")).setValue('your@gmail.com');
+           });
+       });
+   ```
+   
+   You can also find this example in your project!
+   
+   Once your elements are already recorded, you can get rid of Regular locators in your code and use only TA locators:
+   
+   ```javascript
+          const ta = require('trueautomation-helper').ta;
+          
+          describe('TrueAutomation.IO + WebdirverIO', () => {   
+              it('Test example', () => {
+                  browser.setTimeout({ 'implicit': 5000 });
+          
+                  browser.url('https://trueautomation.io');   
+                  $(ta('loginBtn')).click();
+                  $(ta('signUpBtn')).click();
+                  $(ta('emailFld')).setValue('your@gmail.com');
+              });
+          });
+    ```
+    
+6. Run `npm install` and then `npm test` to check your test. You will get an info in the command line:
+
+[screenshot]
+
+The test was successful!
+
+**Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-wdioV5.git**

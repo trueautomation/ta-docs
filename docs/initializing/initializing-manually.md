@@ -100,3 +100,53 @@ config.include TrueAutomation::DSL
 ```
 
 9. Then go to the [Creating your first test in TrueAutomation using Capybara/RSpec](/getting-started/creating-your-first-test.md#trueautomation-test-using-capybararspec) and create your first test.
+
+## Initializing JavaScript/WebdriverIO project
+
+This clause explains how to implement TrueAutomation into JavaScript/WebdriverIO project step by step.
+Firstly, you must have a fully configured and working JavaScript/WebdriverIO project. If you do not have such a project, you can [clone our sample project with Github](https://github.com/shapovalovei/wdioV5-example.git).
+
+**And now take the following steps:**
+
+1. Add the required dependencies in your `package.json` file:
+
+```json
+{
+  "devDependencies": {
+    "trueautomation-helper": "~0.3",
+    "wdio-trueautomation-service": "~0.3"
+  }
+}
+```
+
+2. Then you need to add the `trueautomation` service to your services array in the `wdio.conf.js` file:
+
+```js
+// wdio.conf.js
+exports.config = {
+  // ...
+  services: ['trueautomation'],
+  // ...
+};
+```
+
+3. Specify the `path` in the `wdio.conf.js` file (thus, override the default path of `'/wd/hub'`):
+
+```js
+// wdio.conf.js
+exports.config = {
+  // ...
+  path: '/',
+  // ...
+};
+```
+
+4. Create the `trueautomation.json` file in the project root directory and set the following "name": "value" pair to bind your project from the [cloud](https://app.trueautomation.io/app/projects)
+
+```json
+{
+  "projectName": "your-project-name"
+}
+```
+
+5. Go to [Creating tests, using TrueAutomation and JavaScript/WebdriverIO](getting-started/creating-tests-il?id=trueautomation-with-javascriptwebdriverio) and write your first test.

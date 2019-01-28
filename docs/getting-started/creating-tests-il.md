@@ -205,23 +205,23 @@ The test ran and was successful.
    Once your elements are already recorded, you can get rid of Regular locators in your code and use only TA locators:
    
    ```javascript
-          const ta = require('trueautomation-helper').ta;
+       const ta = require('trueautomation-helper').ta;
           
-          describe('TrueAutomation.IO + WebdirverIO', () => {   
-              it('Test example', () => {
-                  browser.setTimeout({ 'implicit': 5000 });
+       describe('TrueAutomation.IO + WebdirverIO', () => {   
+           it('Test example', () => {
+               browser.setTimeout({ 'implicit': 5000 });
           
-                  browser.url('https://trueautomation.io');   
-                  $(ta('loginBtn')).click();
-                  $(ta('signUpBtn')).click();
-                  $(ta('emailFld')).setValue('your@gmail.com');
-              });
-          });
+               browser.url('https://trueautomation.io');   
+               $(ta('loginBtn')).click();
+               $(ta('signUpBtn')).click();
+               $(ta('emailFld')).setValue('your@gmail.com');  
+           });  
+       });
     ```
     
 6. Run `npm install` and then `npm test` to check your test. You will get an info in the command line:
 
-[screenshot]
+    ![Test output](../_images/wdio-test.png 'Test output')
 
 The test was successful!
 

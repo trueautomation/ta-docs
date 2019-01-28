@@ -115,45 +115,45 @@ The test ran and was successful.
    It can look like this if it is the very first time you run TrueAutomation
 
    ```ruby
-    require 'spec_helper'
+       require 'spec_helper'
 
-    describe 'TrueAutomation.IO capybara example' do
-      it 'Test example' do
-        visit 'https://trueautomation.io/'
+       describe 'TrueAutomation.IO capybara example' do
+           it 'Test example' do
+               visit 'https://trueautomation.io/'
 
-        find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click
+               find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click
 
-        find(:css, ta('ta:mainPage:signupBtn', 'div.sign-up-container > a')).click
+               find(:css, ta('ta:mainPage:signupBtn', 'div.sign-up-container > a')).click
 
-        fill_in ta('ta:loginPage:email', 'email'), with: 'your@mail.com'
-        sleep 3
-      end
-    end
+               fill_in ta('ta:loginPage:email', 'email'), with: 'your@mail.com'
+               sleep 3
+           end
+       end
    ```
 
    It can look like this, if you have previously run TrueAutomation
 
    ```ruby
-    require 'spec_helper'
+       require 'spec_helper'
 
-    describe 'TrueAutomation.IO capybara example' do
-      it 'Test example' do
-        visit 'https://trueautomation.io/'
+       describe 'TrueAutomation.IO capybara example' do
+           it 'Test example' do
+               visit 'https://trueautomation.io/'
 
-        find(ta('ta:mainPage:loginBtn')).click
+               find(ta('ta:mainPage:loginBtn')).click
 
-        find(ta('ta:mainPage:signupBtn')).click
+               find(ta('ta:mainPage:signupBtn')).click
 
-        fill_in ta('ta:loginPage:email'), with: 'your@mail.com'
-        sleep 3
-      end
-    end
+               fill_in ta('ta:loginPage:email'), with: 'your@mail.com'
+               sleep 3
+           end
+       end
    ```
 
 5. To run your test file use the command below in your terminal:
 
    ```bash
-    rspec spec/test_scenario/*rb
+        rspec spec/test_scenario/*rb
    ```
 
 6. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
@@ -180,7 +180,8 @@ The test ran and was successful.
 5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`, more info [here](/getting-started/ta-locators.md)
 
    ```javascript 
-        $('a.login-btn').click(); -> $(ta('loginBtn', 'a.login-btn')).click();
+        $('a.login-btn').click(); // before 
+        $(ta('loginBtn', 'a.login-btn')).click(); // after
    ```
    
    The finally test will look like this:

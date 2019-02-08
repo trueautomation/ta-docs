@@ -1,8 +1,8 @@
-There is a special helper `ta(name, locator)`.
+There is a special helper `ta(ta-name, locator)`.
 
 In order to use TrueAutomation Smart Locators use `ta(ta_name, locator)` instead of your locators.
 
-`ta_name` - is TrueAutomation Element name. We recommend to use namespaced syntax. E.g. `pageName:widgetName:elementName`
+`ta-name` - is TrueAutomation Element name. We recommend to use namespaced syntax. E.g. : `pageName:widgetName:elementName`
 
 `locator` - is any Selenium locator (ID, name, XPath, etc).
 
@@ -16,12 +16,13 @@ The next time running the test, we compare the Initial locator of element in the
 
 This way, you use TA "smart locators" in your tests, and Initial locators are used only to specify the element that you should write or rewrite. At the same time, if elements are already recorded to the object repository, you can get rid of Initial locators in your code and use only TA locators. [See examples when (only) TA locators are used below](https://trueautomation.io/docs/#/getting-started/ta-locators?id=example)
 
-Also, do not forget that you can completely get rid of using the Initial locators when creating your tests via the [TrueAutomation.IO Element Picker](https://trueautomation.io/docs/#/getting-started/using-element-picker), which allows you to record the desired element on a web page by clicking on it with the mouse cursor.
+Also, do not forget that you can completely get rid of using the Initial locators when creating your tests via the [TrueAutomation.io Element Picker](https://trueautomation.io/docs/#/getting-started/using-element-picker), which allows you to record the desired element on a web page by clicking on it with the mouse cursor.
 
 ## Example: {docsify-ignore}
 
 <!-- tabs:start -->
 #### **Java**
+
 Java without TrueAutomation locator:
 ```java
 driver.findElement(By.xpath("//locator"));
@@ -41,15 +42,18 @@ import static io.trueautomation.client.TrueAutomationHelper.byTa;
 driver.findElement(byTa('pageName:moduleName:objectName'));
 ```
 
-#### ** Capybara **
+#### **Capybara**
+
 Capybara without TrueAutomation locator:
 ```ruby
 find(:xpath, '//locator'))
 ```
+
 Capybara with TrueAutomation locator:
 ```ruby
 find(:xpath, ta('pageName:moduleName:objectName', '//locator'))
 ```
+
 Once your elements are in object repository and you want to use them in a test. You can do it like this:
 ```ruby
 find(ta('pageName:objectName'))

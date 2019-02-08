@@ -1,172 +1,218 @@
-## TrueAutomation using Java/Maven
+## TrueAutomation with Java
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
+1. Initialize TrueAutomation project on your machine in the preferred directory. For details checkout the [initializing guide](/initializing/initializing-automatically.md)
 
-2. Open your project in your integrated development environment (IDE)
+2. Open the project in your integrated development environment (IDE).
 
-3. Create simple test file
+3. Create a new java class for your test by following the directory: `./src/test/java/*.java` inside your project.
 
-   It can look like this if it is the very first time you run TrueAutomation
+4. First you need to import the `TrueAutomationDriver` class and the `ta` method, which belongs to the `TrueAutomationHelper` class:
 
-      ```java
-         import io.trueautomation.client.driver.TrueAutomationDriver;
-         import org.openqa.selenium.By;
-         import org.openqa.selenium.WebDriver;
-         import org.testng.annotations.AfterTest;
-         import org.testng.annotations.BeforeTest;
-         import org.testng.annotations.Test;
+```java
+import io.trueautomation.client.driver.TrueAutomationDriver;
+import static io.trueautomation.client.TrueAutomationHelper.ta;
+```
 
-         import java.util.concurrent.TimeUnit;
+5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`. More info: [here](/getting-started/ta-locators.md)
 
-         import static io.trueautomation.client.TrueAutomationHelper.ta;
+```java
+private By loginBtn = By.cssSelector("a.login-btn"); // before
+private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn")); // after
+```
 
-         public class exampleTest {
-             private WebDriver driver;
-             private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
-             private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
-             private By emailFl = By.name(ta("ta:loginPage:email", "email"));
+The final test will look like this:
 
-             @BeforeTest
-             public void beforeTest() {
-                 driver = new TrueAutomationDriver();
-                 driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-             }
+```java
+import io.trueautomation.client.driver.TrueAutomationDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-             @Test
-             public void exampleTest() {
-                 driver.get("https://trueautomation.io");
+import java.util.concurrent.TimeUnit;
 
-                 driver.findElement(loginBtn).click();
-                 driver.findElement(signupBtn).click();
+import static io.trueautomation.client.TrueAutomationHelper.ta;
 
-                 driver.findElement(emailFl).sendKeys("your@mail.com");
-             }
+public class exampleTest {
+    private WebDriver driver;
+    private By loginBtn = By.cssSelector(ta("ta:mainPage:loginBtn", "a.login-btn"));
+    private By signupBtn = By.cssSelector(ta("ta:mainPage:signupBtn", "div.sign-up-container > a"));
+    private By emailFl = By.name(ta("ta:loginPage:email", "email"));
 
-             @AfterTest
-             public void afterTest() {
-                 driver.quit();
-             }
-         }
-      ```
+    @BeforeTest
+    public void beforeTest() {
+        driver = new TrueAutomationDriver();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
 
-   It can look like this if you have previously run TrueAutomation
+    @Test
+    public void exampleTest() {
+        driver.get("https://trueautomation.io");
+        
+        driver.findElement(loginBtn).click();
+        driver.findElement(signupBtn).click();
+        
+        driver.findElement(emailFl).sendKeys("your@mail.com");
+    }
+    
+    @AfterTest
+    public void afterTest() {
+        driver.quit();
+    }
+}
+```
 
-   ```java
-          import io.trueautomation.client.driver.TrueAutomationDriver;
-          import org.openqa.selenium.By;
-          import org.openqa.selenium.WebDriver;
-          import org.testng.annotations.AfterTest;
-          import org.testng.annotations.BeforeTest;
-          import org.testng.annotations.Test;
+You can also find this example in the project!
 
-          import java.util.concurrent.TimeUnit;
+Once your elements are recorded, you can get rid of Regular locators in your code and use only TA locators. To do this, use the special method `byTa`:
 
-          import static io.trueautomation.client.TrueAutomationHelper.byTa;
+```java
+import static io.trueautomation.client.TrueAutomationHelper.byTa;
+```
 
-          public class exampleTest {
-              private WebDriver driver;
+As a result, the test will look like this:
 
-              @BeforeTest
-              public void beforeTest() {
-                  driver = new TrueAutomationDriver();
-                  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-              }
+```java
+import io.trueautomation.client.driver.TrueAutomationDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-              @Test
-              public void exampleTest() {
-                  driver.get("https://trueautomation.io");
+import java.util.concurrent.TimeUnit;
 
-                  driver.findElement(byTa("ta:mainPage:loginBtn")).click();
-                  driver.findElement(byTa("ta:mainPage:signupBtn")).click();
+import static io.trueautomation.client.TrueAutomationHelper.byTa;
 
-                  driver.findElement(byTa("ta:loginPage:email")).click();
-              }
+public class exampleTest {
+    private WebDriver driver;
+    
+    @BeforeTest
+    public void beforeTest() {
+        driver = new TrueAutomationDriver();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    }
 
-              @AfterTest
-              public void afterTest() {
-                  driver.quit();
-              }
-          }
-         ```
-4. To run your test file use the command below in your terminal:
+    @Test
+    public void exampleTest() {
+        driver.get("https://trueautomation.io");
+        
+        driver.findElement(byTa("ta:mainPage:loginBtn")).click();
+        driver.findElement(byTa("ta:mainPage:signupBtn")).click();
+        
+        driver.findElement(byTa("ta:loginPage:email")).click();
+    }
 
-   ```bash
-    mvn -Dtest=exampleTest test
-   ```
+    @AfterTest
+    public void afterTest() {
+        driver.quit();
+    }
+}
+```
 
-5. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
+4. To run your test file use the command below in your command line:
 
-    ![Test output](../_images/java-test.png 'Test output')
+<!-- tabs:start -->
+#### **Maven**
+```bash
+mvn -Dtest=yourTest test
+```  
 
-The test ran and was successful.
+#### **Gradle**
+```bash
+gradle test --tests yourTest
+```   
+<!-- tabs:end -->
+
+5. A new browser window will be opened, test actions will be performed. You’ll get the test info in your command line:
+
+<!-- tabs:start -->
+#### **Maven**
+![Test output](../_images/maven-test.png 'Test output')
+
+#### **Gradle**
+![Test output](../_images/gradle-test.png 'Test output')
+<!-- tabs:end -->
 
 **Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-java**
 
-## TrueAutomation test using Capybara/RSpec
+## TrueAutomation with Capybara/RSpec
 
-1. Initialize TrueAutomation project on your machine in the preferred folder. (for details checkout the [initializing guide](/initializing/initializing-automatically.md))
+1. Initialize TrueAutomation project on your machine in the preferred directory. (for details checkout the [initializing guide](/initializing/initializing-automatically.md)).
 
-2. Open your project in your integrated development environment (IDE).
+2. Open the project in your integrated development environment (IDE).
 
-3. Open folder `spec/` inside of your project, if you don’t have one - create it.
+3. Create a file for your test by following the directory: `./spec/test_scenario/*.rb` inside your project.
 
-4. Create simple test file in `spec/` folder.
+4. First you need to add the `spec_helper` module:
 
-   It can look like this if it is the very first time you run TrueAutomation
+```ruby
+require 'spec_helper'
+```
 
-   ```ruby
-       require 'spec_helper'
+5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`. More info: [here](/getting-started/ta-locators.md)
 
-       describe 'TrueAutomation.IO capybara example' do
-           it 'Test example' do
-               visit 'https://trueautomation.io/'
+```ruby
+find(:css, 'a.login-btn').click # before
+find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click # after
+```
 
-               find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click
+The final test will look like this:
 
-               find(:css, ta('ta:mainPage:signupBtn', 'div.sign-up-container > a')).click
+```ruby
+require 'spec_helper'
 
-               fill_in ta('ta:loginPage:email', 'email'), with: 'your@mail.com'
-               sleep 3
-           end
-       end
-   ```
+describe 'TrueAutomation.IO capybara example' do
+    it 'Test example' do
+        visit 'https://trueautomation.io/'
 
-   It can look like this, if you have previously run TrueAutomation
+        find(:css, ta('ta:mainPage:loginBtn', 'a.login-btn')).click
 
-   ```ruby
-       require 'spec_helper'
+        find(:css, ta('ta:mainPage:signupBtn', 'div.sign-up-container > a')).click
 
-       describe 'TrueAutomation.IO capybara example' do
-           it 'Test example' do
-               visit 'https://trueautomation.io/'
+        fill_in ta('ta:loginPage:email', 'email'), with: 'your@mail.com'
+        sleep 3
+    end
+end
+```
 
-               find(ta('ta:mainPage:loginBtn')).click
+You can also find this example in the project!
+  
+Once your elements are recorded, you can get rid of Regular locators in your code and use only TA locators:
 
-               find(ta('ta:mainPage:signupBtn')).click
+```ruby
+require 'spec_helper'
 
-               fill_in ta('ta:loginPage:email'), with: 'your@mail.com'
-               sleep 3
-           end
-       end
-   ```
+describe 'TrueAutomation.IO capybara example' do
+    it 'Test example' do
+        visit 'https://trueautomation.io/'
 
-5. To run your test file use the command below in your terminal:
+        find(ta('ta:mainPage:loginBtn')).click
 
-   ```bash
-        rspec spec/test_scenario/*rb
-   ```
+        find(ta('ta:mainPage:signupBtn')).click
 
-6. A new chrome window will be opened test actions should be performed. You’ll get the info in terminal:
+        fill_in ta('ta:loginPage:email'), with: 'your@mail.com'
+        sleep 3
+    end
+end
+```
 
-    ![Test output](../_images/capybara-test.png 'Test output')
+6. To run your test file use the command below in your command line:
 
-The test ran and was successful.
+```bash
+rspec spec/test_scenario/*.rb
+```
+
+7. A new browser window will be opened, test actions will be performed. You’ll get the test info in your command line:
+
+![Test output](../_images/capybara-test.png 'Test output')
 
 **Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-capybara**
 
 ## TrueAutomation with JavaScript/WebdriverIO
 
-1. Initialize TrueAutomation project on your machine in the preferred folder, (checkout the [initializing guide](/initializing/initializing-automatically.md) for details).
+1. Initialize TrueAutomation project on your machine in the preferred directory, (checkout the [initializing guide](/initializing/initializing-automatically.md) for details).
 
 2. Open the project in your integrated development environment (IDE).
 
@@ -174,56 +220,54 @@ The test ran and was successful.
 
 4. First you need to load the `trueautomation-helper` module:
 
-   ```javascript
-       const ta = require('trueautomation-helper').ta;
-   ```
-5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`, more info [here](/getting-started/ta-locators.md)
+```javascript
+const ta = require('trueautomation-helper').ta;
+```
+5. Then write your test, by wrapping an element locators in special helper: `ta(ta_name, locator)`. More info: [here](/getting-started/ta-locators.md)
 
-   ```javascript 
-        $('a.login-btn').click(); // before 
-        $(ta('loginBtn', 'a.login-btn')).click(); // after
-   ```
-   
-   The finally test will look like this:
-   
-   ```javascript
-       const ta = require('trueautomation-helper').ta;
-       
-       describe('TrueAutomation.IO + WebdirverIO', () => {   
-           it('Test example', () => {
-               browser.setTimeout({ 'implicit': 5000 });
-       
-               browser.url('https://trueautomation.io');   
-               $(ta('loginBtn', 'a.login-btn')).click();
-               $(ta('signUpBtn', 'div.sign-up-container > a')).click();
-               $(ta('emailFld', "[name='email']")).setValue('your@gmail.com');
-           });
-       });
-   ```
-   
-   You can also find this example in your project!
-   
-   Once your elements are already recorded, you can get rid of Regular locators in your code and use only TA locators:
-   
-   ```javascript
-       const ta = require('trueautomation-helper').ta;
-          
-       describe('TrueAutomation.IO + WebdirverIO', () => {   
-           it('Test example', () => {
-               browser.setTimeout({ 'implicit': 5000 });
-          
-               browser.url('https://trueautomation.io');   
-               $(ta('loginBtn')).click();
-               $(ta('signUpBtn')).click();
-               $(ta('emailFld')).setValue('your@gmail.com');  
-           });  
-       });
-    ```
-    
-6. Run `npm install` and then `npm test` to check your test. You will get an info in the command line:
+```javascript 
+$('a.login-btn').click(); // before 
+$(ta('loginBtn', 'a.login-btn')).click(); // after
+```
 
-    ![Test output](../_images/wdio-test.png 'Test output')
+The final test will look like this:
 
-The test was successful!
+```javascript
+const ta = require('trueautomation-helper').ta;
 
-**Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-wdioV5.git**
+describe('TrueAutomation.IO + WebdirverIO', () => {   
+   it('Test example', () => {
+        browser.setTimeout({ 'implicit': 5000 });
+        
+        browser.url('https://trueautomation.io');   
+        $(ta('loginBtn', 'a.login-btn')).click();
+        $(ta('signUpBtn', 'div.sign-up-container > a')).click();
+        $(ta('emailFld', "[name='email']")).setValue('your@gmail.com');
+   });
+});
+```
+
+You can also find this example in the project!
+
+Once your elements are recorded, you can get rid of Regular locators in your code and use only TA locators:
+
+```javascript
+const ta = require('trueautomation-helper').ta;
+  
+describe('TrueAutomation.IO + WebdirverIO', () => {   
+   it('Test example', () => {
+       browser.setTimeout({ 'implicit': 5000 });
+  
+       browser.url('https://trueautomation.io');   
+       $(ta('loginBtn')).click();
+       $(ta('signUpBtn')).click();
+       $(ta('emailFld')).setValue('your@gmail.com');  
+   });  
+});
+```
+
+6. Run `npm install` and then `npm test` to check your test. A new browser window will be opened, test actions will be performed. You’ll get the test info in your command line:
+
+![Test output](../_images/wdio-test.png 'Test output')
+
+**Check out an example of an actual test here:  https://github.com/shapovalovei/trueautomation-wdioV5**

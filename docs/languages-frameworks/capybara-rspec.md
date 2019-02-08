@@ -1,15 +1,15 @@
 # Capybara
 
 Before using the following tools, please make sure that you have:
-- [Registered TrueAutomation.IO account](https://app.trueautomation.io/auth/signup)
+- [Registered TrueAutomation.io account](https://app.trueautomation.io/auth/signup)
 - [Installed TrueAutomation client](/getting-started/installation.md ':target=_blank')
 - [Initialized project](/initializing/initializing-automatically.md ':target=_blank')
 
-
 ## RemoteWebDriver
-TrueAutomation supports [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver). To use it, set the following parameters into TrueAutomationDriver:
-- `browser: :remote`;
-- remote address of web driver or hub.
+
+TrueAutomation supports using [RemoteWebDriver](https://github.com/SeleniumHQ/selenium/wiki/RemoteWebDriver) in the Capybara/RSpec technology stack. To use RemoteWebDriver with TrueAutomation, set the following parameters into TrueAutomationDriver:
+- the `browser: :remote` option;
+- remote address of a browser driver or WebDriver Server;
 
 ```ruby
 Capybara.register_driver :remote do |app|
@@ -17,7 +17,7 @@ Capybara.register_driver :remote do |app|
 end
 ```
 
-Here is the example of the `spec_helper.rb`, using RemoteWebDriver:
+Here is the example of the `spec_helper.rb` file for using RemoteWebDriver with TrueAutomation in this technology stack:
 
 ```ruby
 require 'bundler/setup'
@@ -71,42 +71,43 @@ end
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-remoteWebDriver**
 
 ## GRID 
-TrueAutomation supports [Selenium GRID](https://github.com/SeleniumHQ/selenium/wiki/Grid2).
 
-Firstly you need to download the Selenium Standalonde Server from [here](https://docs.seleniumhq.org/download/) to folder with your project
+TrueAutomation supports using [Selenium GRID](https://www.seleniumhq.org/docs/07_selenium_grid.jsp) in the Capybara/RSpec technology stack.
+
+To get started, make sure to download Selenium Standalone Server from [here](https://docs.seleniumhq.org/download/) into the folder with your project.
 
 ![Selenium standalone server](../_images/seleniumStandaloneServer.png 'Test output')
     
-On your computer go to Terminal and launch grid hub
+In a separate command line window, navigate to the directory, where the `selenium-server-standalone` file  is located (this is the project's root folder) and run the command below to launch grid hub:    
+
 ```bash
 java -jar selenium-server-standalone-3.14.0.jar -role hub
 ```
 
 ![Hub start](../_images/hub_start.png 'Test output')
 
-On your computer go to Terminal and launch grid node
+In a separate command line window, navigate to the directory, where the `selenium-server-standalone` file  is located (this is the project's root folder) and run the command below to launch grid node:
+
 ```bash
-java -jar selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
+java -jar selenium-server-standalone-3.14.0.jar -role node -hub http://localhost:4444/grid/register
 ```
+
 ![Node start](../_images/node_start.png 'Test output')
 
-Here is the example of the test, using GRID:
+You will also need a driver for the browser where you want to execute your tests. This driver is used by WebDriver Server to start a browser of your choice. So make sure that one of the following conditions is met:
 
-```ruby
-require 'spec_helper'
+- A browser driver binary is in the system path;
+- The WebDriver Server (node) was started with path to your browser driver:
 
-feature 'TrueAutomation.IO capybara example' do
-
-  scenario 'Test example' do
-    visit 'https://trueautomation.io/'
-    find(:css, ta('trueautomationio:home:loginBtn', 'a.login-btn')).click
-    find(:css, ta('trueautomationio:signin:signupBtn', 'div.sign-up-container > a')).click
-    fill_in ta('trueautomationio:signup:email', 'email'), with: 'your@mail.com'
-    sleep 3
-  end
-
-end
+```bash
+-Dwebdriver.chrome.driver=path/to/your/chromedriver
 ```
+
+- A browser driver is in the same directory as the `selenium-server-standalone` file;
+
+> Please refer to [Selenium Grid documentation](https://github.com/SeleniumHQ/selenium/wiki/Grid2) for details on configuring your hub and nodes.
+
+Here is the example of using GRID with TrueAutomation in this technology stack:
 
 ```ruby
 require 'bundler/setup'
@@ -163,15 +164,17 @@ end
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-grid**
 
 ## Appium
-TrueAutomation supports [Appium](https://appium.io/).
-Ensure you have Appium and all of Appium's dependencies installed If you don’t have, use the Appium documentation to install it.
 
+TrueAutomation supports [Appium](https://appium.io/)
+
+To get started, make you have Appium and all of its dependencies installed. If you do not have Appium in place, please refer to its documentation to install it.
 
 Run Appium server, using Terminal, appium desktop app. By default Appium is run on port number `4723`.
 
 Example:
 
 Set up driver for iOS (make sure that you use your device udid):
+
 ```ruby
 Capybara.register_driver :true_automation_driver do |app|
       caps = Selenium::WebDriver::Remote::Capabilities.new
@@ -187,6 +190,7 @@ Capybara.register_driver :true_automation_driver do |app|
 ```
 
 Set up driver for Android (make sure that you use your device udid):
+
 ```ruby
 Capybara.register_driver :true_automation_driver do |app|
       caps = Selenium::WebDriver::Remote::Capabilities.new
@@ -201,6 +205,7 @@ Capybara.register_driver :true_automation_driver do |app|
 ```
 
 After all changes the spec_helper.rb should look like:
+
 ```ruby
 require 'bundler/setup'
 require 'ostruct'
@@ -264,123 +269,124 @@ end
 
 ```
 
-Before you run the test, make sure that you have updated capabilities(`deviceName`, `automationName`, `udid`, `platformName`, `browserName`)  according to the capabilities to the device, used for running the test.
+Before you run the test, make sure that you have updated capabilities(`deviceName`, `automationName`, `udid`, `platformName`, `browserName`) according to the capabilities of the device that is used for running the test.
 
 **Check out an example of an actual test here: https://github.com/shapovalovei/trueautomation-capybara-remoteWebDriver**
 
 ## API example
 
 ```ruby
-   # Find by: id, xpath, css, name
-   find(:id, ta('pageName:moduleName:objectName', 'id-1'))
-   find(:css, ta('pageName:moduleName:objectName', "a#input"))
-   find(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+# Find by: id, xpath, css, name
+find(:id, ta('pageName:moduleName:objectName', 'id-1'))
+find(:css, ta('pageName:moduleName:objectName', "a#input"))
+find(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-   # iframe
-   within_frame(:xpath, ta('pageName:moduleName:objectName',"//iframe[@class='iframe']")) do
-       ...
-   end
+# iframe
+within_frame(:xpath, ta('pageName:moduleName:objectName',"//iframe[@class='iframe']")) do
+   ...
+end
 
-   # Clicking links and buttons by id and text
-   click_link(ta('pageName:moduleName:objectName', 'id-1'))
-   click_link(ta('pageName:moduleName:objectName', 'Forgot password?'))
+# Clicking links and buttons by id and text
+click_link(ta('pageName:moduleName:objectName', 'id-1'))
+click_link(ta('pageName:moduleName:objectName', 'Forgot password?'))
 
-   # Radio buttons by id and text
-   choose(ta('pageName:moduleName:objectName', 'radio1'))
-   choose(ta('pageName:moduleName:objectName', 'Option 1'))
+# Radio buttons by id and text
+choose(ta('pageName:moduleName:objectName', 'radio1'))
+choose(ta('pageName:moduleName:objectName', 'Option 1'))
 
-   # Checkboxes by id and text
-   check(ta('pageName:moduleName:objectName', 'id-1'))
-   check(ta('pageName:moduleName:objectName', 'Choice A'))
-   uncheck(ta('pageName:moduleName:objectName', 'id-1'))
-   uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
+# Checkboxes by id and text
+check(ta('pageName:moduleName:objectName', 'id-1'))
+check(ta('pageName:moduleName:objectName', 'Choice A'))
+uncheck(ta('pageName:moduleName:objectName', 'id-1'))
+uncheck(ta('pageName:moduleName:objectName', 'Choice A'))
 
-   # Fill in
-   fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
-   fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')
+# Fill in
+fill_in(ta('pageName:moduleName:objectName', 'id-1'), with: 'someText')
+fill_in(ta('pageName:moduleName:objectName', 'Email Address'), with: 'someText')
 
-   # Find all (page.all() / find_all())
-   find_all(:id, ta('pageName:moduleName:objectName', 'id-1'))
-   find_all(:css, ta('pageName:moduleName:objectName', "a#input"))
-   find_all(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+# Find all (page.all() / find_all())
+find_all(:id, ta('pageName:moduleName:objectName', 'id-1'))
+find_all(:css, ta('pageName:moduleName:objectName', "a#input"))
+find_all(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-   # Find button
-   find_button(ta('pageName:moduleName:objectName', 'id-1'))
-   find_button(ta('pageName:moduleName:objectName', 'someText'))
+# Find button
+find_button(ta('pageName:moduleName:objectName', 'id-1'))
+find_button(ta('pageName:moduleName:objectName', 'someText'))
 
-   # Find link
-   find_link(ta('pageName:moduleName:objectName', 'id-1'))
-   find_link(ta('pageName:moduleName:objectName', 'someText'))
+# Find link
+find_link(ta('pageName:moduleName:objectName', 'id-1'))
+find_link(ta('pageName:moduleName:objectName', 'someText'))
 
-   # Find field
-   find_field(ta('pageName:moduleName:objectName', 'id-1'))
-   find_field(ta('pageName:moduleName:objectName', 'someText'))
+# Find field
+find_field(ta('pageName:moduleName:objectName', 'id-1'))
+find_field(ta('pageName:moduleName:objectName', 'someText'))
 
-   # First
-   first(:id, ta('pageName:moduleName:objectName', 'id-1'))
-   first(:css, ta('pageName:moduleName:objectName', "a#input"))
-   first(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+# First
+first(:id, ta('pageName:moduleName:objectName', 'id-1'))
+first(:css, ta('pageName:moduleName:objectName', "a#input"))
+first(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 
-   # Click button & link
-   click_button(ta('pageName:moduleName:objectName','someText'))
-   click_link_or_button(ta('pageName:moduleName:objectName', 'id-1'))
+# Click button & link
+click_button(ta('pageName:moduleName:objectName','someText'))
+click_link_or_button(ta('pageName:moduleName:objectName', 'id-1'))
 
-   # Select
-   select 'someText', from: ta('pageName:moduleName:objectName', 'someText')
-   select 'someText', from: ta('pageName:moduleName:objectName', 'id-1')
+# Select
+select 'someText', from: ta('pageName:moduleName:objectName', 'someText')
+select 'someText', from: ta('pageName:moduleName:objectName', 'id-1')
 ```
-
 
 ```ruby
-    # assert_all_of_selectors
-    assert_all_of_selectors(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
-    assert_all_of_selectors(:css, ta('pageName:moduleName:objectName', 'a#input'))
-    assert_all_of_selectors(:id, ta('pageName:moduleName:objectName', 'id-1'))
+# assert_all_of_selectors
+assert_all_of_selectors(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+assert_all_of_selectors(:css, ta('pageName:moduleName:objectName', 'a#input'))
+assert_all_of_selectors(:id, ta('pageName:moduleName:objectName', 'id-1'))
 
-    # assert_selector
-    assert_selector(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
-    assert_selector(:css, ta('pageName:moduleName:objectName', 'a#input'))
-    assert_selector(:id, ta('pageName:moduleName:objectName', 'id-1'))
+# assert_selector
+assert_selector(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+assert_selector(:css, ta('pageName:moduleName:objectName', 'a#input'))
+assert_selector(:id, ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_button?
-    has_button?(ta('pageName:moduleName:objectName', 'someText'))
-    has_button?(ta('pageName:moduleName:objectName', 'id-1'))
+# has_button?
+has_button?(ta('pageName:moduleName:objectName', 'someText'))
+has_button?(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_checked_field?
-    has_checked_field?(ta('pageName:moduleName:objectName', 'someText'))
-    has_checked_field?(ta('pageName:moduleName:objectName', 'id-1'))
+# has_checked_field?
+has_checked_field?(ta('pageName:moduleName:objectName', 'someText'))
+has_checked_field?(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_css?
-    has_css?(ta('pageName:moduleName:objectName', 'a#input'))
+# has_css?
+has_css?(ta('pageName:moduleName:objectName', 'a#input'))
 
-    # has_field?
-    has_field?(ta('pageName:moduleName:objectName', 'someText'))
-    has_field?(ta('pageName:moduleName:objectName', 'id-1'))
+# has_field?
+has_field?(ta('pageName:moduleName:objectName', 'someText'))
+has_field?(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_link?
-    has_link?(ta('pageName:moduleName:objectName', 'id-1'))
-    has_link?(ta('pageName:moduleName:objectName', 'someText'))
+# has_link?
+has_link?(ta('pageName:moduleName:objectName', 'id-1'))
+has_link?(ta('pageName:moduleName:objectName', 'someText'))
 
-    # has_selector?
-    has_selector?(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
-    has_selector?(:css, ta('pageName:moduleName:objectName', 'a#input'))
-    has_selector?(:id, ta('pageName:moduleName:objectName', 'id-1'))
+# has_selector?
+has_selector?(:xpath, ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+has_selector?(:css, ta('pageName:moduleName:objectName', 'a#input'))
+has_selector?(:id, ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_table?
-    has_table?(ta('pageName:moduleName:objectName', 'someText'))
-    has_table?(ta('pageName:moduleName:objectName', 'id-1'))
+# has_table?
+has_table?(ta('pageName:moduleName:objectName', 'someText'))
+has_table?(ta('pageName:moduleName:objectName', 'id-1'))
 
-    # has_xpath?
-    has_xpath?(ta('pageName:moduleName:objectName', "//div[@class='btn']"))
+# has_xpath?
+has_xpath?(ta('pageName:moduleName:objectName', "//div[@class='btn']"))
 ```
+
+<br>
 
 ## TrueAutomation capabilities
 
-TrueAutomationDriver supports using of all WebDriver capabilities and we also expand them by our internal capabilities.
+TrueAutomation supports all WebDriver capabilities and expands them with our internal capabilities.
 
-**TrueAutomation embedded drivers selection**
+#### TrueAutomation embedded drivers selection
 
-We have our internal capabilities for embedded drivers selection through the Desired Capabilities. These are special key and value pairs that are sent to the server in the JSON object when requesting a new automation session. They tell which driver and what driver version will be used in your test run.
+There are internal capabilities for embedded drivers selection through the Desired Capabilities. These are special key and value pairs that are sent to the server in the JSON object when requesting a new automation session. They specify driver and its version that should be used in a test.
 
 |**Key**| &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;**Type**&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; | **Description**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     |
 |:---:|:---:|:---|
@@ -393,6 +399,6 @@ We have our internal capabilities for embedded drivers selection through the Des
 Capybara.register_driver :true_automation_driver do |app|
 TrueAutomation::Driver::Capybara.new(app, driver: 'chromedriver', driver_version: '2.42')
 end
-
 ```
 
+You can observe a list of current drivers and their versions using the `trueautomation driver list` command.

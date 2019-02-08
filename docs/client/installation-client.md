@@ -1,16 +1,21 @@
 # Install Client {docsify-ignore}
 ## Installing TrueAutomation Client
 
-Installing TrueAutomation client is extremely easy. The installer will automatically add TrueAutomation client to your system path so that it is available in terminals.
-If it is not found, please try logging out and logging back in to your system (this is particularly necessary sometimes for Windows).
+You should have a TrueAutomation.io account in place to be able to leverage its capabilities. If you do not have an account yet, please [register](https://app.trueautomation.io/auth/signup) one at [TrueAutomation.io](https://trueautomation.io/)
+
+Installation process is easy and straightforward. Just follow the recommendations in the installer or refer to Documentation section in case you have any questions.
+
+Once you run the installer, it will automatically configure PATH environment variable and will make TrueAutomation Client available from the command line. In Windows environment you might need to re-login to your system for the changes to be applied.
 
 ### Mac OS X and Linux operating system
 
-On your computer go to Terminal and install TrueAutomation Client by running this command:
+Run the command below in your command line to install TrueAutomation Client:
+
 ```bash
 curl -o- https://trueautomation.io/installer.sh | bash
 ```
 or
+
 ```bash
 wget -qO-  https://trueautomation.io/installer.sh | bash
 ```
@@ -24,14 +29,14 @@ Just [download Windows installer](https://downloads.trueautomation.io/trueautoma
 
   ![Windows](../_gif/windows.gif 'Windows installer')
 
-
 ## Verifying the Installation
 
-After installing TrueAutomation client, verify the installation worked by opening a new command prompt or terminal, and checking that TrueAutomation is available:
+Make sure to verify the installed content. To do so, open the command line and run the command below:
+
 ```bash
 trueautomation -h
 ```
 
 ![Help](../_images/ta-help-output.png 'Help output')
 
-You have successfully downloaded and installed TrueAutomation client! Read on to learn about [setting up your first TrueAutomation project](/getting-started/project-setup.md).
+The message above means that the installation process has been completed successfully. Next step is [setting up your first TrueAutomation project](/getting-started/project-setup.md)

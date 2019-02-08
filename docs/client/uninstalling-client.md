@@ -4,11 +4,12 @@ Removing the TrueAutomation Client will remove the TrueAutomation binary and all
 
 ### UNIX operating system
 
-On your computer go to Terminal and uninstall TrueAutomation Client by running this command:
+Run the command below in your command line to uninstall TrueAutomation Client:
 
 ```bash
 rm -rf ~/.trueautomation/
 ```
+
 ### Windows operating system
 
 Uninstall using the add/remove programs section of the control panel

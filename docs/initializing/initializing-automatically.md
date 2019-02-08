@@ -1,32 +1,24 @@
 # Initializing automatically
 
-There are two ways for you to start writing tests with TrueAutomation:
+Follow the steps below to automatically initialize a project and start writing tests (if you prefer to manually initialize your project - please refer to [manual initialization](/initializing/initializing-manually.md) section).
 
-* To initialize a project with automatic tests using TrueAutomation Client and built-in command:  (for details checkout the [Project Setup](/getting-started/project-setup.md)).
+1. Run the code below in your command line to start the initialization process (please refer to [Project Setup](/getting-started/project-setup.md) for details):
 
-    ```bash
-    mkdir my-project
-    cd my-project
-    trueautomation init
-    ```
+```bash
+ mkdir my-project
+ cd my-project
+ trueautomation init
+```
+2. Enter your API key from your profile page at TrueAutomation.io account
 
-    Choose your technology stack with numbers 1) Capybara/RSpec or 2) Java/Maven
+3. Choose your technology stack
 
-    Select existing project or new one
+4. Select an existing project or create a new one
 
-    Run your test with
-    ```bash
-        mvn -Dtest=exampleTest test
-    ```
-
-
-
-
-   This way is the easiest. You can initialize a project from scratch. We generate a sample project for you or you can update your own exciting project.
-
+5. Run the sample test
+    
+This is the easiest way to get started. You can initialize a project from scratch (we generate a sample project for you) or you can update your own existing project.
 
    ![Initial process](../_gif/init-ta.gif 'Initial process')
 
-
-
-* To initialize a project with tests [manually](/initializing/initializing-manually.md).
+To initialize a project with tests [manually](/initializing/initializing-manually.md)

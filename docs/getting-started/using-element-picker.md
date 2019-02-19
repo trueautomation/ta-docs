@@ -1,70 +1,62 @@
 # Element picker
 
-TrueAutomation Element picker is a combination of IDE plugin and web browser extension that allow you to pick an element on the web page for which a unique "smart locator" is generated and used in your test code in IDE.
-- IDE plugin integrates a TA button into your code. Once clicked a new browser session is initiated.
-- Browser extension integrates with your browser. Once a new session is initiated by IDE plugin you will be able to pick an element that should be used in your test.
+TrueAutomation Element Picker is a web browser extension, that gives you an easy, intuitive and fast way of creating Smart Locators that should be used in a test.
+Literally, all you need to do is pick elements that you need and project that they belong to - the elements will be ‘inspected’ by TrueAutomation AI, smart-locators will be generated and added to your project object repository automatically.
+You can use those Smart locators in your test code directly from IDE.
+
+- You can download [TrueAutomation browser extension](https://chrome.google.com/webstore/detail/trueautomationio-element/khpnbhifngechnmadjdgddjjaiioncoh) from Chrome Web Store
 
 ### Use TrueAutomation element picker to:
-- create tests faster
+- create tests faster in multiple times
+- eliminate elements inspection from your workflow
+- give locators human-readable names (by using [TrueAutomation naming patterns](/getting-started/ta-locators)) 
 - create tests in cases when it’s impossible to use IDs, names, XPath or some other locator
-- maintain TrueAutomation-based tests faster
+- minimize tests maintenance (and if such is needed, update locators with a click)
 
 ### Currently supporting:
-- Atom IDE
-- Chrome Browser
+- Chrome Browser (both desktop and mobile view)
 
-Will support soon:
-- IDEA
+## Initial setup
+Install [TrueAutomation Chrome extension](https://chrome.google.com/webstore/detail/trueautomationio-element/khpnbhifngechnmadjdgddjjaiioncoh) for picking web elements
 
-### Initial setup
-1. Install Atom IDE [atom.io](https://atom.io)
-2. Install [TrueAutomation plugin for Atom](https://atom.io/packages/trueautomation-element-picker) (Atom package)
-3. Install [TrueAutomation Chrome extension](https://chrome.google.com/webstore/detail/trueautomationio-element/khpnbhifngechnmadjdgddjjaiioncoh) for picking web elements
+## How to use TrueAutomation element picker
+1. Open your terminal and run the command `trueautomation ide`          
+If you do not run this command, TrueAutomation Chrome extension will return an error.
+![IDE not started](../_images/ide-not-started.png 'TrueAutomation IDE has not been started')
 
-### How to use TrueAutomation element picker
-1. Open or create a TrueAutomation-based project in Atom
+2. Go to the website or web application that you need to cover with tests and activate extension
+![Activate TrueAutomation extension](../_images/activate-extension.png 'Activate TrueAutomation extension')
 
-If the project is TrueAutomation-based, we will define that and automatically start the TrueAutomation Element picker. You will be informed about that.
+3. Select a project (that you have in your TrueAutomation.io cloud account) where the Smart locators should belong. In case you do not have a project - make sure to create one.
+![Select a project](../_images/select-project.png 'Select a project')
+![Cloud project list](../_images/cloud-project-list.png 'Cloud project list')
 
-![Picker](../_gif/picker-starting-notice.gif 'Picker starting notice')
+Once the project is selected, for the elements, that you pick a Smart Locator will be generated and added to project object repository
 
-Also, the special TA buttons will be added to your code only in places where just TA locators are used. TA button will not be displayed in cases where you use TA locator + Regular locator or just Regular locator (IDs, names, XPath, etc)
+4. In order to add a new Smart locator to objects repository, push ‘Select an Element’ button.
 
-<!-- tabs:start -->
-#### ** Java **
+An element will be inspected by TrueAutomation AI, a Smart-locator will be generated automatically and added to current project objects repository.      
+![Select an element](../_images/select-element-btn.png 'Select an element')
+click on the element, located on the current web page.
+![Element on page](../_images/element-on-page.png 'Element on page')
+Once you’ve clicked on the element, it will be selected and you will be asked to give it a name:  “ENTER A SELECTED ELEMENT NAME” 
+- Give it a name (e.g.: `ta:homePage:emailFl`) and click ‘Save’ button
 
-![Picker](../_images/taButton.png 'TA Button')
-#### ** Ruby **
+We recommend to use namespaced syntax to make sure you always have human-readable names that make sense. You can learn more [here]() .
+![Element name](../_images/name-element.png 'Element name')
+Once the element is detected and recorded by TrueAutomation - you will get a confirmation popup. This means a Smart-locator has been generated and added to objects repository successfully. You can use it now in your test code.
 
-![Picker](../_images/taButton-ruby.png 'TA Button')
-<!-- tabs:end -->
+To view the list of all Smart-locators, that have been created for current project, go to your [TrueAutomation.IO cloud account]() , open the particular project and click ‘View elements’ button. 
+![Element tree](../_images/element-tree.png 'Element tree')
 
-[See examples when (only) TA locators are used in code](https://trueautomation.io/docs/#/getting-started/ta-locators?id=example)
+5. In order to rewrite/update an existing element, enter the name of that element into the field on the right, next to "Select an Element" button. If the element exists, "Select an Element" button will change its name to "Reselect an Element".
 
-2. Click on the orange TA button in your code. Once you click, a new browser session will be initiated and you will have to pick the element, corresponding to a locator in your code.
-    The same browser session will be used for elements picking until you close the browser window or close your project.
+> Hit the "Reselect an Element" button and click on any element located on the web page, to rewrite or update the current one.
 
-3. Go to the website or web application that you need to cover with tests
-4. Select an element, that needs to be used in test. There are 2 ways of doing that:
+![Reselect element](../_images/reselect-element.png 'Reselect element')
+Once done, a confirmation popup will be displayed.
 
-
-- Click on the TA extension icon to activate it. Left-click on the element.
-
-![Picker](../_images/elementSelection1.png 'Element Selection')
-
-- Right-click on the element. Choose TA Select
- 
-![Picker](../_images/elementSelection2.png 'Element Selection')
-
-**Once the element is detected and recorded by TrueAutomation, a confirmation popup will be displayed. Now go back to your code, you will see that the recorded TA locator color is changed from red to green.**
-
-<!-- tabs:start -->
-#### ** Java **
-![Picker](../_images/taLocatorColor.png 'TA locator')
-#### ** Ruby **
-![Picker](../_images/taLocatorColor-ruby.png 'TA locator')
-<!-- tabs:end -->
-
-If you go to your TrueAutomation account, you will see that the recorded elements are added to the object repository.
-
-![Picker](../_images/elementInCld.png 'Element In Cloud')
+6. In order to switch to Mobile View of the website, click ‘Mobile’ button.
+![Switch to mobile](../_images/mobile-btn.png 'Switch to mobile')
+The current webpage will be displayed in mobile view. In order to go back to desktop view, hit the same button once again.
+![Mobile view](../_images/mobile-view.png 'Mobile view')

@@ -67,3 +67,6 @@ Once done, a confirmation popup will be displayed.
 ![Switch to mobile](../_images/mobile-btn.png  'Switch to mobile')
 The current webpage will be displayed in mobile view. In order to go back to desktop view, hit the same button once again.
 ![Mobile view](../_images/mobile-view.png  'Mobile view')
+<!--If you use .gif do new line before-->
+>
+![Switching between mobile & desktop view](../_gif/switch-mob-desk.gif  'Switching between mobile & desktop view')

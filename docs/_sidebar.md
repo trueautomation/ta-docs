@@ -30,6 +30,8 @@
  * [Capybara/RSpec](/languages-frameworks/capybara-rspec.md)
  * [JavaScript/WebdriverIO](/languages-frameworks/javascript-wdio.md)
 
+*  **Plugins**
+ * [Atom](/plugins/atom.md)
 
 * [**Technology support**](/support/technology-support.md)
 * [**Troubleshooting**](/support/troubleshooting.md)

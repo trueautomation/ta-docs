@@ -1,7 +1,7 @@
 # Element picker
 
 TrueAutomation Element Picker is a web browser extension, that gives you an easy, intuitive and fast way of creating Smart Locators that should be used in a test.
-Literally, all you need to do is pick elements that you need and project that they belong to - the elements will be ‘inspected’ by TrueAutomation AI, smart-locators will be generated and added to your project object repository automatically.
+Literally, all you need to do is pick elements that you need and project that they belong to - the elements will be ‘inspected’ by TrueAutomation AI, smart-locators will be generated and added to your project objects repository automatically.
 You can use those Smart locators in your test code directly from IDE.
 
 - You can download [TrueAutomation browser extension](https://chrome.google.com/webstore/detail/trueautomationio-element/khpnbhifngechnmadjdgddjjaiioncoh) from Chrome Web Store
@@ -31,7 +31,7 @@ If you do not run this command, TrueAutomation Chrome extension will return an e
 ![Select a project](../_images/select-project.png 'Select a project')
 ![Cloud project list](../_images/cloud-project-list.png 'Cloud project list')
 
-Once the project is selected, for the elements, that you pick a Smart Locator will be generated and added to project object repository
+Once the project is selected, for the elements, that you pick a Smart Locator will be generated and added to project objects repository
 
 4. In order to add a new Smart locator to objects repository, push ‘Select an Element’ button.
 
@@ -39,12 +39,14 @@ An element will be inspected by TrueAutomation AI, a Smart-locator will be gener
 ![Select an element](../_images/select-element-btn.png 'Select an element')
 click on the element, located on the current web page.
 ![Element on page](../_images/element-on-page.png 'Element on page')
-Once you’ve clicked on the element, it will be selected and you will be asked to give it a name:  “ENTER A SELECTED ELEMENT NAME” 
-- Give it a name (e.g.: `ta:homePage:emailFl`) and click ‘Save’ button
+Once you’ve clicked on the element, it will be selected and you will be asked to give it a name: **"ENTER A SELECTED ELEMENT NAME"**
+> Give it a name (e.g.: `ta:homePage:emailFl`) and click ‘Save’ button
 
-We recommend to use namespaced syntax to make sure you always have human-readable names that make sense. You can learn more [here]() .
+We recommend to use namespaced syntax to make sure you always have human-readable names that make sense. You can learn more [here]().
 ![Element name](../_images/name-element.png 'Element name')
 Once the element is detected and recorded by TrueAutomation - you will get a confirmation popup. This means a Smart-locator has been generated and added to objects repository successfully. You can use it now in your test code.
+
+![Add element using Element Picker](../_gif/add-new-element20fps.gif 'Add element using Element Picker')
 
 To view the list of all Smart-locators, that have been created for current project, go to your [TrueAutomation.IO cloud account]() , open the particular project and click ‘View elements’ button. 
 ![Element tree](../_images/element-tree.png 'Element tree')
@@ -55,6 +57,8 @@ To view the list of all Smart-locators, that have been created for current proje
 
 ![Reselect element](../_images/reselect-element.png 'Reselect element')
 Once done, a confirmation popup will be displayed.
+
+![Reselect element using Element Picker](../_gif/reselect-element20fps.gif 'Reselect element using Element Picker')
 
 6. In order to switch to Mobile View of the website, click ‘Mobile’ button.
 ![Switch to mobile](../_images/mobile-btn.png 'Switch to mobile')

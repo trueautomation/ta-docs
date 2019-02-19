@@ -31,11 +31,12 @@ If the project is TrueAutomation-based, we will define that and automatically st
 Also, the special TA buttons will be added to your code only in places where just TA locators are used. TA button will not be displayed in cases where you use TA locator + Regular locator or just Regular locator (IDs, names, XPath, etc)
 
 <!-- tabs:start -->
-### ** Java **
-![Picker](../_images/taButton.png 'TA Button')
-
-### ** Ruby **
-![Picker](../_images/taButton-ruby.png 'TA Button')
+#### ** Java **
+![Picker](../_images/taButton-java.png 'TA button')
+#### ** Capybara **
+![Picker](../_images/taButton-capybara.png 'TA button')
+#### ** WebDriverIO **
+![Picker](../_images/taButton-webdriverio.png 'TA button')
 <!-- tabs:end -->
 
 [See examples when (only) TA locators are used in code](/getting-started/ta-locators?id=example)
@@ -45,19 +46,19 @@ Also, the special TA buttons will be added to your code only in places where jus
 
 3. Go to the website or web application that you need to cover with tests
 
-4. Select an element, that needs to be used in test.
->
-Click on the TA extension icon to activate it. Left-click on the element.
-![Picker](../_images/elementSelection1.png 'Element Selection')
+4. Select an element, that needs to be used in test. Click on the TA extension icon to activate it. Push ‘Select an Element’ button. Left-click on the element.
+![Picker](../_images/select-element-atom.png 'Element Selection')
 **Once the element is detected and recorded by TrueAutomation, a confirmation popup will be displayed. Now go back to your code, you will see that the recorded TA locator color is changed from red to green.**
 
 <!-- tabs:start -->
 #### ** Java **
-![Picker](../_images/taLocatorColor.png 'TA locator')
-#### ** Ruby **
-![Picker](../_images/taLocatorColor-ruby.png 'TA locator')
+![Picker](../_images/taLocatorColor-java.png 'TA locator')
+#### ** Capybara **
+![Picker](../_images/taLocatorColor-capybara.png 'TA locator')
+#### ** WebDriverIO **
+![Picker](../_images/taLocatorColor-webdriverio.png 'TA locator')
 <!-- tabs:end -->
 
 If you go to your TrueAutomation account, you will see that the recorded elements are added to the object repository.
 
-![Picker](../_images/elementInCld.png 'Element In Cloud')
+![Picker](../_images/element-tree.png 'Element In Cloud')

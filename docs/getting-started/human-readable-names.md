@@ -18,7 +18,9 @@ The number of blocks separated with a ‘colon’ is not limited, you can use as
 ?> However we do not recommend to use too long names. The shorter the name the easier it is to read and use it in test code.
 
 In your Objects Repository Smart-locators with human-readable names are organized in a tree-like structure and are sorted based on the name of the blocks, used in a name. E.g.
-All Smart locators that belong to `homePage` will be organized under `homePage` category in the project they belong to in your Objects Repository. Every Smart-locator, that has been added using Element Picker will also have an element screenshot. Locators, that have been added using initial locators will not have element screenshots attached.
+All Smart locators that belong to `homePage` will be organized under `homePage` category in the project they belong to in your Objects Repository.
+
+?> Every Smart-locator, that has been added using Element Picker will also have an element screenshot. Locators, that have been added using initial locators will not have element screenshots attached.
 
 Here’s an example.
 

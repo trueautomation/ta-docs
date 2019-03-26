@@ -8,6 +8,7 @@
   * [API Key](/getting-started/api-key.md)
   * [Project setup](/getting-started/project-setup.md)
   * [Using TA locators](/getting-started/ta-locators.md)
+  * [Human-readable names](/getting-started/human-readable-names.md)
   * [Creating tests, using the Element Picker](/getting-started/using-element-picker.md)
   * [Creating tests, using Initial locators](/getting-started/creating-tests-il.md)
   * [TrueAutomation.io vs Selenium](/getting-started/trueautomation-vs-selenium.md)

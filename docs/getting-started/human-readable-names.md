@@ -25,7 +25,6 @@ All Smart locators that belong to `homePage` will be organized under `homePage` 
 Here’s an example.
 
 Let’s say we have created a number of Smart-locators using Chrome element picker and have named them:
-
 * `homePage:emailFl`
 * `homePage:goBtn`
 * `homePage:loginBtn`
@@ -40,6 +39,7 @@ Here is how these smart locators will be displayed in the Objects Repository:
 **1. Copy the full name of your Smart-locator to use it in your IDE.**
 
 Click on the locator name (e.g. `emailFl`), the full name `homePage:emailFl` will be automatically copied and can be pasted into the test code in your IDE.
+
 ![Copy name](../_gif/copy-name-from-cloud.gif 'Copy name')
 
 **2. View element screenshot.**
